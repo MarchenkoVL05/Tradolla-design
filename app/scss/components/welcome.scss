@@ -1,0 +1,31 @@
+.welcome {
+  @include d-flex-center;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 80px 120px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--white-shadow);
+  &__text {
+    max-width: 512px;
+    text-align: center;
+    color: var(--main-text);
+    font-size: 16px;
+    letter-spacing: 1.6px;
+  }
+  &__login-link {
+    margin-top: 15px;
+    color: var(--main-text);
+    font-size: 16px;
+    a {
+      color: var(--orange);
+      transition: 0.2s all;
+      &:hover {
+        color: var(--main-text);
+      }
+    }
+  }
+  &__button {
+    margin-top: 35px;
+  }
+}

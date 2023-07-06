@@ -1,0 +1,34 @@
+@media (max-width: 1024px) {
+  .header__inner {
+    gap: 80px;
+  }
+
+  .signIn {
+    font-size: 16px;
+  }
+
+  .header__signUp {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .lang-select {
+    padding: 7px;
+  }
+
+  .lang-list {
+    top: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu,
+  .header__functions {
+    display: none;
+  }
+}

@@ -5,12 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>VendorVerse</title>
 </head>
 
 <body>
+    <div class="container">
+        <button class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </button>
+        <header class="header">
+            <div class="header__inner">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Suppliers</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Customers</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+                </ul>
 
+                <div class="header__functions">
+                    <a class="header__info" href="#">
+                        <img src="./images/messagequestion.svg" alt="">
+                    </a>
+                    <button class="lang-select">
+                        <img src="./images/lang-arrow.svg" alt="">
+                        en
+                        <img src="./images/en-lang-icon.png" alt="">
+                        <ul class="lang-list">
+                            <li class="lang-list__item">
+                                ru
+                                <img src="./images/rus-lang-icon.png" alt="">
+                            </li>
+                        </ul>
+                    </button>
+                    <a class="signIn" href="#">Sign In</a>
+                    <a class="button header__signUp" href="#">sign Up</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="welcome">
+                <img class="logotype welcome__logotype" src="./images/logotype.svg" alt="">
+                <p class="welcome__text">Welcome to our website! Here you will find a wide range of products at
+                    competitive prices. We strive
+                    to provide our customers with the best possible shopping experience, from browsing to checkout.
+                    <b>Thank you for choosing us and happy shopping!</b>
+                </p>
+                <button class="button welcome__button">Let’s start <img src="./images/button-arrow.svg" alt=""></button>
+                <div class="welcome__login-link">Already have an account? <a href="#">Login</a></div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

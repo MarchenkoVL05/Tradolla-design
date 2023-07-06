@@ -1,1 +1,47 @@
+@import "./var";
+@import "./mixins";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+body {
+  background-image: url("./images/welcome-bg.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 44px;
+}
+
+.content {
+  @include d-flex-center;
+}
+
+.button {
+  @include d-flex-center;
+  @include button;
+}
+
+// Components
+@import "./components/header.scss";
+@import "./components/welcome.scss";
+// Media
+@import "./media/style-Media.scss";
+@import "./media/header-Media.scss";
+@import "./media/welcome-Media.scss";
