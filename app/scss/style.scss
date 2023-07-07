@@ -86,7 +86,7 @@ li {
     height: 3px;
     background-color: var(--white);
     border-radius: 10px;
-    box-shadow: 0px 2px 13px 2px #a1acb7b3;
+    box-shadow: var(--white-shadow);
     transition: 0.3s all;
   }
 }
@@ -99,7 +99,7 @@ li {
   align-items: center;
   gap: 5px;
   border-radius: 8px;
-  box-shadow: 0px 2px 13px 2px #a1acb7b3;
+  box-shadow: var(--white-shadow);
   font-size: 16px;
   position: relative;
   cursor: pointer;
@@ -114,7 +114,7 @@ li {
     gap: 20px;
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0px 2px 13px 2px #a1acb7b3;
+    box-shadow: var(--white-shadow);
     padding: 20px;
     transition: 0.1s all;
     &::before {
@@ -187,7 +187,7 @@ li {
   margin: 0 auto 20px;
   border-radius: 20px;
   background: var(--white);
-  box-shadow: 0px 2px 13px 2px #a1acb7b3;
+  box-shadow: var(--white-shadow);
   &__text {
     margin-top: 35px;
     max-width: 585px;
