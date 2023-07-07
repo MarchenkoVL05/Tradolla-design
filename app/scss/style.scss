@@ -34,6 +34,7 @@ li {
 }
 
 .header {
+  position: relative;
   margin-top: 40px;
   display: flex;
   justify-content: flex-end;
@@ -43,12 +44,14 @@ li {
     display: flex;
     align-items: center;
     gap: 40px;
+    transition: 0.2s all;
   }
 
   &__funcs {
     display: flex;
     align-items: center;
     gap: 30px;
+    transition: 0.2s all;
     &-info {
       &:hover {
         filter: invert(51%) sepia(97%) saturate(2067%) hue-rotate(3deg) brightness(107%) contrast(104%);
@@ -65,6 +68,26 @@ li {
     &:hover {
       color: var(--orange);
     }
+  }
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+  cursor: pointer;
+  &__line {
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 2px 13px 2px #a1acb7b3;
+    transition: 0.3s all;
   }
 }
 
@@ -126,6 +149,12 @@ li {
   visibility: visible;
   top: 40px;
   opacity: 1;
+}
+
+.burgerMenuShow {
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
 }
 
 .button {

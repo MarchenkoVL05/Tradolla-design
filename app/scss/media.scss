@@ -47,14 +47,25 @@
   .header {
     gap: 20px;
     flex-direction: column;
+    padding: 60px 0 0;
     &__menu {
       gap: 20px;
       flex-direction: column;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
     }
     &__funcs {
       gap: 20px;
       flex-direction: column;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
     }
+  }
+
+  .burger {
+    display: flex;
   }
 
   .content {
@@ -89,5 +100,11 @@
   }
   .logo {
     height: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    height: 33px;
   }
 }
