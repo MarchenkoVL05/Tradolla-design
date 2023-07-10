@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>VendorVerse</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <ul class="header__menu">
+                <li><a class="header-link header__menu-link" href="#">Suppliers</a></li>
+                <li><a class="header-link header__menu-link" href="#">Customers</a></li>
+                <li><a class="header-link header__menu-link" href="#">Help</a></li>
+            </ul>
+            <div class="header__funcs">
+                <a class="header__funcs-info" href="#"><img src="./images/messagequestion.svg" alt=""></a>
+                <div class="lang">
+                    <img src="./images/lang-arrow.svg" alt="">
+                    <img src="./images/united-kingdom.png" alt="">
+                    English
+                    <ul class="lang__list">
+                        <li class="lang__list-item"><a href="#"><img src="./images/russia.png" alt="">Russian</a></li>
+                        <li class="lang__list-item"><a href="#"><img src="./images/iran.png" alt="">Farsi</a></li>
+                        <li class="lang__list-item"><a href="#"><img src="./images/russia.png" alt="">Russian</a></li>
+                        <li class="lang__list-item"><a href="#"><img src="./images/iran.png" alt="">Farsi</a></li>
+                        <li class="lang__list-item"><a href="#"><img src="./images/iran.png" alt="">Farsi</a></li>
+                        <li class="lang__list-item"><a href="#"><img src="./images/russia.png" alt="">Russian</a></li>
+                    </ul>
+                </div>
+                <a class="header-link" href="./login-page.html">Sign In</a>
+                <a class="button" href="./register-account.html">Sign Up</a>
+            </div>
+            <div class="burger">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="welcome welcome--wide">
+                <img class="logo" src="./images/logotype.svg" alt="">
+                <div class="second-step">
+                    <div class="progress-bar"></div>
+                    <h1 class="second-step__title">Company info</h1>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="Company Registration Number">
+                        <p class="second-step__text text">Corporation, sole proprietor, partnership, etc.</p>
+                    </div>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="Bank details">
+                        <p class="second-step__text text">Bank name, account number, BIC code
+                            and/or SWIFT/IBAN</p>
+                    </div>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="DUNS-number (if available)">
+                        <p class="second-step__text text">Manufacturer, service provider, broker,
+                            government agency, etc.</p>
+                    </div>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="DUNS-number (if available)">
+                        <p class="second-step__text text">For example Manufacturing, Retail, Finance, Healthcare,
+                            Technology and others.</p>
+                    </div>
+                    <div class="second-step__btns">
+                        <button class="button button--reverse"
+                            onclick="javascript:window.location.href='company_register-3.html'"><img
+                                src="./images/button-arrow.svg" alt="">
+                            Back</button>
+                        <button class="button" onclick="javascript:window.location.href='company_register-5.html'">Next
+                            <img src="./images/button-arrow.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
