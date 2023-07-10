@@ -75,6 +75,12 @@
       font-size: 34px;
     }
   }
+
+  .third-step {
+    &__title {
+      font-size: 34px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -135,6 +141,17 @@
 
     &__input {
       width: 100%;
+    }
+  }
+
+  .third-step {
+    gap: 20px;
+    &__title {
+      font-size: 26px;
+    }
+
+    &__label {
+      font-size: 16px;
     }
   }
 }
@@ -215,6 +232,12 @@
       font-size: 24px;
     }
   }
+
+  .third-step {
+    &__title {
+      font-size: 24px;
+    }
+  }
 }
 
 @media (max-width: 320px) {
@@ -229,6 +252,17 @@
   }
 
   .second-step {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__btns {
+      flex-direction: column;
+      gap: 25px;
+    }
+  }
+
+  .third-step {
     &__title {
       font-size: 20px;
     }
