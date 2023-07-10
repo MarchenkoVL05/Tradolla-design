@@ -34,7 +34,7 @@
                         <li class="lang__list-item"><a href="#"><img src="./images/russia.png" alt="">Russian</a></li>
                     </ul>
                 </div>
-                <a class="header-link" href="./login-page.html">Sign In</a>
+                <a class="header-link" href="#">Sign In</a>
                 <a class="button" href="#">Sign Up</a>
             </div>
             <div class="burger">
@@ -47,13 +47,13 @@
         <main class="content">
             <div class="welcome">
                 <img class="logo" src="./images/logotype.svg" alt="">
-                <p class="welcome__text">Welcome to our website! Here you will find a wide range of products at
-                    competitive prices. We strive
-                    to provide our customers with the best possible shopping experience, from browsing to checkout.
-                    <b>Thank you for choosing us and happy shopping!</b>
-                </p>
-                <button class="button welcome__button">Let’s start <img src="./images/button-arrow.svg" alt=""></button>
-                <p class="welcome__login">Already have an account? <a href="./login-page.html">Login</a></p>
+                <form class="login-form" action="">
+                    <input class="login-form__input input" type="text" minlength="10" maxlength="100"
+                        placeholder="login or email" required>
+                    <input class="login-form__input input" type="password" minlength="10" maxlength="100"
+                        placeholder="password" required>
+                    <button class="button">Sign In <img src="./images/button-arrow.svg" alt=""></button>
+                </form>
             </div>
         </main>
     </div>
