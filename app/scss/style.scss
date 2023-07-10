@@ -28,6 +28,44 @@ li {
   list-style-type: none;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 60px;
+  color: var(--white);
+  border: none;
+  border-radius: 15px;
+  background: var(--orange-gradient);
+  box-shadow: 1px 2px 10px 0px #ff8a0080;
+  transition: 0.3s all;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.input {
+  padding: 15px;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #ff9401, #599fff) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: var(--main-text);
+  &::placeholder {
+    color: #949fcb;
+    font-size: 17px;
+  }
+  &:focus {
+    outline: none;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #599fff, #ff9401) border-box;
+  }
+}
+
+.text {
+  color: var(--main-text);
+  letter-spacing: 1.6px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 44px;
@@ -157,38 +195,6 @@ li {
   height: auto !important;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 60px;
-  color: var(--white);
-  border: none;
-  border-radius: 15px;
-  background: var(--orange-gradient);
-  box-shadow: 1px 2px 10px 0px #ff8a0080;
-  transition: 0.3s all;
-  cursor: pointer;
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
-
-.input {
-  padding: 15px;
-  background: linear-gradient(white, white) padding-box, linear-gradient(to right, #ff9401, #599fff) border-box;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  &::placeholder {
-    color: #949fcb;
-    font-size: 17px;
-  }
-  &:focus {
-    outline: none;
-    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #599fff, #ff9401) border-box;
-  }
-}
-
 .content {
   margin-top: 150px;
 }
@@ -206,8 +212,6 @@ li {
   &__text {
     margin-top: 15px;
     max-width: 585px;
-    color: var(--main-text);
-    letter-spacing: 1.6px;
   }
   &__button {
     margin-top: 35px;
@@ -237,6 +241,37 @@ li {
   gap: 25px;
   &__input {
     width: 100%;
+  }
+}
+
+.register-account {
+  &__title {
+    @include font-title-lg;
+  }
+
+  &__text {
+    margin-top: 15px;
+    a {
+      color: var(--orange);
+    }
+  }
+}
+
+.register-form {
+  margin-top: 30px;
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__button {
+    margin-top: 25px;
   }
 }
 

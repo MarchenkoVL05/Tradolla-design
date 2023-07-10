@@ -3,3 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin font-title-lg {
+  color: #3a4571;
+  text-shadow: 5px 5px 10px #323e7126;
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-weight: 700;
+}

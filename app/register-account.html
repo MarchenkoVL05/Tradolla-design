@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Login | VendorVerse</title>
+    <title>Registration | VendorVerse</title>
 </head>
 
 <body>
@@ -49,15 +49,37 @@
 
         <main class="content">
             <div class="welcome">
-                <img class="logo" src="./images/logotype.svg" alt="">
-                <form class="login-form" action="">
-                    <input class="login-form__input input" type="text" minlength="10" maxlength="100"
-                        placeholder="Email" required>
-                    <input class="login-form__input input" type="password" minlength="10" maxlength="100"
-                        placeholder="Password" required>
-                    <button class="button">Sign In <img src="./images/button-arrow.svg" alt=""></button>
-                </form>
-                <p class="welcome__login">Don't have an account yet? <a href="./register-account.html">Sign Up</a></p>
+                <div class="register-account">
+                    <img class="logo" src="./images/logotype.svg" alt="">
+                    <h1 class="register-account__title">Input your information</h1>
+                    <p class="register-account__text text">We need you to help us with some basic information for
+                        your
+                        account creation. Here are our <a href="#">terms and conditins</a>. Please read them
+                        carefully.
+                    </p>
+                    <form class="register-form" action="">
+                        <div class="register-form__inputs">
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Email" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Surname" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Name" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Patronymic (if any)" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Your role" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Phone" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="Country" required>
+                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
+                                placeholder="City" required>
+                        </div>
+                        <button class="register-form__button button">Sign Up <img src="./images/button-arrow.svg"
+                                alt=""></button>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
