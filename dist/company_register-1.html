@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Registration | VendorVerse</title>
+    <title>VendorVerse</title>
 </head>
 
 <body>
@@ -49,36 +49,17 @@
 
         <main class="content">
             <div class="welcome">
-                <div class="register-account">
-                    <img class="logo" src="./images/logotype.svg" alt="">
-                    <h1 class="register-account__title">Input your information</h1>
-                    <p class="register-account__text text">We need you to help us with some basic information for
-                        your
-                        account creation. Here are our <a href="#">terms and conditins</a>. Please read them
-                        carefully.
-                    </p>
-                    <form class="register-form" action="javascript:window.location.href='email_confirm.html'">
-                        <div class="register-form__inputs">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Email">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Surname">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Name">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Patronymic (if any)">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Your role">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Phone">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Country">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="City">
-                        </div>
-                        <button class="register-form__button button">Sign Up <img src="./images/button-arrow.svg"
-                                alt=""></button>
-                    </form>
+                <img class="logo" src="./images/logotype.svg" alt="">
+                <div class="register-progress">
+                    <div class="progress-bar"></div>
+                    <div class="register-progress__text text">First you need to specify the name and location of your
+                        company.
+                        This name will be displayed on the marketplace and will help customers learn about your company.
+                    </div>
+                    <input class="register-progress__input input" type="text" placeholder="Company's name">
+                    <input class="register-progress__input input" type="text" placeholder="Country">
+                    <button class="register-progress__btn button">Next <img src="./images/button-arrow.svg"
+                            alt=""></button>
                 </div>
             </div>
         </main>

@@ -331,4 +331,42 @@ li {
   }
 }
 
+.progress-bar {
+  margin-top: 20px;
+  width: 100%;
+  height: 3px;
+  background: #ffcb53;
+  background: linear-gradient(120deg, #ffda84 0%, #ffcc84 100%);
+  border-radius: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    background: #ffb301;
+    background: linear-gradient(120deg, #ffb301 0%, #ff9401 100%);
+    box-shadow: 1px 2px 10px #ff8800a8;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.register-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+
+  &__text {
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__input {
+    width: 100%;
+  }
+}
+
 @import "./media.scss";
