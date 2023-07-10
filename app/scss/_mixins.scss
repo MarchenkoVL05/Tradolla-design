@@ -11,3 +11,11 @@
   font-size: 44px;
   font-weight: 700;
 }
+
+@mixin font-title-md {
+  color: #3a4571;
+  text-shadow: 5px 5px 10px #323e7126;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 700;
+}

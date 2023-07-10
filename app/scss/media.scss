@@ -105,6 +105,12 @@
       font-size: 32px;
     }
   }
+
+  .email-confirm {
+    &__title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 522px) {
@@ -149,6 +155,28 @@
   .register-account {
     &__title {
       font-size: 26px;
+    }
+  }
+
+  .email-confirm {
+    margin-top: 15px;
+    &__title {
+      font-size: 22px;
+    }
+
+    &__input {
+      width: 27px;
+      height: 54px;
+      border-radius: 8px;
+      font-size: 18px;
+    }
+
+    &__code-text {
+      margin-top: 15px;
+    }
+
+    &__btns {
+      flex-wrap: wrap;
     }
   }
 }

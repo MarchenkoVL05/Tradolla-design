@@ -49,35 +49,24 @@
 
         <main class="content">
             <div class="welcome">
-                <div class="register-account">
-                    <img class="logo" src="./images/logotype.svg" alt="">
-                    <h1 class="register-account__title">Input your information</h1>
-                    <p class="register-account__text text">We need you to help us with some basic information for
-                        your
-                        account creation. Here are our <a href="#">terms and conditins</a>. Please read them
-                        carefully.
-                    </p>
-                    <form class="register-form" action="javascript:window.location.href='email_confirm.html'">
-                        <div class="register-form__inputs">
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Email" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Surname" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Name" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Patronymic (if any)" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Your role" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Phone" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="Country" required>
-                            <input class="register-form__input input" type="text" minlength="10" maxlength="100"
-                                placeholder="City" required>
+                <img class="logo" src="./images/logotype.svg" alt="">
+                <div class="email-confirm">
+                    <div class="email-confirm__title">email confirmation</div>
+                    <div class="email-confirm__code-text text">Enter the code from the email sent to the mail</div>
+                    <form class="email-confirm__form" action="">
+                        <div class="email-confirm__form-inputs">
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
+                            <input class="email-confirm__input" minlength="1" maxlength="1" type="text" required>
                         </div>
-                        <button class="register-form__button button">Sign Up <img src="./images/button-arrow.svg"
-                                alt=""></button>
+                        <div class="email-confirm__btns">
+                            <button class="email-confirm__btn button button--transparent">Resend an email</button>
+                            <button class="email-confirm__btn button">Next <img src="./images/button-arrow.svg"
+                                    alt=""></button>
+                        </div>
                     </form>
                 </div>
             </div>
