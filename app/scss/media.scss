@@ -69,6 +69,12 @@
   .register-progress {
     gap: 25px;
   }
+
+  .second-step {
+    &__title {
+      font-size: 34px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -113,6 +119,22 @@
   .email-confirm {
     &__title {
       font-size: 28px;
+    }
+  }
+
+  .second-step {
+    gap: 20px;
+    &__inner {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__input {
+      width: 100%;
     }
   }
 }
@@ -187,10 +209,33 @@
   .register-progress {
     gap: 20px;
   }
+
+  .second-step {
+    &__title {
+      font-size: 24px;
+    }
+  }
 }
 
 @media (max-width: 320px) {
+  .input {
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
   .logo {
     height: 45px;
+  }
+
+  .second-step {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__btns {
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 }

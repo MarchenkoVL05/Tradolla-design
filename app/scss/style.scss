@@ -45,6 +45,11 @@ li {
     border: 1px solid #ff9401;
     color: #ff9401;
   }
+  &--reverse {
+    img {
+      transform: rotate(180deg);
+    }
+  }
 
   &:hover {
     transform: translateY(-2px);
@@ -215,6 +220,9 @@ li {
   border-radius: 20px;
   background: var(--white);
   box-shadow: var(--white-shadow);
+  &--wide {
+    max-width: 940px;
+  }
   &__text {
     margin-top: 15px;
     max-width: 585px;
@@ -352,7 +360,7 @@ li {
   }
 }
 
-.register-progress {
+.first-step {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -366,6 +374,34 @@ li {
 
   &__input {
     width: 100%;
+  }
+}
+
+.second-step {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__title {
+    @include font-title-lg;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

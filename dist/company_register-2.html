@@ -48,19 +48,36 @@
         </header>
 
         <main class="content">
-            <div class="welcome">
+            <div class="welcome welcome--wide">
                 <img class="logo" src="./images/logotype.svg" alt="">
-                <div class="first-step">
+                <div class="second-step">
                     <div class="progress-bar"></div>
-                    <div class="first-step__text text">First you need to specify the name and location of your
-                        company.
-                        This name will be displayed on the marketplace and will help customers learn about your company.
+                    <h1 class="second-step__title">Taxpayer data</h1>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="Company Registration Number">
+                        <p class="second-step__text text">For example, CRN in the UK, OGRN in the Russian Federation,
+                            EIN in
+                            the USA.</p>
                     </div>
-                    <input class="first-step__input input" type="text" placeholder="Company's name">
-                    <input class="first-step__input input" type="text" placeholder="Country">
-                    <button class="first-step__btn button"
-                        onclick="javascript:window.location.href='company_register-2.html'">Next <img
-                            src="./images/button-arrow.svg" alt=""></button>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text"
+                            placeholder="Taxpayer Identification Number">
+                        <p class="second-step__text text">Unique number that is assigned to a company or individual to
+                            account for tax payments.</p>
+                    </div>
+                    <div class="second-step__inner">
+                        <input class="second-step__input input" type="text" placeholder="DUNS-number (if available)">
+                        <p class="second-step__text text">Unique nine-digit identification code assigned to companies in
+                            the international D&B database.</p>
+                    </div>
+                    <div class="second-step__btns">
+                        <button class="button button--reverse"
+                            onclick="javascript:window.location.href='company_register-1.html'"><img
+                                src="./images/button-arrow.svg" alt="">
+                            Back</button>
+                        <button class="button" onclick="javascript:window.location.href='company_register-3.html'">Next
+                            <img src="./images/button-arrow.svg" alt=""></button>
+                    </div>
                 </div>
             </div>
         </main>
