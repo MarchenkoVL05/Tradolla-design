@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // close burger when screen is became wider
+  // close the burger when a screen becomes wider
   window.addEventListener("resize", () => {
     console.log("resized");
     const windowWidth = window.innerWidth;
