@@ -21,6 +21,9 @@ window.addEventListener("DOMContentLoaded", () => {
   let burgerClosed = true;
 
   function headerTransform() {
+    langList.classList.add("hidden");
+    langBtnArrow.classList.remove("rotate-180");
+
     headerMenu.classList.toggle("hidden");
     headerMenu.classList.toggle("mt-6");
 
@@ -56,8 +59,8 @@ window.addEventListener("DOMContentLoaded", () => {
       burgerBtnImg.src = "./images/burger-icon.svg";
       burgerClosed = true;
 
-      langList.classList.toggle("hidden");
-      langBtnArrow.classList.toggle("rotate-180");
+      langList.classList.add("hidden");
+      langBtnArrow.classList.remove("rotate-180");
     }
   });
 });
