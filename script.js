@@ -79,6 +79,8 @@ window.addEventListener("DOMContentLoaded", () => {
       burgerBtnImg.src = "./images/burger-icon.svg";
 
       burgerClosed = true;
+
+      langList.classList.toggle("hidden");
     }
   });
 });
