@@ -2,9 +2,11 @@ window.addEventListener("DOMContentLoaded", () => {
   // language select
   const langBtn = document.querySelector("button[data-lang-button]");
   const langList = document.querySelector("div[data-lang-list]");
+  const langBtnArrow = document.querySelector("img[data-lang-arrow]");
 
   langBtn.addEventListener("click", () => {
     langList.classList.toggle("hidden");
+    langBtnArrow.classList.toggle("rotate-180");
   });
 
   // burger
@@ -18,69 +20,44 @@ window.addEventListener("DOMContentLoaded", () => {
 
   let burgerClosed = true;
 
+  function headerTransform() {
+    headerMenu.classList.toggle("hidden");
+    headerMenu.classList.toggle("mt-6");
+
+    header.classList.toggle("flex-col");
+    header.classList.toggle("h-auto");
+    header.classList.toggle("py-5");
+
+    headerMenuLinks.classList.toggle("flex-col");
+    headerMenuLinks.classList.toggle("mt-6");
+
+    headerAuthBtns.classList.toggle("flex-col");
+    headerAuthBtns.classList.toggle("mt-6");
+  }
+
   burgerBtn.addEventListener("click", () => {
+    headerTransform();
     if (burgerClosed) {
-      headerMenu.classList.toggle("hidden");
-      headerMenu.classList.toggle("mt-6");
-
-      header.classList.toggle("flex-col");
-      header.classList.toggle("h-auto");
-      header.classList.toggle("py-5");
-
-      headerMenuLinks.classList.toggle("flex-col");
-      headerMenuLinks.classList.toggle("mt-6");
-
-      headerAuthBtns.classList.toggle("flex-col");
-      headerAuthBtns.classList.toggle("mt-6");
-
       burgerBtnImg.src = "./images/burger-close.svg";
-
       burgerClosed = false;
     } else {
-      headerMenu.classList.toggle("hidden");
-      headerMenu.classList.toggle("mt-6");
-
-      header.classList.toggle("flex-col");
-      header.classList.toggle("h-auto");
-      header.classList.toggle("py-5");
-
-      headerMenuLinks.classList.toggle("flex-col");
-      headerMenuLinks.classList.toggle("mt-6");
-
-      headerAuthBtns.classList.toggle("flex-col");
-      headerAuthBtns.classList.toggle("mt-6");
-
       burgerBtnImg.src = "./images/burger-icon.svg";
-
       burgerClosed = true;
     }
   });
 
   // close the burger when a screen becomes wider
   window.addEventListener("resize", () => {
-    console.log("resized");
     const windowWidth = window.innerWidth;
     const breakpoint = 768;
 
-    if (windowWidth > breakpoint && !burgerClosed) {
-      headerMenu.classList.toggle("hidden");
-      headerMenu.classList.toggle("mt-6");
-
-      header.classList.toggle("flex-col");
-      header.classList.toggle("h-auto");
-      header.classList.toggle("py-5");
-
-      headerMenuLinks.classList.toggle("flex-col");
-      headerMenuLinks.classList.toggle("mt-6");
-
-      headerAuthBtns.classList.toggle("flex-col");
-      headerAuthBtns.classList.toggle("mt-6");
-
+    if (windowWidth >= breakpoint && !burgerClosed) {
+      headerTransform();
       burgerBtnImg.src = "./images/burger-icon.svg";
-
       burgerClosed = true;
 
       langList.classList.toggle("hidden");
+      langBtnArrow.classList.toggle("rotate-180");
     }
   });
 });
