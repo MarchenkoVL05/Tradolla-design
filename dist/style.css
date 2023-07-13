@@ -530,6 +530,10 @@ video {
   position: relative;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .top-10 {
   top: 2.5rem;
 }
@@ -544,6 +548,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -566,6 +574,10 @@ video {
   height: 3rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -584,6 +596,10 @@ video {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-96 {
@@ -704,6 +720,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .text-center {
@@ -922,4 +943,14 @@ video {
 
 .focus\:ring-offset-white:focus {
   --tw-ring-offset-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
 }
