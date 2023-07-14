@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .tooltip-triangle {
+    @apply after:content-['']  after:absolute after:-bottom-2 after:left-2 after:w-0 after:h-0 after:border-l-[10px] after:border-l-transparent after:border-t-[10px] after:border-t-gray-800 after:border-r-[10px] after:border-r-transparent;
+  }
+}
