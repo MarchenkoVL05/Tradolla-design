@@ -33,6 +33,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     headerMenuLinks.classList.toggle("flex-col");
     headerMenuLinks.classList.toggle("mt-6");
+    headerMenuLinks.classList.toggle("gap-6");
+    headerMenuLinks.classList.toggle("gap-4");
 
     headerAuthBtns.classList.toggle("flex-col");
     headerAuthBtns.classList.toggle("mt-6");
