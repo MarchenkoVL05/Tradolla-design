@@ -65,4 +65,22 @@ window.addEventListener("DOMContentLoaded", () => {
       langBtnArrow.classList.remove("rotate-180");
     }
   });
+
+  // email confirmation's inputs logic
+  const emailConfirmInputsWrapper = document.querySelector("div[data-confirm-input]");
+  const emailConfirmInputs = emailConfirmInputsWrapper.querySelectorAll("input");
+
+  emailConfirmInputs.forEach((input) => {
+    input.oninput = function (event) {
+      let target = event.target;
+      if (target.value.length > target.maxLength) {
+        target.value = target.value.slice(0, target.maxLength);
+      }
+
+      let nextInput = target.nextElementSibling;
+      if (nextInput && event.inputType !== "deleteContentBackward") {
+        target.nextElementSibling.focus();
+      }
+    };
+  });
 });
