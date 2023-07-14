@@ -46,8 +46,8 @@
             <img src="./images/burger-icon.svg" alt="">
         </button>
     </header>
-    <main class="h-screen bg-gray-100 md:flex justify-center items-center">
-        <form class="w-full max-h-full overflow-auto sm:w-auto sm:h-auto bg-white p-6 shadow-md rounded-lg" action="">
+    <main class="h-screen bg-gray-100 flex justify-center items-center">
+        <form class="w-full max-h-full overflow-auto sm:w-auto sm:h-auto bg-white p-6 shadow-md rounded-lg">
             <h1 class="font-bold text-center text-2xl text-gray-800">Sign Up</h1>
             <p class="mt-2 text-base text-center text-gray-600">
                 Already have an account?
@@ -74,15 +74,16 @@
                     <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" type="tel">
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
-                    <div class="relative flex items-center gap-1">
+                    <span class="relative flex items-center gap-1">
                         <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg" alt="">
-                        <p>Your business role</p>
-                        <div class="invisible opacity-0 peer-hover:visible peer-hover:opacity-70 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                        <span>Your business role</span>
+                        <span
+                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-70 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
                             data-tooltip>
                             Manager, director,
                             employee etc.
-                        </div>
-                    </div>
+                        </span>
+                    </span>
                     <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" type="text">
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
