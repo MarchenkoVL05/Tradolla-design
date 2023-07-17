@@ -68,19 +68,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // email confirmation's inputs logic
   const emailConfirmInputsWrapper = document.querySelector("div[data-confirm-input]");
-  const emailConfirmInputs = emailConfirmInputsWrapper.querySelectorAll("input");
+  const emailConfirmInputs = null;
 
-  emailConfirmInputs.forEach((input) => {
-    input.oninput = function (event) {
-      let target = event.target;
-      if (target.value.length > target.maxLength) {
-        target.value = target.value.slice(0, target.maxLength);
-      }
+  if (emailConfirmInputsWrapper) {
+    emailConfirmInputs = emailConfirmInputsWrapper.querySelectorAll("input");
+  }
 
-      let nextInput = target.nextElementSibling;
-      if (nextInput && event.inputType !== "deleteContentBackward") {
-        target.nextElementSibling.focus();
-      }
-    };
-  });
+  if (emailConfirmInputs) {
+    emailConfirmInputs.forEach((input) => {
+      input.oninput = function (event) {
+        let target = event.target;
+        if (target.value.length > target.maxLength) {
+          target.value = target.value.slice(0, target.maxLength);
+        }
+
+        let nextInput = target.nextElementSibling;
+        if (nextInput && event.inputType !== "deleteContentBackward") {
+          target.nextElementSibling.focus();
+        }
+      };
+    });
+  }
 });
