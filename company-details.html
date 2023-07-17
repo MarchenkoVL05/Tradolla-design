@@ -51,6 +51,10 @@
             class="relative w-full max-h-full overflow-auto h-full  sm:w-auto sm:h-auto bg-white p-6 shadow-md rounded-lg">
             <div class="absolute top-0 left-0 w-full h-1 rounded-lg bg-orange-500"></div>
             <h1 class="font-bold text-center text-2xl text-gray-800">Company details</h1>
+            <p class="mt-2 max-w-xl text-base text-gray-600">
+                Let's fill in the information about your company's social media. If any of the social networks are
+                missing, leave the field blank.
+            </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                     <label class="flex flex-col mt-4 text-gray-600">
@@ -84,8 +88,11 @@
                             <img class="max-h-4" src="./images/file.svg" alt="">
                             <span>Logotype</span>
                         </span>
-                        <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600"
+                        <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" hidden
                             type="file">
+                        <div
+                            class="py-2 px-3 mt-2 w-full flex justify-center items-center transition-all rounded-md cursor-pointer border border-orange-500 bg-white text-orange-500 font-semibold">
+                            choose file</div>
                     </label>
                     <label class="flex flex-col mt-4 text-gray-600">
                         <span class="flex items-center gap-2">
@@ -103,13 +110,12 @@
                         <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600"
                             type="text">
                     </label>
-                    <label class="flex flex-col mt-4 text-gray-600">
-                        Web-site
-                        <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600"
-                            type="text">
-                    </label>
                 </div>
             </div>
+            <label class="flex flex-col mt-4 text-gray-600">
+                Web-site
+                <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" type="text">
+            </label>
             <label class="flex flex-col mt-4 text-gray-600">
                 Brief description of the company
                 <textarea class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600"></textarea>
