@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // email confirmation's inputs logic
   const emailConfirmInputsWrapper = document.querySelector("div[data-confirm-input]");
-  const emailConfirmInputs = null;
+  let emailConfirmInputs = null;
 
   if (emailConfirmInputsWrapper) {
     emailConfirmInputs = emailConfirmInputsWrapper.querySelectorAll("input");
