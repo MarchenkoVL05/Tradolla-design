@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Company registration | Tradorra.com</title>
+</head>
+
+<body>
+    <header class="relative w-full h-12 flex items-center justify-between px-3 bg-white shadow" data-header>
+        <a class="block font-bold text-xl text-gray-800" href="/"><span class="text-orange-500">Trad</span>orra.com</a>
+        <div class="hidden justify-center items-center gap-14 md:flex" data-header-menu>
+            <div class="relative">
+                <button class="flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                    <img class="max-h-5" src="./images/english.png" alt="">
+                    English
+                    <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt="" data-lang-arrow>
+                </button>
+                <div class="hidden absolute top-10 bg-white w-[200%] rounded-md shadow-md transition-all"
+                    data-lang-list>
+                    <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100" href="#"><img
+                            class="block max-h-5" src="./images/farsi.png" alt="">
+                        Farsi</a>
+                    <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100" href="#"><img
+                            class="block max-h-5" src="./images/russian.png" alt="">
+                        Russian</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-6 text-gray-800 font-medium" data-header-menu-links>
+                <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                <a class="transition-all hover:text-orange-500" href="#">Help</a>
+            </div>
+            <div class="flex items-center justify-center gap-6" data-header-auth-buttons>
+                <a class="text-gray-800 transition-all hover:text-orange-500" href="/">Sign In</a>
+                <a class="bg-orange-500 px-4 py-2 rounded-md text-white transition-all hover:bg-orange-600 focus:outline-none focus:ring focus:ring-orange-500"
+                    href="./registration.html">Sign
+                    Up</a>
+            </div>
+        </div>
+        <button class="absolute right-3 w-7 h-7 flex items-center justify-center md:hidden" data-burger>
+            <img src="./images/burger-icon.svg" alt="">
+        </button>
+    </header>
+    <main class="h-screen bg-gray-100 flex justify-center items-center">
+        <form
+            class="relative w-full max-h-full overflow-auto h-full  sm:w-96 sm:h-auto bg-white p-6 shadow-md rounded-lg">
+            <div class="absolute top-0 left-0 w-1/4 h-1 rounded-lg bg-orange-500"></div>
+            <h1 class="font-bold text-center text-2xl text-gray-800">Company registration</h1>
+            <p class="mt-2 text-base text-gray-600">
+                First you need to specify the name and location of your company. This name will be displayed on the
+                marketplace and will help customers learn about your company.
+            </p>
+            <label class="flex flex-col mt-4 text-gray-600">
+                Company name
+                <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" type="text">
+            </label>
+            <label class="flex flex-col mt-4 text-gray-600">
+                Country
+                <input class="mt-2 p-2 border rounded-md focus:outline-none focus:border-orange-600" type="text">
+            </label>
+            <button
+                class="py-3 px-4 flex justify-center items-center gap-3 transition-all rounded-md bg-orange-500 text-white font-semibold mt-5 w-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                type="submit">Next <img class="max-h-6" src="./images/arrow-btn-right.svg" alt=""></button>
+        </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
