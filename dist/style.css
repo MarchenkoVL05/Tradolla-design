@@ -734,6 +734,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -780,6 +784,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .overflow-auto {
@@ -1128,6 +1136,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:h-14 {
     height: 3.5rem;
   }
