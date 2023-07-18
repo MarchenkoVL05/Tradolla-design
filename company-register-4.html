@@ -56,7 +56,8 @@
                 <select
                     class="mt-2 p-2 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600"
                     name="legal_form">
-                    <option value="corporation" selected="selected">corporation</option>
+                    <option class="text-gray-400" disabled selected="selected" value> -- select a form -- </option>
+                    <option value="corporation">corporation</option>
                     <option value="sole_proprietor">sole proprietor</option>
                     <option value="partnership">partnership</option>
                     <option value="other">other</option>
@@ -79,7 +80,8 @@
                 <select
                     class="mt-2 p-2 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600"
                     name="legal_form">
-                    <option value="manufacturer" selected="selected">manufacturer</option>
+                    <option class="text-gray-400" disabled selected="selected" value> -- select a type -- </option>
+                    <option value="manufacturer">manufacturer</option>
                     <option value="service_provider">service provider</option>
                     <option value="broker">broker</option>
                     <option value="government_agency">government agency</option>
@@ -91,7 +93,8 @@
                 <select
                     class="mt-2 p-2 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600"
                     name="legal_form">
-                    <option value="manufacturing" selected="selected">manufacturing</option>
+                    <option class="text-gray-400" disabled selected="selected" value> -- select an activity -- </option>
+                    <option value="manufacturing">manufacturing</option>
                     <option value="retail">retail</option>
                     <option value="finance">finance</option>
                     <option value="healthcare">healthcare</option>
@@ -100,8 +103,8 @@
                 </select>
             </label>
             <button
-                class="py-3 px-4 flex justify-center items-center gap-3 transition-all rounded-md bg-orange-500 text-white font-semibold mt-5 w-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                type="submit">Next <img class="max-h-6" src="./images/arrow-btn-right.svg" alt=""></button>
+                class="py-3 px-4 flex justify-center items-center gap-1 transition-all rounded-md bg-orange-500 text-white font-semibold mt-5 w-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                type="submit">Next <img class="max-h-5" src="./images/arrow-btn-right.svg" alt=""></button>
         </form>
     </main>
     <script src="./script.js"></script>
