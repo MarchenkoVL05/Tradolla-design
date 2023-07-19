@@ -12,7 +12,10 @@ window.addEventListener("DOMContentLoaded", () => {
   // burger
   const burgerBtn = document.querySelector("button[data-burger]");
   const headerMenu = document.querySelector("div[data-header-menu]");
-  const burgerBtnImg = burgerBtn.querySelector("img");
+  let burgerBtnImg;
+  if (burgerBtn) {
+    burgerBtnImg = burgerBtn.querySelector("img");
+  }
 
   const header = document.querySelector("header[data-header]");
   const headerMenuLinks = document.querySelector("div[data-header-menu-links]");
@@ -50,7 +53,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  if (burgerBtn) {
+  if (burgerBtn && burgerBtnImg) {
     burgerBtn.addEventListener("click", () => {
       headerTransform();
       if (burgerClosed) {
@@ -59,6 +62,38 @@ window.addEventListener("DOMContentLoaded", () => {
       } else {
         burgerBtnImg.src = "./images/burger-icon.svg";
         burgerClosed = true;
+      }
+    });
+  }
+
+  // burger on crm's pages
+  const asideLinks = document.querySelectorAll("div[data-aside-links]");
+  const asideSetting = document.querySelector("div[data-aside-setting]");
+  const asideBurger = document.querySelector("button[data-aside-burger]");
+  const asideBurgerImg = document.querySelector("img[data-aside-burger-img]");
+
+  let asideBurgerClosed = true;
+
+  if (asideBurger) {
+    asideBurger.addEventListener("click", () => {
+      if (asideBurgerClosed) {
+        asideLinks.forEach((bunchOfLinks) => {
+          bunchOfLinks.classList.remove("hidden");
+          bunchOfLinks.classList.add("flex");
+        });
+
+        asideSetting.classList.toggle("hidden");
+        asideBurgerImg.src = "./images/burger-close--white.svg";
+        asideBurgerClosed = false;
+      } else {
+        asideLinks.forEach((bunchOfLinks) => {
+          bunchOfLinks.classList.add("hidden");
+          bunchOfLinks.classList.remove("flex");
+        });
+
+        asideSetting.classList.toggle("hidden");
+        asideBurgerImg.src = "./images/burger-icon--white.svg";
+        asideBurgerClosed = true;
       }
     });
   }

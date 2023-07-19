@@ -11,16 +11,21 @@
 </head>
 
 <body class="h-full bg-gray-100">
-    <div class="flex h-full">
-        <aside class="fixed w-72 h-full max-h-full overflow-y-auto p-4 shrink-0 shadow z-10 bg-slate-900">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
             <div class="min-h-full flex flex-col justify-between gap-8">
                 <div class="flex flex-col gap-8 break-all">
-                    <div class="flex items-center gap-3">
-                        <button class="w-7 h-7"><img src="./images/burger-icon--white.svg" alt=""></button>
-                        <a class="block font-bold text-2xl text-white" href="/"><span
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
                                 class="text-orange-500">Trad</span>olla.com</a>
                     </div>
-                    <div class="flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white">
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
                         <div class="mb-2 flex items-center justify-between cursor-pointer">
                             <div class="flex items-center gap-2 text-xl">
                                 <img class="max-h-5" src="./images/home-icon.svg" alt="">
@@ -36,12 +41,12 @@
                         <a class="transition-all hover:text-orange-400" href="#">Notifications</a>
                     </div>
                 </div>
-                <div>
+                <div class="hidden lg:block" data-aside-setting>
                     <div class="flex items-center gap-2 cursor-pointer"><img class="max-h-8"
                             src="./images/settings-icon.svg" alt=""><span
                             class="text-xl font-thin text-white">Settings</span></div>
                     <div
-                        class="flex items-center gap-2 mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                        class="flex items-center gap-2 flex-wrap mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -53,15 +58,17 @@
                 </div>
             </div>
         </aside>
-        <div class="w-72 h-full shrink-0"></div>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
         <div class="w-full flex flex-col">
-            <header class="relative w-full h-12 flex items-center justify-between shrink-0 px-3 bg-white shadow"
+
+            <header
+                class="relative w-full lg:flex p-4 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
                 data-header>
-                <a class="block invisible font-bold text-xl text-gray-800" href="/"><span
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
                         class="text-orange-500">Trad</span>olla.com</a>
-                <div class="hidden justify-center items-center gap-14 md:flex" data-header-menu>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
                     <div class="relative z-10">
-                        <button class="flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
                             <img class="max-h-5" src="./images/english.png" alt="">
                             English
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
@@ -77,21 +84,18 @@
                                 Russian</a>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium"
-                        data-header-menu-links>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
                         <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden md:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="font-thin transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
                 </div>
-                <button class="absolute right-3 w-7 h-7 flex items-center justify-center md:hidden" data-burger>
-                    <img src="./images/burger-icon.svg" alt="">
-                </button>
             </header>
+
             <main class="h-full p-4">
                 <div class="relative flex items-center gap-3">
                     <img class="max-h-5 absolute left-2" src="./images/search-icon.svg" alt="">
