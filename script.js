@@ -21,35 +21,47 @@ window.addEventListener("DOMContentLoaded", () => {
   let burgerClosed = true;
 
   function headerTransform() {
-    langList.classList.add("hidden");
-    langBtnArrow.classList.remove("rotate-180");
+    if (langList && langBtnArrow) {
+      langList.classList.add("hidden");
+      langBtnArrow.classList.remove("rotate-180");
+    }
 
-    headerMenu.classList.toggle("hidden");
-    headerMenu.classList.toggle("mt-6");
+    if (headerMenu) {
+      headerMenu.classList.toggle("hidden");
+      headerMenu.classList.toggle("mt-6");
+    }
 
-    header.classList.toggle("flex-col");
-    header.classList.toggle("h-auto");
-    header.classList.toggle("py-5");
+    if (header) {
+      header.classList.toggle("flex-col");
+      header.classList.toggle("h-auto");
+      header.classList.toggle("py-5");
+    }
 
-    headerMenuLinks.classList.toggle("flex-col");
-    headerMenuLinks.classList.toggle("mt-6");
-    headerMenuLinks.classList.toggle("gap-6");
-    headerMenuLinks.classList.toggle("gap-4");
+    if (headerMenuLinks) {
+      headerMenuLinks.classList.toggle("flex-col");
+      headerMenuLinks.classList.toggle("mt-6");
+      headerMenuLinks.classList.toggle("gap-6");
+      headerMenuLinks.classList.toggle("gap-4");
+    }
 
-    headerAuthBtns.classList.toggle("flex-col");
-    headerAuthBtns.classList.toggle("mt-6");
+    if (headerAuthBtns) {
+      headerAuthBtns.classList.toggle("flex-col");
+      headerAuthBtns.classList.toggle("mt-6");
+    }
   }
 
-  burgerBtn.addEventListener("click", () => {
-    headerTransform();
-    if (burgerClosed) {
-      burgerBtnImg.src = "./images/burger-close.svg";
-      burgerClosed = false;
-    } else {
-      burgerBtnImg.src = "./images/burger-icon.svg";
-      burgerClosed = true;
-    }
-  });
+  if (burgerBtn) {
+    burgerBtn.addEventListener("click", () => {
+      headerTransform();
+      if (burgerClosed) {
+        burgerBtnImg.src = "./images/burger-close.svg";
+        burgerClosed = false;
+      } else {
+        burgerBtnImg.src = "./images/burger-icon.svg";
+        burgerClosed = true;
+      }
+    });
+  }
 
   // close the burger when a screen becomes wider
   window.addEventListener("resize", () => {
