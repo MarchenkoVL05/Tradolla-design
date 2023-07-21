@@ -75,7 +75,7 @@
         <div class="w-full flex flex-col">
 
             <header
-                class="relative w-full lg:flex p-4 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
                 data-header>
                 <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
                         class="text-orange-500">Trad</span>olla.com</a>
@@ -109,32 +109,64 @@
                 </div>
             </header>
 
-            <main class="h-full p-4">
+            <main class="h-full p-3">
                 <div class="p-4 rounded-md border border-gray-300 bg-gray-200">
-                    <div class="relative flex items-center gap-3">
-                        <img class="max-h-5 absolute left-2" src="./images/search-icon.svg" alt="">
-                        <input
-                            class="max-w-full pl-9 py-2 pr-2 border rounded-md focus:outline-none focus:border-orange-600"
-                            type="text" placeholder="Searching...">
-                    </div>
-                    <div
-                        class="mt-4 px-4 py-2 flex justify-between items-center flex-wrap gap-4 border rounded-md bg-white">
-                        <div class="font-medium">Showing 1-24 of 205 Products</div>
-                        <div class="flex items-center flex-wrap gap-3">
-                            <span>Sort by:</span>
-                            <select
-                                class="px-2 py-1 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600">
-                                <option value="Best match">Best match</option>
-                                <option value="Newest">Newest</option>
-                                <option value="Price">Price</option>
-                            </select>
-                            <a href="#">
-                                <img class="h-7" src="./images/grid-icon.svg" alt="">
-                            </a>
+                    <form action="">
+                        <div class="relative flex items-center">
+                            <img class="max-h-5 absolute left-2" src="./images/search-icon.svg" alt="">
+                            <input
+                                class="w-full pl-9 py-1 pr-2 border border-gray-300 rounded-l focus:outline-none focus:border-slate-900"
+                                type="text" placeholder="Enter the product name">
+                            <button
+                                class="py-1 px-3 rounded-r border border-slate-900 bg-slate-900 text-white">Search</button>
                         </div>
+                        <div class="mt-2 flex items-center gap-4 flex-wrap">
+                            <div class="max-w-full">
+                                <span class="text-gray-700">Choose a price</span>
+                                <div class="mt-1 flex items-center gap-2 flex-wrap">
+                                    <input
+                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
+                                        placeholder="from" type="text">
+                                    <input
+                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
+                                        placeholder="to" type="text">
+                                </div>
+                            </div>
+                            <div class="max-w-full">
+                                <span class="text-gray-700">Published</span>
+                                <div class="mt-1 flex items-center gap-2 flex-wrap">
+                                    <input
+                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
+                                        placeholder="from" type="date">
+                                    <input
+                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
+                                        placeholder="to" type="date">
+                                </div>
+                            </div>
+                            <div class="max-w-full">
+                                <span class="text-gray-700">Supplier</span>
+                                <div class="mt-1 flex items-center gap-2 flex-wrap">
+                                    <input
+                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
+                                        placeholder="company name" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="mt-4 flex justify-between items-center flex-wrap gap-2 rounded-md md:gap-4">
+                    <div class="font-medium">Showing 1-24 of 205 Products</div>
+                    <div class="flex items-center flex-wrap gap-3">
+                        <span>Sort by:</span>
+                        <select
+                            class="px-2 py-1 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                            <option value="Best match">Best match</option>
+                            <option value="Newest">Newest</option>
+                            <option value="Price">Price</option>
+                        </select>
                     </div>
                 </div>
-                <div class="flex flex-col mt-4 rounded-md border bg-white">
+                <div class="flex flex-col rounded-md border mt-2 bg-white">
                     <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
                         <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
                             <a class="min-[1368px]:flex-shrink-0" href="#">
