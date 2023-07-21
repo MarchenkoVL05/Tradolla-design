@@ -110,70 +110,12 @@
             </header>
 
             <main class="h-full p-3">
-                <div class="p-4 rounded-md border border-gray-300 bg-gray-200">
-                    <form action="">
-                        <div class="relative flex items-center">
-                            <img class="max-h-5 absolute left-2" src="./images/search-icon.svg" alt="">
-                            <input
-                                class="w-full pl-9 py-1 pr-2 border border-gray-300 rounded-l focus:outline-none focus:border-slate-900"
-                                type="text" placeholder="Enter the product name">
-                            <button
-                                class="py-1 px-3 rounded-r border border-slate-900 bg-slate-900 text-white">Search</button>
-                        </div>
-                        <div class="mt-2 hidden items-center gap-4 flex-wrap" data-search-panel>
-                            <div class="max-w-full border border-gray-300 p-5 rounded">
-                                <span class="text-gray-700">Choose a price</span>
-                                <div class="mt-1 flex items-center gap-2 flex-wrap">
-                                    <div class="relative">
-                                        <input
-                                            class="max-w-full w-full pl-2 pr-5 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
-                                            placeholder="from" type="text">
-                                        <span
-                                            class="absolute right-2 top-1/2 -translate-y-1/2 text-lg text-gray-700">$</span>
-                                    </div>
-                                    <div class="relative">
-                                        <input
-                                            class="max-w-full w-full pl-2 pr-5 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
-                                            placeholder="to" type="text">
-                                        <span
-                                            class="absolute right-2 top-1/2 -translate-y-1/2 text-lg text-gray-700">$</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="max-w-full">
-                                <div class="mt-1 flex items-center gap-2 flex-wrap">
-                                    <div class="flex flex-col">
-                                        <span class="text-gray-700">From date</span>
-                                        <input
-                                            class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
-                                            placeholder="from" type="date">
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <span class="text-gray-700">To date</span>
-                                        <input
-                                            class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
-                                            placeholder="from" type="date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="max-w-full">
-                                <span class="text-gray-700">Supplier</span>
-                                <div class="mt-1 flex items-center gap-2 flex-wrap">
-                                    <input
-                                        class="max-w-full px-2 py-1 rounded border border-gray-300 focus:outline-none focus:border-slate-900"
-                                        placeholder="company name" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="mt-3 underline text-gray-500" data-search-hide-btn>show more options</button>
-                </div>
                 <div class="mt-4 flex justify-between items-center flex-wrap gap-2 rounded-md md:gap-4">
                     <div class="font-medium">Showing 1-24 of 205 Products</div>
                     <div class="flex items-center flex-wrap gap-3">
                         <span>Sort by:</span>
                         <select
-                            class="px-2 py-1 border rounded-md text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                            class="px-2 py-1 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
                             <option value="Best match">Best match</option>
                             <option value="Newest">Newest</option>
                             <option value="Price">Price</option>
@@ -183,9 +125,11 @@
                 <div class="flex flex-col rounded-md border mt-2 bg-white">
                     <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
                         <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="min-[1368px]:flex-shrink-0" href="#">
+                            <a class="relative min-[1368px]:flex-shrink-0" href="#">
                                 <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-1.jpg"
                                     alt="">
+                                <div class="absolute top-2 right-2 px-3 py-1 rounded-full text-white bg-orange-400">new
+                                </div>
                             </a>
                             <div>
                                 <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
@@ -202,6 +146,19 @@
                                     10-core Intel Xeon W, 1TB
                                     SSD)
                                 </a>
+                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                    <a href="#">
+                                        apple
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        laptop
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        iMac
+                                    </a>
+                                </div>
                                 <div class="mt-2 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
                                     elit. Asperiores doloremque, consequuntur iusto alias illum voluptates non harum.
                                     Aspernatur earum alias illo blanditiis provident corrupti similique illum omnis sit,
@@ -210,8 +167,16 @@
                             </div>
                         </div>
                         <div
-                            class="flex flex-col gap-3 flex-shrink-0 rounded-md md:gap-0 md:justify-between md:w-64 md:h-60 md:p-5 md:border">
-                            <div class="text-2xl text-gray-800 md:text-3xl">$<span>1199.5</span></div>
+                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
+                            <div class="text-2xl text-slate-800">$<span>799</span></div>
+                            <div class="flex items-center gap-1">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <span class="text-slate-800">(8)</span>
+                            </div>
                             <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
                             <button
                                 class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
@@ -221,9 +186,9 @@
                                     src="./images/contact_us.svg" alt=""> Contact Us</button>
                         </div>
                     </div>
-                    <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
+                    <div class="flex flex-col justify-between gap-4 p-4 md:bg-gray-50 md:flex-row md:gap-6">
                         <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="min-[1368px]:flex-shrink-0" href="#">
+                            <a class="relative min-[1368px]:flex-shrink-0" href="#">
                                 <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-2.jpg"
                                     alt="">
                             </a>
@@ -233,14 +198,38 @@
                                 <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
                                     href="#">Apple iPhone XS Max (4GB RAM, 512GB ROM, 12MP Main Camera)
                                 </a>
-                                <div class="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Magni incidunt error reiciendis eos distinctio.
+                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                    <a href="#">
+                                        apple
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        iphone
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        mobile
+                                    </a>
+                                </div>
+                                <div class="mt-2 text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Harum, molestias eveniet. Nam, hic. Iste ipsam perferendis explicabo? Quos
+                                    eaque quibusdam sit mollitia! Neque adipisci quidem recusandae eaque, velit vel
+                                    eligendi.
                                 </div>
                             </div>
                         </div>
                         <div
-                            class="flex flex-col gap-3 flex-shrink-0 rounded-md md:gap-0 md:justify-between md:w-64 md:h-60 md:p-5 md:border">
-                            <div class="text-2xl text-gray-800 md:text-3xl">$<span>699</span></div>
+                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-72 md:p-5 md:border">
+                            <del class="text-slate-600 text-xl">$1300</del>
+                            <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
+                            <div class="flex items-center gap-1">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <span class="text-slate-800">(20)</span>
+                            </div>
                             <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
                             <button
                                 class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
@@ -252,7 +241,7 @@
                     </div>
                     <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
                         <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="min-[1368px]:flex-shrink-0" href="#">
+                            <a class="relative min-[1368px]:flex-shrink-0" href="#">
                                 <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-3.jpg"
                                     alt="">
                             </a>
@@ -263,6 +252,19 @@
                                     href="#">Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB
                                     RAM, 256GB SSD) - Space Gray (Latest Model)
                                 </a>
+                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                    <a href="#">
+                                        apple
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        laptop
+                                    </a>
+                                    &
+                                    <a href="#">
+                                        iMac
+                                    </a>
+                                </div>
                                 <div class="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Obcaecati a quo quae, ipsum officiis iure ea molestiae aliquam quam autem
                                     repudiandae vero, cumque blanditiis qui necessitatibus facilis. Cum, possimus minus?
@@ -273,8 +275,16 @@
                             </div>
                         </div>
                         <div
-                            class="flex flex-col gap-3 flex-shrink-0 rounded-md md:gap-0 md:justify-between md:w-64 md:h-60 md:p-5 md:border">
-                            <div class="text-2xl text-gray-800 md:text-3xl">$<span>1300</span></div>
+                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
+                            <div class="text-2xl text-slate-800">$<span>1300</span></div>
+                            <div class="flex items-center gap-1">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <span class="text-slate-800">(14)</span>
+                            </div>
                             <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
                             <button
                                 class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img

@@ -136,26 +136,4 @@ window.addEventListener("DOMContentLoaded", () => {
       };
     });
   }
-
-  // Toggle search panel
-  const toggleSearchPanelBtn = document.querySelector("button[data-search-hide-btn]");
-  const searchPanel = document.querySelector("div[data-search-panel]");
-
-  let searchPanelOpened = false;
-
-  toggleSearchPanelBtn.addEventListener("click", (e) => {
-    if (searchPanelOpened) {
-      searchPanel.classList.remove("flex");
-      searchPanel.classList.add("hidden");
-      e.target.textContent = "show more options";
-
-      searchPanelOpened = false;
-    } else {
-      searchPanel.classList.add("flex");
-      searchPanel.classList.remove("hidden");
-      e.target.textContent = "hide options";
-
-      searchPanelOpened = true;
-    }
-  });
 });
