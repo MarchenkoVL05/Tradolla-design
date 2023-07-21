@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Product List | Tradolla.com</title>
+</head>
+
+<body class="h-full bg-gray-100">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+            <div class="min-h-full flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-8 break-all">
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
+                                class="text-orange-500">Trad</span>olla.com</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="max-h-5" src="./images/home-icon.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="#">
+                            Dashboard
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="#">E-commerce</a>
+                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="#">Notifications</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-4" src="./images/cart-icon.svg" alt="">
+                                <span>E-commerce</span>
+                            </div>
+                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                        </div>
+                        <a class="transition-all text-orange-400" href="./product-list.html">
+                            Product list
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aside-setting>
+                    <div class="flex items-center gap-2 cursor-pointer"><img class="max-h-8"
+                            src="./images/settings-icon.svg" alt=""><span
+                            class="text-xl font-thin text-white">Settings</span></div>
+                    <div
+                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                        <img class="h-10" src="./images/pedro_pascal.png" alt="">
+                        <div>
+                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-light text-sm">
+                                pedropascal@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
+        <div class="w-full flex flex-col">
+
+            <header
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                data-header>
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
+                        class="text-orange-500">Trad</span>olla.com</a>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
+                    <div class="relative z-10">
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                            <img class="max-h-5" src="./images/english.png" alt="">
+                            English
+                            <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
+                                data-lang-arrow>
+                        </button>
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md transition-all"
+                            data-lang-list>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
+                                Farsi</a>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/russian.png" alt="">
+                                Russian</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
+                        <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Help</a>
+                    </div>
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                        <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
+                        <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="h-full p-3">
+                <div class="rounded-md p-4 bg-white">
+                    <div class="max-w-[1700px] flex gap-4 flex-col min-[1368px]:flex-row">
+                        <img class="w-full max-h-96 object-cover rounded-md" src="./images/example-3.jpg" alt="">
+                        <div>
+                            <div class="text-lg sm:text-xl text-gray-800 font-medium">Apple MacBook Pro (15" Retina,
+                                Touch
+                                Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD)
+                                - Space Gray (Latest Model)</div>
+                            <div class="mt-2 items-center flex-wrap gap-2 text-orange-500">
+                                <a href="#">
+                                    apple
+                                </a>
+                                &
+                                <a href="#">
+                                    laptop
+                                </a>
+                                &
+                                <a href="#">
+                                    iMac
+                                </a>
+                            </div>
+                            <div class="mt-2 flex items-center gap-1">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                <span class="text-slate-800">(8)</span>
+                            </div>
+                            <div class="mt-2 sm:mt-4 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Asperiores doloremque, consequuntur iusto alias illum voluptates non harum.
+                                Aspernatur earum alias illo blanditiis provident corrupti similique illum omnis sit,
+                                quisquam facere.
+                            </div>
+                            <del class="block mt-2 sm:mt-4 text-xl text-slate-600">$1300</del>
+                            <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
+                            <div class="mt-2 sm:mt-4 text-gray-700">Stock: <span class="text-green-600">Avaliable</span>
+                            </div>
+                            <div class="mt-4 flex items-center flex-wrap gap-2 sm:gap-4">
+                                <button
+                                    class="py-3 px-6 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/heart.svg" alt=""> Favorite</button>
+                                <button
+                                    class="py-3 px-6 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/contact_us.svg" alt=""> Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap font-semibold sm:border-b sm:border-gray-200">
+                        <div class="px-3 py-2 cursor-pointer border-b-2 text-orange-500 border-orange-500">Description
+                        </div>
+                        <div class="px-3 py-2 cursor-pointer">Specifications</div>
+                        <div class="px-3 py-2 cursor-pointer">Reviews</div>
+                    </div>
+                    <p class="mt-4 pb-4 sm:text-lg text-gray-600">Over the years, Apple has built a reputation for
+                        releasing its
+                        products with a lot
+                        of fanfare –
+                        but that didn’t exactly happen for the MacBook Pro 2018. Rather, Apple’s latest pro laptop
+                        experienced a subdued launch, in spite of it offering a notable spec upgrade over the 2017 model
+                        – along with an improved keyboard. And, as with previous generations the 15-inch MacBook Pro
+                        arrives alongside a 13-inch model.
+
+                        Apple still loves the MacBook Pro though, despite the quiet release. This is because, while the
+                        iPhone XS and iPad, along with the 12-inch MacBook, are aimed at everyday consumers, the MacBook
+                        Pro has always aimed at the creative and professional audience. This new MacBook Pro brings a
+                        level of performance (and price) unlike its more consumer-oriented devices.
+
+                        Still, Apple wants mainstream users to buy the MacBook Pro, too. So, if you’re just looking for
+                        the most powerful MacBook on the market, you’ll love this new MacBook Pro. Just keep in mind
+                        that, while the keyboard has been updated, there are still some issues with it.
+
+                        There’s enough of a difference between the two sizes when it comes to performance to warrant two
+                        separate reviews, and here we’ll be looking at how the flagship 15-inch MacBook Pro performs in
+                        2019.
+
+                        It's build quality and design is batter than elit. Numquam excepturi a debitis, sint voluptates,
+                        nam odit vel delectus id repellendus vero reprehenderit quidem totam praesentium vitae nesciunt
+                        deserunt. Sint, veniam?</p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
