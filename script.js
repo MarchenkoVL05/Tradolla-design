@@ -141,7 +141,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const toggleSearchPanelBtn = document.querySelector("button[data-search-hide-btn]");
   const searchPanel = document.querySelector("div[data-search-panel]");
 
-  let searchPanelOpened = true;
+  let searchPanelOpened = false;
 
   toggleSearchPanelBtn.addEventListener("click", (e) => {
     if (searchPanelOpened) {
