@@ -136,4 +136,30 @@ window.addEventListener("DOMContentLoaded", () => {
       };
     });
   }
+
+  // product details tabs
+  const pdTabs = document.querySelectorAll("div[data-pd-tab]");
+  const pdContents = document.querySelectorAll("[data-pd-content]");
+
+  pdTabs.forEach((tab, tabIndex) => {
+    tab.addEventListener("click", () => {
+      tab.classList.add("text-orange-500");
+      tab.classList.add("border-b-2");
+      tab.classList.add("border-orange-500");
+      pdTabs.forEach((t, i) => {
+        if (tabIndex !== i) {
+          t.classList.remove("text-orange-500");
+          t.classList.remove("border-b-2");
+          t.classList.remove("border-orange-500");
+        }
+      });
+      pdContents.forEach((content, contentIndex) => {
+        if (tabIndex === contentIndex) {
+          content.classList.remove("hidden");
+        } else {
+          content.classList.add("hidden");
+        }
+      });
+    });
+  });
 });
