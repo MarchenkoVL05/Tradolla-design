@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./dist/style.css">
-    <title>Product List | Tradolla.com</title>
+    <title>Product Grid | Tradolla.com</title>
 </head>
 
 <body class="h-full bg-gray-100">
@@ -28,7 +28,7 @@
                         data-aside-links>
                         <div class="mb-2 flex items-center justify-between cursor-pointer">
                             <div class="flex items-center gap-2 text-xl">
-                                <img class="max-h-5" src="./images/home-icon.svg" alt="">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
                                 <span>Home</span>
                             </div>
                             <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
@@ -49,10 +49,10 @@
                             </div>
                             <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
                         </div>
-                        <a class="transition-all text-orange-400" href="./product-list.html">
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
                             Product list
                         </a>
-                        <a class="transition-all hover:text-orange-400" href="./product-grid.html">
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
                             Product grid
                         </a>
                     </div>
@@ -78,7 +78,7 @@
         <div class="w-full flex flex-col">
 
             <header
-                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                class="relative w-full lg:flex p-4 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
                 data-header>
                 <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
                         class="text-orange-500">Trad</span>olla.com</a>
@@ -125,16 +125,12 @@
                         </select>
                     </div>
                 </div>
-                <div class="flex flex-col rounded-md border mt-2 bg-white">
-                    <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-1.jpg"
-                                    alt="">
-                                <div class="absolute top-2 right-2 px-3 py-1 rounded-full text-white bg-orange-400">new
-                                </div>
-                            </a>
-                            <div>
+                <div class="mt-2 border p-4 rounded bg-white">
+                    <div class="flex gap-4">
+                        <div class="w-1/2 xl:w-1/3 shadow rounded relative pb-44">
+                            <a href="./product-details.html"><img class="w-full h-80 object-cover rounded-t-lg"
+                                    src="./images/example-1.jpg" alt=""></a>
+                            <div class="p-4">
                                 <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
                                     href="#">LLC
                                     'VIATSKY PLYWOOD
@@ -167,35 +163,35 @@
                                     Aspernatur earum alias illo blanditiis provident corrupti similique illum omnis sit,
                                     quisquam facere.
                                 </div>
+                                <div class="absolute left-0 bottom-0 w-full p-4">
+                                    <div class="mt-2">
+                                        <div class="text-2xl text-slate-800">$<span>799</span></div>
+                                    </div>
+                                    <div class="mt-2 text-gray-700">Stock: <span class="text-green-600">Avaliable</span>
+                                    </div>
+                                    <div class="mt-2 flex items-center gap-1">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <span class="text-slate-800">(20)</span>
+                                    </div>
+                                    <div class="mt-4 flex items-center gap-4">
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/heart.svg" alt=""> Favorite</button>
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/contact_us.svg" alt=""> Contact Us</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
-                            <div class="text-2xl text-slate-800">$<span>799</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(8)</span>
-                            </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-between gap-4 p-4 md:bg-gray-50 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-2.jpg"
-                                    alt="">
-                            </a>
-                            <div>
+                        <div class="w-1/2 xl:w-1/3 shadow rounded relative pb-44">
+                            <a href="./product-details.html"><img class="w-full h-80 object-cover rounded-t-lg"
+                                    src="./images/example-2.jpg" alt=""></a>
+                            <div class="p-4">
                                 <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
                                     href="#">Chunghwa Telecom Co., Ltd.</a>
                                 <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
@@ -220,42 +216,41 @@
                                     eaque quibusdam sit mollitia! Neque adipisci quidem recusandae eaque, velit vel
                                     eligendi.
                                 </div>
+                                <div class="absolute left-0 bottom-0 w-full p-4">
+                                    <div class="mt-2 flex gap-4">
+                                        <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
+                                        <del class="text-slate-600 text-xl">$1300</del>
+                                    </div>
+                                    <div class="mt-2 text-gray-700">Stock: <span class="text-green-600">Avaliable</span>
+                                    </div>
+                                    <div class="mt-2 flex items-center gap-1">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <span class="text-slate-800">(8)</span>
+                                    </div>
+                                    <div class="mt-4 flex items-center gap-4">
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/heart.svg" alt=""> Favorite</button>
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/contact_us.svg" alt=""> Contact Us</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-72 md:p-5 md:border">
-                            <del class="text-slate-600 text-xl">$1300</del>
-                            <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(20)</span>
-                            </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="w-full max-w-full min-[1368px]:h-60 rounded-md" src="./images/example-3.jpg"
-                                    alt="">
-                            </a>
-                            <div>
+                        <div class="w-1/2 xl:w-1/3 shadow rounded relative pb-44">
+                            <a href="./product-details.html"><img class="w-full h-80 object-cover rounded-t-lg"
+                                    src="./images/example-3.jpg" alt=""></a>
+                            <div class="p-4">
                                 <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
-                                    href="#">Fubon Financial Holding Co. Ltd</a>
+                                    href="#">Chunghwa Telecom Co., Ltd.</a>
                                 <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
-                                    href="./product-details.html">Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz
-                                    6-Core Intel Core i7, 16GB
-                                    RAM, 256GB SSD) - Space Gray (Latest Model)
+                                    href="./product-details.html">Apple iPhone XS Max (4GB RAM, 512GB ROM, 12MP Main
+                                    Camera)
                                 </a>
                                 <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
                                     <a href="#">
@@ -263,40 +258,42 @@
                                     </a>
                                     &
                                     <a href="#">
-                                        laptop
+                                        iphone
                                     </a>
                                     &
                                     <a href="#">
-                                        iMac
+                                        mobile
                                     </a>
                                 </div>
-                                <div class="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Obcaecati a quo quae, ipsum officiis iure ea molestiae aliquam quam autem
-                                    repudiandae vero, cumque blanditiis qui necessitatibus facilis. Cum, possimus minus?
-                                    Enim doloribus earum illum ut explicabo inventore voluptas labore itaque
-                                    consequuntur! Assumenda debitis nulla quae exercitationem id, iure illo explicabo
-                                    veniam. Quidem, atque mollitia.
+                                <div class="mt-2 text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Harum, molestias eveniet. Nam, hic. Iste ipsam perferendis explicabo? Quos
+                                    eaque quibusdam sit mollitia! Neque adipisci quidem recusandae eaque, velit vel
+                                    eligendi.
+                                </div>
+                                <div class="absolute left-0 bottom-0 w-full p-4">
+                                    <div class="mt-2">
+                                        <div class="text-2xl text-slate-800">$<span>1300</span></div>
+                                    </div>
+                                    <div class="mt-2 text-gray-700">Stock: <span class="text-red-600">Sold-Out</span>
+                                    </div>
+                                    <div class="mt-2 flex items-center gap-1">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                        <span class="text-slate-800">(12)</span>
+                                    </div>
+                                    <div class="mt-4 flex items-center gap-4">
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/heart.svg" alt=""> Favorite</button>
+                                        <button
+                                            class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                                src="./images/contact_us.svg" alt=""> Contact Us</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
-                            <div class="text-2xl text-slate-800">$<span>1300</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(14)</span>
-                            </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
                         </div>
                     </div>
                 </div>
