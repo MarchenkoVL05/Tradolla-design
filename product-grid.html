@@ -114,7 +114,7 @@
                 <p class="text-gray-400">Apply your filters &#8595;</p>
                 <div class="mt-1 p-3 rounded border bg-white">
                     <form class="flex items-end justify-between flex-wrap gap-4 text-gray-500" action="">
-                        <div class="flex gap-4 flex-wrap">
+                        <div class="flex items-end gap-4 flex-wrap">
                             <label class="flex flex-col gap-1">
                                 Product name
                                 <span class="relative flex items-center gap-3">
@@ -134,34 +134,19 @@
                                 Choose price
                                 <span class="flex gap-2 flex-wrap">
                                     <input
-                                        class="max-w-full w-full sm:w-auto p-1 border rounded shadow focus:outline-none focus:border-orange-600"
+                                        class="max-w-full w-28 p-1 border rounded shadow focus:outline-none focus:border-orange-600"
                                         type="number" placeholder="From (USD)">
                                     <input
-                                        class="max-w-full w-full sm:w-auto p-1 border rounded shadow focus:outline-none focus:border-orange-600"
+                                        class="max-w-full w-28 p-1 border rounded shadow focus:outline-none focus:border-orange-600"
                                         type="number" placeholder="To (USD)">
                                 </span>
                             </div>
-                            <label class="flex flex-col gap-1">
-                                Category
-                                <input
-                                    class="max-w-full w-full p-1 border rounded shadow focus:outline-none focus:border-orange-600"
-                                    type="text" placeholder="start typing...">
-                            </label>
-                            <label class="flex flex-col gap-1">
-                                Tags
-                                <input
-                                    class="max-w-full w-full p-1 border rounded shadow focus:outline-none focus:border-orange-600"
-                                    type="text">
-                            </label>
-                            <label class="flex flex-col gap-1">
-                                Country
-                                <select
-                                    class="px-2 py-1 border rounded shadow text-gray-500 bg-white focus:outline-none focus:border-orange-600">
-                                    <option value="Best match">Iran</option>
-                                    <option value="Newest">Russia</option>
-                                    <option value="Price">USA</option>
-                                </select>
-                            </label>
+                            <div class="flex items-center">
+                                <input type="checkbox" value="" id="avaliable"
+                                    class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label class="ml-2 text-lg text-green-600 dark:text-gray-300"
+                                    for="avaliable">Avaliable</label>
+                            </div>
                         </div>
                         <button
                             class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
