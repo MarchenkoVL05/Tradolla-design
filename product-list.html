@@ -113,248 +113,257 @@
             </header>
 
             <main class="h-full p-3">
-                <p class="text-gray-400">Apply your filters &#8595;</p>
-                <div class="mt-1 p-3 rounded border bg-white">
-                    <form class="flex items-end justify-between flex-wrap gap-4 text-gray-500" action="">
-                        <div class="flex items-end gap-4 flex-wrap">
-                            <label class="flex flex-col gap-1 w-full sm:w-auto">
-                                Product name
-                                <span class="relative flex items-center gap-3">
-                                    <img class="max-h-4 absolute left-2" src="./images/search-icon.svg" alt="">
+                <div class="max-w-[1627px]">
+                    <p class="text-gray-400">Apply your filters &#8595;</p>
+                    <div class="mt-1 p-3 rounded border bg-white">
+                        <form class="flex items-end justify-between flex-wrap gap-4 text-gray-500" action="">
+                            <div class="flex items-end gap-4 flex-wrap">
+                                <label class="flex flex-col gap-1 w-full sm:w-auto">
+                                    Product name
+                                    <span class="relative flex items-center gap-3">
+                                        <img class="max-h-4 absolute left-2" src="./images/search-icon.svg" alt="">
+                                        <input
+                                            class="max-w-full w-full pl-9 py-1 pr-2 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text">
+                                    </span>
+                                </label>
+                                <label class="flex flex-col gap-1 w-full sm:w-auto">
+                                    Supplier name
                                     <input
-                                        class="max-w-full w-full pl-9 py-1 pr-2 border rounded shadow focus:outline-none focus:border-orange-600"
+                                        class="max-w-full w-full p-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text">
-                                </span>
-                            </label>
-                            <label class="flex flex-col gap-1 w-full sm:w-auto">
-                                Supplier name
-                                <input
-                                    class="max-w-full w-full p-1 border rounded shadow focus:outline-none focus:border-orange-600"
-                                    type="text">
-                            </label>
-                            <div class="flex flex-col gap-1">
-                                Choose price
-                                <span class="flex gap-2 flex-wrap">
-                                    <input
-                                        class="max-w-full w-28 p-1 border rounded shadow focus:outline-none focus:border-orange-600"
-                                        type="number" placeholder="From (USD)">
-                                    <input
-                                        class="max-w-full w-28 p-1 border rounded shadow focus:outline-none focus:border-orange-600"
-                                        type="number" placeholder="To (USD)">
-                                </span>
+                                </label>
+                                <div class="flex flex-col gap-1">
+                                    Choose price
+                                    <span class="flex gap-2 flex-wrap">
+                                        <input
+                                            class="max-w-full w-28 p-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="number" placeholder="From (USD)">
+                                        <input
+                                            class="max-w-full w-28 p-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="number" placeholder="To (USD)">
+                                    </span>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" value="" id="avaliable"
+                                        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded">
+                                    <label class="ml-2 text-lg text-green-600" for="avaliable">Avaliable</label>
+                                </div>
                             </div>
-                            <div class="flex items-center">
-                                <input type="checkbox" value="" id="avaliable"
-                                    class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded">
-                                <label class="ml-2 text-lg text-green-600" for="avaliable">Avaliable</label>
-                            </div>
-                        </div>
-                        <button
-                            class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
-                            type="submit">Search</button>
-                    </form>
-                </div>
-                <div class="mt-1 sm:text-lg text-gray-500">If you need a more detailed search by categories, types of
-                    suppliers, or
-                    delivery
-                    region - use our
-                    <a class="font-medium underline text-orange-500" href="#">advanced search</a>
-                </div>
-                <div class="mt-2 flex justify-between items-center flex-wrap gap-2 rounded-md md:gap-4">
-                    <div class="font-medium">Showing 1-24 of 205 Products</div>
-                    <div class="flex items-center flex-wrap gap-3">
-                        <div class="flex items-center gap-3">
-                            <div class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white">
-                                <a href="./product-list.html"><img class="h-4" src="./images/list.svg" alt=""></a>
-                            </div>
-                            <div class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white">
-                                <a href="./product-grid.html"><img class="h-4" src="./images/grid.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <span>Sort by:</span>
-                        <select
-                            class="px-2 py-1 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
-                            <option value="Best match">Best match</option>
-                            <option value="Newest">Newest</option>
-                            <option value="Price">Price</option>
-                        </select>
+                            <button
+                                class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
+                                type="submit">Search</button>
+                        </form>
                     </div>
-                </div>
-                <div class="flex flex-col rounded-md border mt-2 bg-white">
-                    <!-- 1 -->
-                    <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
-                                    src="./images/example-1.jpg" alt="">
-                                <div class="absolute top-2 right-2 px-3 py-1 rounded-full text-white bg-orange-400">new
+                    <div class="mt-1 sm:text-lg text-gray-500">If you need a more detailed search by categories, types
+                        of
+                        suppliers, or
+                        delivery
+                        region - use our
+                        <a class="font-medium underline text-orange-500" href="#">advanced search</a>
+                    </div>
+                    <div class="mt-2 flex justify-between items-center flex-wrap gap-2 rounded-md md:gap-4">
+                        <div class="font-medium">Showing 1-24 of 205 Products</div>
+                        <div class="flex items-center flex-wrap gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white">
+                                    <a href="./product-list.html"><img class="h-4" src="./images/list.svg" alt=""></a>
                                 </div>
-                            </a>
-                            <div>
-                                <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
-                                    href="#">LLC
-                                    'VIATSKY PLYWOOD
-                                    COMBINATE'</a>
-                                <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
-                                    href="./product-details.html">Apple
-                                    iMac Pro
-                                    (27-inch with
-                                    Retina
-                                    5K
-                                    Display, 3.0GHz
-                                    10-core Intel Xeon W, 1TB
-                                    SSD)
-                                </a>
-                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
-                                    <a href="#">
-                                        apple
-                                    </a>
-                                    &
-                                    <a href="#">
-                                        laptop
-                                    </a>
-                                    &
-                                    <a href="#">
-                                        iMac
-                                    </a>
-                                </div>
-                                <div class="mt-2 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Asperiores doloremque, consequuntur iusto alias illum voluptates non harum.
-                                    Aspernatur earum alias illo blanditiis provident corrupti similique illum omnis sit,
-                                    quisquam facere.
+                                <div class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white">
+                                    <a href="./product-grid.html"><img class="h-4" src="./images/grid.svg" alt=""></a>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
-                            <div class="text-2xl text-slate-800">$<span>799</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(8)</span>
-                            </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
+                            <span>Sort by:</span>
+                            <select
+                                class="px-2 py-1 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                <option value="Best match">Best match</option>
+                                <option value="Newest">Newest</option>
+                                <option value="Price">Price</option>
+                            </select>
                         </div>
                     </div>
-                    <!-- 2 -->
-                    <div class="flex flex-col justify-between gap-4 p-4 md:bg-gray-50 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
-                                    src="./images/example-2.jpg" alt="">
-                            </a>
-                            <div>
-                                <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
-                                    href="#">Chunghwa Telecom Co., Ltd.</a>
-                                <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
-                                    href="./product-details.html">Apple iPhone XS Max (4GB RAM, 512GB ROM, 12MP Main
-                                    Camera)
+                    <div class="flex flex-col rounded-md border mt-2 bg-white">
+                        <!-- 1 -->
+                        <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
+                            <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
+                                <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
+                                    <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
+                                        src="./images/example-1.jpg" alt="">
+                                    <div class="absolute top-2 right-2 px-3 py-1 rounded-full text-white bg-orange-400">
+                                        new
+                                    </div>
                                 </a>
-                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
-                                    <a href="#">
-                                        apple
+                                <div>
+                                    <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
+                                        href="./company.html">LLC
+                                        'VIATSKY PLYWOOD
+                                        COMBINATE'</a>
+                                    <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
+                                        href="./product-details.html">Apple
+                                        iMac Pro
+                                        (27-inch with
+                                        Retina
+                                        5K
+                                        Display, 3.0GHz
+                                        10-core Intel Xeon W, 1TB
+                                        SSD)
                                     </a>
-                                    &
-                                    <a href="#">
-                                        iphone
-                                    </a>
-                                    &
-                                    <a href="#">
-                                        mobile
-                                    </a>
-                                </div>
-                                <div class="mt-2 text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing
-                                    elit. Harum, molestias eveniet. Nam, hic. Iste ipsam perferendis explicabo? Quos
-                                    eaque quibusdam sit mollitia! Neque adipisci quidem recusandae eaque, velit vel
-                                    eligendi.
+                                    <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                        <a href="#">
+                                            apple
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            laptop
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            iMac
+                                        </a>
+                                    </div>
+                                    <div class="mt-2 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit. Asperiores doloremque, consequuntur iusto alias illum voluptates non
+                                        harum.
+                                        Aspernatur earum alias illo blanditiis provident corrupti similique illum omnis
+                                        sit,
+                                        quisquam facere.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-72 md:p-5 md:border">
-                            <del class="text-slate-600 text-xl">$1300</del>
-                            <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(20)</span>
+                            <div
+                                class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
+                                <div class="text-2xl text-slate-800">$<span>799</span></div>
+                                <div class="flex items-center gap-1">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <span class="text-slate-800">(8)</span>
+                                </div>
+                                <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/heart.svg" alt=""> Favorite</button>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/contact_us.svg" alt=""> Contact Us</button>
                             </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
                         </div>
-                    </div>
-                    <!-- 3 -->
-                    <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
-                        <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
-                            <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
-                                <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
-                                    src="./images/example-3.jpg" alt="">
-                            </a>
-                            <div>
-                                <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
-                                    href="#">Fubon Financial Holding Co. Ltd</a>
-                                <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
-                                    href="./product-details.html">Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz
-                                    6-Core Intel Core i7, 16GB
-                                    RAM, 256GB SSD) - Space Gray (Latest Model)
+                        <!-- 2 -->
+                        <div class="flex flex-col justify-between gap-4 p-4 md:bg-gray-50 md:flex-row md:gap-6">
+                            <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
+                                <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
+                                    <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
+                                        src="./images/example-2.jpg" alt="">
                                 </a>
-                                <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
-                                    <a href="#">
-                                        apple
+                                <div>
+                                    <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
+                                        href="./company.html">Chunghwa Telecom Co., Ltd.</a>
+                                    <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
+                                        href="./product-details.html">Apple iPhone XS Max (4GB RAM, 512GB ROM, 12MP Main
+                                        Camera)
                                     </a>
-                                    &
-                                    <a href="#">
-                                        laptop
-                                    </a>
-                                    &
-                                    <a href="#">
-                                        iMac
-                                    </a>
+                                    <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                        <a href="#">
+                                            apple
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            iphone
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            mobile
+                                        </a>
+                                    </div>
+                                    <div class="mt-2 text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Harum, molestias eveniet. Nam, hic. Iste ipsam perferendis explicabo? Quos
+                                        eaque quibusdam sit mollitia! Neque adipisci quidem recusandae eaque, velit vel
+                                        eligendi.
+                                    </div>
                                 </div>
-                                <div class="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Obcaecati a quo quae, ipsum officiis iure ea molestiae aliquam quam autem
-                                    repudiandae vero, cumque blanditiis qui necessitatibus facilis. Cum, possimus minus?
-                                    Enim doloribus earum illum ut explicabo inventore voluptas labore itaque
-                                    consequuntur! Assumenda debitis nulla quae exercitationem id, iure illo explicabo
-                                    veniam. Quidem, atque mollitia.
+                            </div>
+                            <div
+                                class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-72 md:p-5 md:border">
+                                <del class="text-slate-600 text-xl">$1300</del>
+                                <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
+                                <div class="flex items-center gap-1">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <span class="text-slate-800">(20)</span>
                                 </div>
+                                <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/heart.svg" alt=""> Favorite</button>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/contact_us.svg" alt=""> Contact Us</button>
                             </div>
                         </div>
-                        <div
-                            class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
-                            <div class="text-2xl text-slate-800">$<span>1300</span></div>
-                            <div class="flex items-center gap-1">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
-                                <span class="text-slate-800">(14)</span>
+                        <!-- 3 -->
+                        <div class="flex flex-col justify-between gap-4 p-4 md:flex-row md:gap-6">
+                            <div class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8">
+                                <a class="relative min-[1368px]:flex-shrink-0" href="./product-details.html">
+                                    <img class="rounded object-cover w-full min-[1368px]:w-96 min-[1368px]:h-60"
+                                        src="./images/example-3.jpg" alt="">
+                                </a>
+                                <div>
+                                    <a class="block uppercase text-sm lg:text-base text-gray-700 hover:underline"
+                                        href="./company.html">Fubon Financial Holding Co. Ltd</a>
+                                    <a class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
+                                        href="./product-details.html">Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz
+                                        6-Core Intel Core i7, 16GB
+                                        RAM, 256GB SSD) - Space Gray (Latest Model)
+                                    </a>
+                                    <div class="mt-2 items-center flex-wrap gap-2 text-sm text-gray-400">
+                                        <a href="#">
+                                            apple
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            laptop
+                                        </a>
+                                        &
+                                        <a href="#">
+                                            iMac
+                                        </a>
+                                    </div>
+                                    <div class="mt-2 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Obcaecati a quo quae, ipsum officiis iure ea molestiae aliquam quam autem
+                                        repudiandae vero, cumque blanditiis qui necessitatibus facilis. Cum, possimus
+                                        minus?
+                                        Enim doloribus earum illum ut explicabo inventore voluptas labore itaque
+                                        consequuntur! Assumenda debitis nulla quae exercitationem id, iure illo
+                                        explicabo
+                                        veniam. Quidem, atque mollitia.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/heart.svg" alt=""> Favorite</button>
-                            <button
-                                class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
-                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
+                            <div
+                                class="flex flex-col gap-2 flex-shrink-0 rounded-md bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border">
+                                <div class="text-2xl text-slate-800">$<span>1300</span></div>
+                                <div class="flex items-center gap-1">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star--fill.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <img class="max-h-4 md:max-h-5" src="./images/star.svg" alt="">
+                                    <span class="text-slate-800">(14)</span>
+                                </div>
+                                <div class="text-gray-700">Stock: <span class="text-green-600">Avaliable</span></div>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/heart.svg" alt=""> Favorite</button>
+                                <button
+                                    class="w-full py-3 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        src="./images/contact_us.svg" alt=""> Contact Us</button>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Home | Tradolla.com</title>
+</head>
+
+<body class="h-full bg-gray-100">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+            <div class="min-h-full flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-8 break-all">
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
+                                class="text-orange-500">Trad</span>olla.com</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="#">
+                            Dashboard
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="#">E-commerce</a>
+                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="#">Notifications</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-4" src="./images/cart-icon.svg" alt="">
+                                <span>E-commerce</span>
+                            </div>
+                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
+                            Product list
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="./product-grid.html">
+                            Product grid
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aside-setting>
+                    <div class="flex items-center gap-2 cursor-pointer"><img class="max-h-8"
+                            src="./images/settings-icon.svg" alt=""><span
+                            class="text-xl font-thin text-white">Settings</span></div>
+                    <div
+                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                        <img class="h-10" src="./images/pedro_pascal.png" alt="">
+                        <div>
+                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-light text-sm">
+                                pedropascal@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
+        <div class="w-full flex flex-col">
+
+            <header
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                data-header>
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
+                        class="text-orange-500">Trad</span>olla.com</a>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
+                    <div class="relative z-10">
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                            <img class="max-h-5" src="./images/english.png" alt="">
+                            English
+                            <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
+                                data-lang-arrow>
+                        </button>
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md transition-all"
+                            data-lang-list>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
+                                Farsi</a>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/russian.png" alt="">
+                                Russian</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
+                        <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Help</a>
+                    </div>
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                        <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
+                        <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="h-full p-4">
+                <div class="max-w-[1627px] grid grid-cols-9 gap-3">
+                    <div class="col-span-8 p-4 border rounded-md bg-white text-gray-800">
+                        <div class="flex justify-between gap-4 items-start">
+                            <div>
+                                <img class="h-16" src="./images/company-logo.svg" alt="">
+                                <h1 class="mt-4 text-xl sm:text-2xl">Chunghwa Telecom Co., Ltd.</h1>
+                                <a class="inline-block mt-1 text-gray-400 hover:underline"
+                                    href="mailto:chtir@cht.com.tw">chtir@cht.com.tw</a>
+                                <p class="mt-2 text-gray-500">is the largest integrated telecom service provider in
+                                    Taiwan, and the incumbent local exchange carrier of PSTN, Mobile, and broadband
+                                    services in the country.</p>
+                            </div>
+                            <button
+                                class="py-2 px-4 flex justify-center items-center flex-shrink-0 gap-2 rounded-md transition-all cursor-pointer text-white bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-2"><img
+                                    src="./images/contact_us.svg" alt=""> Contact Us</button>
+                        </div>
+                        <div class="mt-4 flex flex-wrap font-semibold sm:border-b sm:border-gray-200">
+                            <div class="px-3 py-2 cursor-pointer border-b-2 text-orange-500 border-orange-500"
+                                data-pd-tab="">
+                                Information
+                            </div>
+                            <div class="px-3 py-2 cursor-pointer" data-pd-tab="">Goods and services</div>
+                            <div class="px-3 py-2 cursor-pointer" data-pd-tab="">Trading procedures</div>
+                        </div>
+                        <div class="mt-4 p-4 rounded-md border shadow">
+                            <h4 class="font-semibold text-lg sm:text-xl">About the company</h4>
+                            <div class="mt-4 flex flex-col text-sm sm:text-base">
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Headquarters</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">Taiwan, Taipei</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Company name</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">Chunghwa Telecom Co.,
+                                        Ltd.</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Company Registration
+                                        Number</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">96979976</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Taxpayer Identification
+                                        Number</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">01123456323</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">DUNS-number</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">31-41-634</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Year of foundation</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">1996</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Full-time staff</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">1500</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Annual income (USD)</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">$40 000 000</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Legal form</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">corporation</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Type of company</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">manufacturer</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Scope of activity</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">manufacturing</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Bank name</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">Taibai Bank</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">BIC code and/or
+                                        SWIFT/IBAN</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">090293023012</span>
+                                </div>
+                                <div class="grid grid-cols-2">
+                                    <span class="p-2 border-b bg-gray-100 text-gray-500">Account number</span>
+                                    <span class="p-2 font-medium border-b border-gray-100">32032-323-235-23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4 rounded-md border shadow">
+                            <h4 class="font-semibold text-lg sm:text-xl">Who we are?</h4>
+                            <p class="mt-1 text-gray-500">Chunghwa Telecom is the largest integrated
+                                telecommunication service
+                                provider in Taiwan,
+                                with leading offerings in domestic and international fixed communication, mobile
+                                communication, broadband, and internet services.
+                                <br>
+                                In addition to these traditional services, the Company also provides information and
+                                communication technology services to enterprise customers with big data, information
+                                security, cloud computing and IDC capabilities, and is expanding businesses into
+                                innovative technology services such as IoT, AI, etc. All of these capabilities and
+                                offerings aim to create an optimal communication environment to enable wonderful and
+                                convenient digital life-style, as well as to serve as a key partner for other
+                                international telecommunication service providers.
+                                <br>
+                                Based on the "customer-centric" concept, Chunghwa Telecom completed a new organizational
+                                transformation in 2022. Under the new organizational structure, our three business
+                                groups, Consumer, Enterprise and International Business Groups, with the full support of
+                                three technical groups, the Network Group, Information Group and Research Lab, will
+                                continue to implement our business strategy, "Transformation x 5G x Sustainability" and
+                                provide digital transformation solutions for our customers.
+                                <br>
+                                Organizational transformation and corporate values are the major hard and soft strengths
+                                of a company. Under our new customer-centric organizational structure, we advocate our
+                                four corporate values of " integrity, customers’ trust, creation of value and
+                                innovation, commitment to accountability” and integrate into our corporate culture.
+                            </p>
+                        </div>
+                        <div class="mt-4 p-4 rounded-md border shadow">
+                            <h4 class="font-semibold text-lg sm:text-xl">Social:</h4>
+                            <div class="flex justify-between items-end flex-wrap">
+                                <div class="mt-4 flex flex-wrap gap-10">
+                                    <a href="#">
+                                        <img class="h-11" src="./images/facebook--colored.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="h-11" src="./images/instagram--colored.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="h-11" src="./images/linkedin--colored.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="h-11" src="./images/twitter--colored.svg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="h-11" src="./images/whatsapp--colored.svg" alt="">
+                                    </a>
+                                </div>
+                                <a class="inline-block underline text-gray-800" href="#">www.cht.com.tw</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 p-4 border rounded-md overflow-auto bg-white text-gray-800">
+                        <h4 class="text-center text-base sm:text-lg">Employees (6)</h4>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/pedro_pascal.png" alt="">
+                            <span class="text-blue-600">Pedro Pascal</span>
+                            <span class="text-sm text-center text-gray-400">mandalorian</span>
+                        </a>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/emilia_clarke.jpg" alt="">
+                            <span class="text-blue-600">Emilia Clarke</span>
+                            <span class="text-sm text-center text-gray-400">Technext limited</span>
+                        </a>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/kit_harington.jpg" alt="">
+                            <span class="text-blue-600">Kit Harington</span>
+                            <span class="text-sm text-center text-gray-400">Harvard Korea Society</span>
+                        </a>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/peter_dinklage.jpg" alt="">
+                            <span class="text-blue-600">Peter Dinklage</span>
+                            <span class="text-sm text-center text-gray-400">Art Club, MIT</span>
+                        </a>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/nikolai_coster.jpg" alt="">
+                            <span class="text-blue-600">Nikolaj Coster</span>
+                            <span class="text-sm text-center text-gray-400">Archery Club, MIT</span>
+                        </a>
+                        <a class="mt-4 flex flex-col items-center" href="#">
+                            <img class="rounded-full h-14" src="./images/isaac_hempstead.jpg" alt="">
+                            <span class="text-blue-600">Isaac Hempstead</span>
+                            <span class="text-sm text-center text-gray-400">Asymptones</span>
+                        </a>
+                        <button class="block mt-4 mx-auto text-gray-500">view all &#8595;</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
