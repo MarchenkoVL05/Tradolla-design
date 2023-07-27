@@ -591,6 +591,14 @@ video {
   top: 0.5rem;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -802,6 +810,10 @@ video {
   max-height: 1627px;
 }
 
+.max-h-40 {
+  max-height: 10rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -960,6 +972,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -1231,6 +1247,22 @@ video {
 
 .pr-3 {
   padding-right: 0.75rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-\[88px\] {
+  padding-bottom: 88px;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -1583,6 +1615,11 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .sm\:mt-4 {
     margin-top: 1rem;
   }
@@ -1607,6 +1644,10 @@ video {
     max-height: 4rem;
   }
 
+  .sm\:max-h-40 {
+    max-height: 10rem;
+  }
+
   .sm\:w-12 {
     width: 3rem;
   }
@@ -1615,8 +1656,16 @@ video {
     width: auto;
   }
 
+  .sm\:max-w-xs {
+    max-width: 20rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -1830,6 +1879,10 @@ video {
     flex-shrink: 0;
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1871,6 +1924,12 @@ video {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -1923,6 +1982,14 @@ video {
 
   .\32xl\:grid-cols-9 {
     grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .\32xl\:flex-row {
