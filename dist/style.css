@@ -615,6 +615,10 @@ video {
   grid-column: span 8 / span 8;
 }
 
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -802,6 +806,11 @@ video {
   min-height: 100%;
 }
 
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -861,6 +870,10 @@ video {
 
 .min-w-\[220px\] {
   min-width: 220px;
+}
+
+.min-w-\[90px\] {
+  min-width: 90px;
 }
 
 .max-w-7xl {
@@ -1561,6 +1574,14 @@ video {
     height: 1.75rem;
   }
 
+  .sm\:h-11 {
+    height: 2.75rem;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
   .sm\:max-h-16 {
     max-height: 4rem;
   }
@@ -1731,6 +1752,11 @@ video {
     padding-top: 8rem;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:shadow-md {
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1854,12 +1880,28 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .\32xl\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
+
   .\32xl\:h-full {
     height: 100%;
   }
 
+  .\32xl\:h-14 {
+    height: 3.5rem;
+  }
+
   .\32xl\:max-w-sm {
     max-width: 24rem;
+  }
+
+  .\32xl\:grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
 
   .\32xl\:flex-row {
@@ -1868,5 +1910,14 @@ video {
 
   .\32xl\:flex-col {
     flex-direction: column;
+  }
+
+  .\32xl\:gap-4 {
+    gap: 1rem;
+  }
+
+  .\32xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

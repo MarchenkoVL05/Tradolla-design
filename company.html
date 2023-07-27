@@ -113,15 +113,16 @@
             </header>
 
             <main class="h-full p-4">
-                <div class="max-w-[1627px] grid grid-cols-9 gap-3">
-                    <div class="col-span-8 p-4 border rounded-md bg-white text-gray-800">
-                        <div class="flex justify-between gap-4 items-start">
+                <div class="max-w-[1627px] grid grid-cols-1 2xl:grid-cols-9 gap-3 xl">
+                    <div class="2xl:col-span-8 p-4 border rounded-md bg-white text-gray-800">
+                        <div class="flex justify-between gap-4 items-start flex-wrap">
                             <div>
-                                <img class="h-16" src="./images/company-logo.svg" alt="">
+                                <img class="h-12 sm:h-16" src="./images/company-logo.svg" alt="">
                                 <h1 class="mt-4 text-xl sm:text-2xl">Chunghwa Telecom Co., Ltd.</h1>
                                 <a class="inline-block mt-1 text-gray-400 hover:underline"
                                     href="mailto:chtir@cht.com.tw">chtir@cht.com.tw</a>
-                                <p class="mt-2 text-gray-500">is the largest integrated telecom service provider in
+                                <p class="text-sm sm:text-base mt-2 text-gray-500">is the largest integrated telecom
+                                    service provider in
                                     Taiwan, and the incumbent local exchange carrier of PSTN, Mobile, and broadband
                                     services in the country.</p>
                             </div>
@@ -204,7 +205,8 @@
                         </div>
                         <div class="mt-4 p-4 rounded-md border shadow">
                             <h4 class="font-semibold text-lg sm:text-xl">Who we are?</h4>
-                            <p class="mt-1 text-gray-500">Chunghwa Telecom is the largest integrated
+                            <p class="text-sm sm:text-base mt-1 text-gray-500">Chunghwa Telecom is the largest
+                                integrated
                                 telecommunication service
                                 provider in Taiwan,
                                 with leading offerings in domestic and international fixed communication, mobile
@@ -233,60 +235,62 @@
                         </div>
                         <div class="mt-4 p-4 rounded-md border shadow">
                             <h4 class="font-semibold text-lg sm:text-xl">Social:</h4>
-                            <div class="flex justify-between items-end flex-wrap">
+                            <div class="flex justify-between items-end flex-wrap gap-4">
                                 <div class="mt-4 flex flex-wrap gap-10">
                                     <a href="#">
-                                        <img class="h-11" src="./images/facebook--colored.svg" alt="">
+                                        <img class="h-9 sm:h-11" src="./images/facebook--colored.svg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img class="h-11" src="./images/instagram--colored.svg" alt="">
+                                        <img class="h-9 sm:h-11" src="./images/instagram--colored.svg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img class="h-11" src="./images/linkedin--colored.svg" alt="">
+                                        <img class="h-9 sm:h-11" src="./images/linkedin--colored.svg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img class="h-11" src="./images/twitter--colored.svg" alt="">
+                                        <img class="h-9 sm:h-11" src="./images/twitter--colored.svg" alt="">
                                     </a>
                                     <a href="#">
-                                        <img class="h-11" src="./images/whatsapp--colored.svg" alt="">
+                                        <img class="h-9 sm:h-11" src="./images/whatsapp--colored.svg" alt="">
                                     </a>
                                 </div>
                                 <a class="inline-block underline text-gray-800" href="#">www.cht.com.tw</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 p-4 border rounded-md overflow-auto bg-white text-gray-800">
-                        <h4 class="text-center text-base sm:text-lg">Employees (6)</h4>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/pedro_pascal.png" alt="">
-                            <span class="text-blue-600">Pedro Pascal</span>
-                            <span class="text-sm text-center text-gray-400">mandalorian</span>
-                        </a>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/emilia_clarke.jpg" alt="">
-                            <span class="text-blue-600">Emilia Clarke</span>
-                            <span class="text-sm text-center text-gray-400">Technext limited</span>
-                        </a>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/kit_harington.jpg" alt="">
-                            <span class="text-blue-600">Kit Harington</span>
-                            <span class="text-sm text-center text-gray-400">Harvard Korea Society</span>
-                        </a>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/peter_dinklage.jpg" alt="">
-                            <span class="text-blue-600">Peter Dinklage</span>
-                            <span class="text-sm text-center text-gray-400">Art Club, MIT</span>
-                        </a>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/nikolai_coster.jpg" alt="">
-                            <span class="text-blue-600">Nikolaj Coster</span>
-                            <span class="text-sm text-center text-gray-400">Archery Club, MIT</span>
-                        </a>
-                        <a class="mt-4 flex flex-col items-center" href="#">
-                            <img class="rounded-full h-14" src="./images/isaac_hempstead.jpg" alt="">
-                            <span class="text-blue-600">Isaac Hempstead</span>
-                            <span class="text-sm text-center text-gray-400">Asymptones</span>
-                        </a>
+                    <div class="2xl:col-span-1 h-fit p-4 border rounded-md overflow-auto bg-white text-gray-800">
+                        <h4 class="text-center">Employees (6):</h4>
+                        <div class="mt-4 flex flex-wrap justify-center gap-8 2xl:flex-col 2xl:gap-4">
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/pedro_pascal.png" alt="">
+                                <span class="text-center text-blue-600">Pedro Pascal</span>
+                                <span class="text-sm text-center text-gray-400">mandalorian</span>
+                            </a>
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/emilia_clarke.jpg" alt="">
+                                <span class="text-center text-blue-600">Emilia Clarke</span>
+                                <span class="text-sm text-center text-gray-400">Technext limited</span>
+                            </a>
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/kit_harington.jpg" alt="">
+                                <span class="text-center text-blue-600">Kit Harington</span>
+                                <span class="text-sm text-center text-gray-400">Harvard Korea Society</span>
+                            </a>
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/peter_dinklage.jpg" alt="">
+                                <span class="text-center text-blue-600">Peter Dinklage</span>
+                                <span class="text-sm text-center text-gray-400">Art Club, MIT</span>
+                            </a>
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/nikolai_coster.jpg" alt="">
+                                <span class="text-center text-blue-600">Nikolaj Coster</span>
+                                <span class="text-sm text-center text-gray-400">Archery Club, MIT</span>
+                            </a>
+                            <a class="flex flex-col items-center" href="#">
+                                <img class="rounded-full h-12 2xl:h-14" src="./images/isaac_hempstead.jpg" alt="">
+                                <span class="text-center text-blue-600">Isaac Hempstead</span>
+                                <span class="text-sm text-center text-gray-400">Asymptones</span>
+                            </a>
+                        </div>
                         <button class="block mt-4 mx-auto text-gray-500">view all &#8595;</button>
                     </div>
                 </div>
