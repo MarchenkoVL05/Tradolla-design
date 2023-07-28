@@ -162,4 +162,20 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // toggle aside menu links
+  const asideMenus = document.querySelectorAll("[data-aside-menu]");
+
+  if (asideMenus) {
+    asideMenus.forEach((menu) => {
+      menu.addEventListener("click", () => {
+        const links = menu.parentElement.querySelectorAll("a");
+        const menuArrowIcon = menu.querySelector("[data-aside-menu-img]");
+        menuArrowIcon.classList.toggle("rotate-180");
+        links.forEach((link) => {
+          link.classList.toggle("hidden");
+        });
+      });
+    });
+  }
 });

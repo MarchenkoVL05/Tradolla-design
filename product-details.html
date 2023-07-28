@@ -12,7 +12,8 @@
 
 <body class="h-full bg-gray-100">
     <div class="lg:flex lg:h-full">
-        <aside class="lg:fixed lg:w-72 lg:h-full lg:max-h-full p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
             <div class="min-h-full flex flex-col justify-between gap-8">
                 <div class="flex flex-col gap-8 break-all">
                     <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
@@ -25,12 +26,13 @@
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
                         data-aside-links>
-                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
                             <div class="flex items-center gap-2 text-xl">
-                                <img class="max-h-5" src="./images/home-icon.svg" alt="">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
                                 <span>Home</span>
                             </div>
-                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
                         </div>
                         <a class="transition-all hover:text-orange-400" href="#">
                             Dashboard
@@ -41,14 +43,15 @@
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
                         data-aside-links>
-                        <div class="mb-2 flex items-center justify-between cursor-pointer">
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
                             <div class="flex items-center gap-2 text-xl">
                                 <img class="h-4" src="./images/cart-icon.svg" alt="">
                                 <span>E-commerce</span>
                             </div>
-                            <img class="max-h-5" src="./images/arrow-btn-icon--white.svg" alt="">
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
                         </div>
-                        <a class="transition-all text-orange-400" href="./product-list.html">
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
                             Product list
                         </a>
                         <a class="transition-all hover:text-orange-400" href="./product-grid.html">
