@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./dist/style.css">
-    <title>Home | Tradolla.com</title>
+    <title>Add a Product | Tradolla.com</title>
 </head>
 
 <body class="h-full bg-gray-100">
@@ -132,6 +132,187 @@
             </header>
 
             <main class="h-full p-3">
+                <div class="max-w-[1627px] pb-4">
+                    <div
+                        class="flex justify-between items-center gap-4 px-4 py-2 border rounded-md shadow text-gray-800 bg-white">
+                        <h1 class="text-lg font-semibold">Add a product</h1>
+                        <div class="flex items-center gap-1">
+                            <button class="px-4 py-1 text-lg transition-all hover:text-orange-500">Discard</button>
+                            <button
+                                class="px-4 py-1 text-lg flex justify-center items-center transition-all rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Save</button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 mt-4 items-start gap-3 text-gray-800">
+                        <div class="col-span-9 w-full max-w-7xl flex flex-col gap-4">
+                            <div class="gap-4 border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Basic information</div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Product name</div>
+                                    <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text">
+                                </div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Description</div>
+                                    <textarea
+                                        class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                        rows="5" type="text"></textarea>
+                                </div>
+                            </div>
+                            <div class="gap-4 border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Add images</div>
+                                <div class="p-4">
+                                    <div
+                                        class="h-20 flex items-center gap-2 justify-center mx-auto w-full border rounded border-gray-400 border-dashed text-gray-500">
+                                        Drag you images or <span class="text-orange-500"> browse</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gap-4 border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Specifications</div>
+                                <div class="px-4 py-2 flex flex-col gap-4">
+                                    <div class="py-2 grid grid-cols-3 gap-4 justify-between">
+                                        <div>Processor</div>
+                                        <div>2.3GHz quad-core Intel Core i5</div>
+                                        <button class="justify-self-end"><img class="h-6" src="./images/trash-icon.svg"
+                                                alt=""></button>
+                                    </div>
+                                    <div class="py-2 grid grid-cols-3 gap-4 justify-between">
+                                        <div>Memory</div>
+                                        <div>8GB of 2133MHz LPDDR3 onboard memory</div>
+                                        <button class="justify-self-end"><img class="h-6" src="./images/trash-icon.svg"
+                                                alt=""></button>
+                                    </div>
+                                    <div class="py-2 grid grid-cols-3 gap-4 justify-between">
+                                        <div>Brand name</div>
+                                        <div>
+                                            Apple</div>
+                                        <button class="justify-self-end"><img class="h-6" src="./images/trash-icon.svg"
+                                                alt=""></button>
+                                    </div>
+                                    <div class="py-2 grid grid-cols-3 gap-4 justify-between">
+                                        <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" placeholder="label">
+                                        <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" placeholder="property">
+                                        <button class="justify-self-end hover:underline">Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-3 gap-4 flex flex-col">
+                            <div class="border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Type</div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Select category:</div>
+                                    <select
+                                        class="p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600"
+                                        name="legal_form">
+                                        <option class="text-gray-400" disabled selected="selected" value> -- select --
+                                        </option>
+                                        <option value="electonics">electonics</option>
+                                        <option value="home_and_kitchen">home and kitchen</option>
+                                        <option value="fashion">fashion</option>
+                                        <option value="books">books</option>
+                                        <option value="health">health</option>
+                                    </select>
+                                </div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Select sub-category:</div>
+                                    <select
+                                        class="p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600"
+                                        name="legal_form">
+                                        <option class="text-gray-400" disabled selected="selected" value> -- select --
+                                        </option>
+                                        <option value="electonics">electonics</option>
+                                        <option value="home_and_kitchen">home and kitchen</option>
+                                        <option value="fashion">fashion</option>
+                                        <option value="books">books</option>
+                                        <option value="health">health</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Tags</div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Add a keyword:</div>
+                                    <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Pricing</div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <span class="relative flex items-center gap-1">
+                                        <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
+                                            alt="">
+                                        <span class="text-gray-700">Base Price:</span>
+                                        <span
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            data-tooltip>
+                                            Product regular price
+                                        </span>
+                                    </span>
+                                    <div class="flex gap-2">
+                                        <input
+                                            class="w-3/4 p-2 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text">
+                                        <select
+                                            class="p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600"
+                                            name="legal_form">
+                                            <option class="text-gray-400" disabled selected="selected" value> -- select
+                                                --
+                                            </option>
+                                            <option value="USD">USD</option>
+                                            <option value="RUB">RUB</option>
+                                            <option value="EU">EU</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <div class="text-gray-700">Discount in percentage:</div>
+                                    <input class="w-full p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="number">
+                                </div>
+                                <div class="px-4 py-2 flex flex-col gap-1">
+                                    <span class="relative flex items-center gap-1">
+                                        <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
+                                            alt="">
+                                        <span class="text-gray-700">Final Price:</span>
+                                        <span
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            data-tooltip>
+                                            Product final price
+                                        </span>
+                                    </span>
+                                    <input class="w-full p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text">
+                                </div>
+                            </div>
+                            <div class="border rounded-md shadow bg-white">
+                                <div class="px-4 py-2 font-medium rounded bg-gray-50">Stock status:</div>
+                                <div class="px-4 py-2 flex flex-col gap-2">
+                                    <label class="flex items-center gap-2 text-lg text-gray-700">
+                                        <input name="status" type="radio">
+                                        In stock
+                                    </label>
+                                    <label class="flex items-center gap-2 text-lg text-gray-700">
+                                        <input name="status" type="radio">
+                                        Unavailable
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-4 flex justify-between items-center gap-4 px-4 py-2 border rounded-md shadow text-gray-800 bg-white">
+                        <h1 class="text-lg font-semibold">You're almost done</h1>
+                        <div class="flex items-center gap-1">
+                            <button class="px-4 py-1 text-lg transition-all hover:text-orange-500">Discard</button>
+                            <button
+                                class="px-4 py-1 text-lg flex justify-center items-center transition-all rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Save</button>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>

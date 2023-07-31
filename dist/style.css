@@ -635,6 +635,10 @@ video {
   grid-column: span 7 / span 7;
 }
 
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -766,6 +770,10 @@ video {
   height: 2rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .max-h-12 {
   max-height: 3rem;
 }
@@ -858,6 +866,10 @@ video {
   width: 2.5rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .min-w-\[220px\] {
   min-width: 220px;
 }
@@ -935,6 +947,10 @@ video {
   flex-shrink: 0;
 }
 
+.basis-3\/4 {
+  flex-basis: 75%;
+}
+
 .rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -970,6 +986,10 @@ video {
 
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -1040,6 +1060,14 @@ video {
   gap: 2rem;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1096,6 +1124,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -1109,6 +1141,21 @@ video {
 .border-orange-500 {
   --tw-border-opacity: 1;
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
@@ -1409,6 +1456,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .underline {
