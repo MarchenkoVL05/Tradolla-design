@@ -862,6 +862,18 @@ video {
   min-width: 220px;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-\[1000px\] {
+  min-width: 1000px;
+}
+
+.min-w-\[960px\] {
+  min-width: 960px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1574,6 +1586,10 @@ video {
 @media (min-width: 640px) {
   .sm\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
   .sm\:h-11 {
