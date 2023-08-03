@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Offer Details | Tradolla.com</title>
+</head>
+
+<body class="h-full bg-gray-100">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+            <div class="min-h-full flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-8 break-all">
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
+                                class="text-orange-500">Trad</span>olla.com</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="#">
+                            Dashboard
+                        </a>
+
+                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/document.svg" alt="">
+                                <span>Procurements</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./offers.html">
+                            Offers
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-4" src="./images/cart-icon.svg" alt="">
+                                <span>E-commerce</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
+                            Product list
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="./product-grid.html">
+                            Product grid
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="./our-products.html">
+                            Our products
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/social.svg" alt="">
+                                <span>Social</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./company-list.html">
+                            Companies
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aside-setting>
+                    <div class="group flex items-center gap-2 cursor-pointer"><img
+                            class="transition-all group-hover:rotate-45 max-h-8" src="./images/settings-icon.svg"
+                            alt=""><span class="text-xl font-thin text-white">Settings</span></div>
+                    <div
+                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                        <img class="h-10" src="./images/pedro_pascal.png" alt="">
+                        <div>
+                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-light text-sm">
+                                pedropascal@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
+        <div class="w-full flex flex-col">
+
+            <header
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                data-header>
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
+                        class="text-orange-500">Trad</span>olla.com</a>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
+                    <div class="relative z-10">
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                            <img class="max-h-5" src="./images/english.png" alt="">
+                            English
+                            <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
+                                data-lang-arrow>
+                        </button>
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md transition-all"
+                            data-lang-list>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
+                                Farsi</a>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/russian.png" alt="">
+                                Russian</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
+                        <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Help</a>
+                    </div>
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                        <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
+                        <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="h-full p-3">
+                <div class="rounded-md p-4 border bg-white"></div>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

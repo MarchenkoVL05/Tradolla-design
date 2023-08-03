@@ -98,7 +98,7 @@
                         class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
-                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-medium">Pedro Pascal</div>
                             <div class="text-gray-50 font-light text-sm">
                                 pedropascal@gmail.com
                             </div>
@@ -173,7 +173,7 @@
                                 </label>
                             </div>
                             <button
-                                class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
+                                class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-medium hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
                                 type="submit">Search</button>
                         </form>
                     </div>
@@ -181,200 +181,158 @@
                         <a class="font-medium underline text-orange-500" href="#">advanced search</a>
                     </div>
                     <div class="mt-2 rounded-md border text-gray-700 bg-white">
-                        <!-- 1 -->
-                        <div class="p-4 flex flex-col gap-1">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
-                                            <div class="text-sm">Request for Information (№ <span>000023</span>)</div>
-                                        </div>
-                                    </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">Construction
-                                        Services for
-                                        Office Expansion
-                                        Project
-                                    </a>
-                                </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">12 november 2023</span>
-                                    </div>
-                                    <div class="text-sm">deadline: <span class="font-medium">12 november 2023</span>
-                                    </div>
+                        <!-- Table -->
+                        <div class="grid grid-cols-8">
+                            <div class="px-4 py-2 col-span-4 border-b border-r font-medium flex items-center">
+                                Procedure
+                            </div>
+                            <div class="px-4 py-2 col-span-2 border-b border-r font-medium flex items-center">Company
+                            </div>
+                            <div
+                                class="px-4 py-2 col-span-1 border-b border-r font-medium flex justify-between items-center gap-4">
+                                Published
+                                <div class="flex flex-col">
+                                    <button
+                                        class="flex items-end text-[12px] text-gray-700 hover:text-orange-500">&#9650;</button>
+                                    <button
+                                        class="flex items-start text-[12px] text-gray-700 hover:text-orange-500">&#9660;</button>
                                 </div>
                             </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Office
-                                            Equipment, construction equipment</span>
-                                    </div>
-                                    <div>Delivery or service provision addresses:
-                                        <span class="font-medium">New York, USA; London, United Kingdom</span>
-                                    </div>
-                                </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">Chunghwa
-                                        Telecom
-                                        Ltd.</a>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- 2 -->
-                        <div class="p-4 flex flex-col gap-1 bg-slate-50">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-5" src="./images/star--fill.svg" alt=""></button>
-                                            <div class="text-sm">Request for Proposal (№ <span>000001</span>)</div>
-                                        </div>
-                                    </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">IT Solutions and Software Providers for Enterprise Resource Planning
-                                        (ERP) System</a>
-                                </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">15 July 2023</span></div>
-                                    <div class="text-sm">deadline: <span class="font-medium">31 August 2023</span></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Information
-                                            Technology, Software Development</span></div>
-                                    <div>Delivery or service provision addresses: <span class="font-medium">Berlin,
-                                            Germany; Bangalore, India</span></div>
-                                </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">Tech
-                                        Innovators</a></span>
-                            </div>
-                        </div>
-                        <!-- 3 -->
-                        <div class="p-4 flex flex-col gap-1">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
-                                            <div class="text-sm">Request for Price (№ <span>000005</span>)</div>
-                                        </div>
-                                    </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">Sustainable Packaging Materials</a>
-                                </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">20 September 2023</span>
-                                    </div>
-                                    <div class="text-sm">deadline: <span class="font-medium">15 October 2023</span>
+                            <div class="px-4 py-2 col-span-1 border-b font-medium flex items-center">Deadline</div>
+                            <!-- 1 -->
+                            <div class="col-span-4 p-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Information (№ <span>000023</span>)</div>
                                     </div>
                                 </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Construction
+                                    Services for
+                                    Office Expansion
+                                    Project
+                                </a>
                             </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Packaging,
-                                            Eco-friendly Materials</span></div>
-                                    <div>Delivery or service provision addresses: <span class="font-medium">Paris,
-                                            France; Toronto, Canada</span></div>
-                                </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">EcoPack
-                                        Solutions</a></span>
-                            </div>
-                        </div>
-                        <!-- 4 -->
-                        <div class="p-4 flex flex-col gap-1 bg-gray-50">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
-                                            <div class="text-sm">Request for Information (№ <span>000012</span>)</div>
-                                        </div>
-                                    </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">Solar Power Installations</a>
-                                </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">5 June 2023</span></div>
-                                    <div class="text-sm">deadline: <span class="font-medium">30 June 2023</span></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Renewable Energy,
-                                            Solar Panels</span></div>
-                                    <div>Delivery or service provision addresses: <span class="font-medium">Miami, USA;
-                                            Sydney, Australia</span></div>
-                                </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">GreenEnergy
-                                        Solutions</a></span>
-                            </div>
-                        </div>
-                        <!-- 5 -->
-                        <div class="p-4 flex flex-col gap-1">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
-                                            <div class="text-sm">Request for Information (№ <span>000032</span>)</div>
-                                        </div>
-                                    </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">Marketing and Advertising Agencies for Product Launch Campaign</a>
-                                </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">8 October 2023</span>
-                                    </div>
-                                    <div class="text-sm">deadline: <span class="font-medium">30 November 2023</span>
+                            <a class="col-span-2 flex items-center p-4 xl:text-lg  text-blue-500 hover:text-slate-800"
+                                href="./company.html">Chunghwa
+                                Telecom
+                                Ltd.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">12.04.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">31.12.23</span>
+                            <!-- 2 -->
+                            <div class="col-span-4 p-4 bg-gray-50">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Information (№ <span>000023</span>)</div>
                                     </div>
                                 </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Software Development Services
+                                </a>
                             </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Marketing,
-                                            Advertising, Promotion</span></div>
-                                    <div>Delivery or service provision addresses: <span class="font-medium">San
-                                            Francisco, USA; Paris, France</span></div>
-                                </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">AdMasters
-                                        Inc.</a></span>
-                            </div>
-                        </div>
-                        <!-- 6 -->
-                        <div class="p-4 flex flex-col gap-1 bg-gray-50">
-                            <div class="flex justify-between items-start gap-1 sm:gap-4 flex-wrap">
-                                <div class="flex flex-col items-start gap-1">
-                                    <div class="flex items-center gap-4">
-                                        <div class="flex items-center gap-2 text-gray-400">
-                                            <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
-                                            <div class="text-sm">Request for Proposal (№ <span>000045</span>)</div>
-                                        </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg bg-gray-50 text-blue-500 hover:text-slate-800"
+                                href="./company.html">ABC Solutions Ltd.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">01.09.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">15.11.23</span>
+                            <!-- 3 -->
+                            <div class="col-span-4 p-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Proposal (№ <span>000065</span>)</div>
                                     </div>
-                                    <a class="inline-block sm:text-lg transition-all text-orange-500 hover:text-slate-800"
-                                        href="#">Healthcare Providers for Employee Wellness Programs</a>
                                 </div>
-                                <div class="flex flex-col sm:items-end gap-1">
-                                    <div class="text-sm">published: <span class="font-medium">20 May 2023</span></div>
-                                    <div class="text-sm">deadline: <span class="font-medium">15 June 2023</span></div>
-                                </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Energy-efficient Lighting Solutions
+                                </a>
                             </div>
-                            <div class="flex justify-between items-end flex-wrap gap-4">
-                                <div class="flex flex-col gap-1">
-                                    <div>Categories of goods and services: <span class="font-medium">Healthcare,
-                                            Wellness Services</span></div>
-                                    <div>Delivery or service provision addresses: <span class="font-medium">Berlin,
-                                            Germany; Bangalore, India</span></div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg text-blue-500 hover:text-slate-800"
+                                href="./company.html">Bright Energy Corp.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">05.07.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">30.09.23</span>
+                            <!-- 4 -->
+                            <div class="col-span-4 p-4 bg-gray-50">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Quote (№ <span>000092</span>)</div>
+                                    </div>
                                 </div>
-                                <span>published by: <a class="font-medium underline text-blue-500"
-                                        href="./company.html">HealthyLiving
-                                        Medical</a></span>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Office Cleaning Services
+                                </a>
                             </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg bg-gray-50 text-blue-500 hover:text-slate-800"
+                                href="./company.html">Clean & Shine Services Ltd.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">20.08.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">31.10.23</span>
+                            <!-- 5 -->
+                            <div class="col-span-4 p-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Information (№ <span>000034</span>)</div>
+                                    </div>
+                                </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">IT Support Services
+                                </a>
+                            </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg text-blue-500 hover:text-slate-800"
+                                href="./company.html">Tech Experts Ltd.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">25.06.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">15.09.23</span>
+                            <!-- 6 -->
+                            <div class="col-span-4 p-4 bg-gray-50">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Information (№ <span>000034</span>)</div>
+                                    </div>
+                                </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">IT Support Services
+                                </a>
+                            </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg bg-gray-50 text-blue-500 hover:text-slate-800"
+                                href="./company.html">Aksioma pro Ltd.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">34.07.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">21.10.23</span>
+                            <!-- 7 -->
+                            <div class="col-span-4 p-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Proposal (№ <span>000057</span>)</div>
+                                    </div>
+                                </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Website Development and Design
+                                </a>
+                            </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg text-blue-500 hover:text-slate-800"
+                                href="./company.html">WebMasters Inc.</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">10.07.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center">30.11.23</span>
+                            <!-- 8 -->
+                            <div class="col-span-4 p-4 bg-gray-50">
+                                <div class="flex items-center gap-4">
+                                    <div class="flex items-center gap-2 text-gray-400">
+                                        <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                        <div class="text-sm">Request for Quote (№ <span>000013</span>)</div>
+                                    </div>
+                                </div>
+                                <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                    href="./offer-details.html">Catering Services for Company Event
+                                </a>
+                            </div>
+                            <a class="col-span-2  flex items-center p-4 xl:text-lg bg-gray-50 text-blue-500 hover:text-slate-800"
+                                href="./company.html">TasteBuds Catering</a>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">05.05.23</span>
+                            <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">20.09.23</span>
+
                         </div>
                     </div>
                 </div>
