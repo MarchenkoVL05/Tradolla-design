@@ -615,6 +615,10 @@ video {
   grid-column: span 4 / span 4;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -752,6 +756,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .max-h-12 {
@@ -995,6 +1003,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1393,6 +1405,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
