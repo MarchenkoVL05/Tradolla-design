@@ -178,4 +178,15 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // select all product positions of offer
+  const selectAllProducts = document.querySelector("[data-select-all-product]");
+
+  if (selectAllProducts) {
+    selectAllProducts.addEventListener("click", () => {
+      document.querySelectorAll("input").forEach((input) => {
+        input.setAttribute("checked", "true");
+      });
+    });
+  }
 });
