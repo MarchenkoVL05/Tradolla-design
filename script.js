@@ -194,13 +194,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const contactsBtn = document.querySelector("[data-contacts-button]");
   const chat = document.querySelector("[data-chat]");
   const contacts = document.querySelector("[data-contacts]");
-  const contactsWrapper = document.querySelector("[data-contact-wrapper]");
   const contactCards = document.querySelectorAll("[data-contact]");
 
   function toggleChat() {
     chat.classList.toggle("hidden");
     contacts.classList.toggle("hidden");
-    contactsWrapper.classList.toggle("flex");
+    contacts.classList.toggle("basis-64");
+    contacts.classList.toggle("basis-full");
   }
 
   if (contactsBtn) {
@@ -210,7 +210,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   // show chat and contacts when a screen becomes wider
-  if (chat && contactsWrapper && contacts) {
+  if (chat && contacts) {
     window.addEventListener("resize", () => {
       const windowWidth = window.innerWidth;
       const breakpoint = 1024;
@@ -218,8 +218,9 @@ window.addEventListener("DOMContentLoaded", () => {
       if (windowWidth >= breakpoint) {
         if (chat.classList.contains("hidden")) {
           chat.classList.remove("hidden");
-          contactsWrapper.classList.add("flex");
           contacts.classList.add("hidden");
+          contacts.classList.toggle("basis-64");
+          contacts.classList.toggle("basis-full");
         }
       }
     });
