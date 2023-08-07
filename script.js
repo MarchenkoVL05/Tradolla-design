@@ -229,7 +229,9 @@ window.addEventListener("DOMContentLoaded", () => {
   if (contactCards) {
     contactCards.forEach((card) => {
       card.addEventListener("click", () => {
-        toggleChat();
+        if (chat.classList.contains("hidden")) {
+          toggleChat();
+        }
       });
     });
   }
