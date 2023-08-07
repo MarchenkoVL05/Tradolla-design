@@ -189,4 +189,48 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // Chat: open/close contacts
+  const contactsBtn = document.querySelector("[data-contacts-button]");
+  const chat = document.querySelector("[data-chat]");
+  const contacts = document.querySelector("[data-contacts]");
+  const contactsWrapper = document.querySelector("[data-contact-wrapper]");
+  const contactCards = document.querySelectorAll("[data-contact]");
+
+  function toggleChat() {
+    chat.classList.toggle("hidden");
+    contacts.classList.toggle("hidden");
+    contactsWrapper.classList.toggle("flex");
+  }
+
+  if (contactsBtn) {
+    contactsBtn.addEventListener("click", () => {
+      toggleChat();
+    });
+  }
+
+  // show chat and contacts when a screen becomes wider
+  if (chat && contactsWrapper && contacts) {
+    window.addEventListener("resize", () => {
+      const windowWidth = window.innerWidth;
+      const breakpoint = 1024;
+
+      if (windowWidth >= breakpoint) {
+        if (chat.classList.contains("hidden")) {
+          chat.classList.remove("hidden");
+          contactsWrapper.classList.add("flex");
+          contacts.classList.add("hidden");
+        }
+      }
+    });
+  }
+
+  // open chat with user
+  if (contactCards) {
+    contactCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        toggleChat();
+      });
+    });
+  }
 });
