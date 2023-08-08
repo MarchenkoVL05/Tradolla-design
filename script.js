@@ -236,7 +236,4 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-
-  // WYSIWYG Editor (Froala)
-  var editor = new FroalaEditor("#details");
 });
