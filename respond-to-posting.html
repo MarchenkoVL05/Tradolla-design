@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Respond | Tradolla.com</title>
+</head>
+
+<body class="h-full bg-slate-100">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+            <div class="min-h-full flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-8 break-all">
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
+                                class="text-orange-500">Trad</span>olla.com</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="#">
+                            Dashboard
+                        </a>
+
+                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/document.svg" alt="">
+                                <span>Procurements</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./offers.html">
+                            Offers
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-4" src="./images/cart-icon.svg" alt="">
+                                <span>E-commerce</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
+                            Products
+                        </a>
+
+                        <a class="transition-all hover:text-orange-400" href="./our-products.html">
+                            Our products
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/social.svg" alt="">
+                                <span>Social</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./company-list.html">
+                            Companies</a>
+                        <a class="transition-all hover:text-orange-400" href="./chat.html">
+                            Chat and calls
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aside-setting>
+                    <div class="group flex items-center gap-2 cursor-pointer"><img
+                            class="transition-all group-hover:rotate-45 max-h-8" src="./images/settings-icon.svg"
+                            alt=""><span class="text-xl font-thin text-white">Settings</span></div>
+                    <div
+                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                        <img class="h-10" src="./images/pedro_pascal.png" alt="">
+                        <div>
+                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-light text-sm">
+                                pedropascal@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
+        <div class="w-full flex flex-col">
+
+            <header
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                data-header>
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
+                        class="text-orange-500">Trad</span>olla.com</a>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
+                    <div class="relative z-10">
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                            <img class="max-h-5" src="./images/english.png" alt="">
+                            English
+                            <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
+                                data-lang-arrow>
+                        </button>
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md transition-all"
+                            data-lang-list>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
+                                Farsi</a>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/russian.png" alt="">
+                                Russian</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
+                        <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Help</a>
+                    </div>
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                        <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
+                        <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="h-full p-3">
+                <div class="max-w-[1627px] text-gray-800">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="col-span-2 sm:col-span-1 border rounded-md shadow bg-white">
+                            <div class="px-4 py-2 font-medium rounded bg-gray-50">Buyer:</div>
+                            <div class="px-4 py-2 flex flex-col gap-1">
+                                <div>Company: <span class="font-medium">Aksioma LTD.</span></div>
+                                <div>DUNS-number: <span class="font-medium">5-048-3782</span></div>
+                            </div>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1 border rounded-md shadow bg-white">
+                            <div class="px-4 py-2 flex items-center gap-2 font-medium rounded bg-gray-50">
+                                <button><img class="h-4" src="./images/star-favorite.svg" alt=""></button>
+                                Request for Information
+                            </div>
+                            <div class="px-4 py-2 text-sm">RFIs are typically used to assess the
+                                capabilities,
+                                offerings,
+                                and pricing of potential suppliers, aiding the organization in making informed
+                                decisions before proceeding to a formal Request for Proposal (RFP) or bidding
+                                process.</div>
+                        </div>
+                        <div class="col-span-2 border rounded-md shadow bg-white">
+                            <div class="px-4 py-2 font-medium rounded bg-gray-50">Supplier:</div>
+                            <div class="px-4 py-2 flex flex-col gap-3">
+                                <div>Company: <a class="sm:font-medium text-blue-500 hover:underline"
+                                        href="./company.html">Chunghwa
+                                        Telecom
+                                        Ltd. (view profile)</a></div>
+                                <div class="flex flex-col text-sm sm:text-base">
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Headquarters</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">Taiwan, Taipei</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Company name</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">Chunghwa Telecom Co.,
+                                            Ltd.</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Company Registration
+                                            Number</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">96979976</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Taxpayer Identification
+                                            Number</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">01123456323</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">DUNS-number</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">31-41-634</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Year of foundation</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">1996</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Full-time staff</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">1500</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Annual income (USD)</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">$40 000 000</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Legal form</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">corporation</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Type of company</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">manufacturer</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Scope of activity</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">manufacturing</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Bank name</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">Taibai Bank</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">BIC code and/or
+                                            SWIFT/IBAN</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">090293023012</span>
+                                    </div>
+                                    <div class="grid grid-cols-2">
+                                        <span class="p-1 border-b bg-slate-100 text-gray-500">Account number</span>
+                                        <span class="p-1 font-medium border-b border-gray-100">32032-323-235-23</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2 border rounded-md shadow w-full overflow-auto bg-white">
+                            <div class="px-4 py-2 font-medium rounded bg-gray-50">Chosen positions:
+                            </div>
+                            <div class="px-4 grid grid-cols-5 min-w-[1020px]">
+                                <!-- table head -->
+                                <div
+                                    class="flex justify-between items-center gap-4 p-2 font-medium border-t border-b border-r border-l shadow border-gray-200">
+                                    Product or Service
+                                    <button
+                                        class="flex items-start text-[12px] text-gray-700 hover:text-orange-500">▼</button>
+                                </div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Shipping Address
+                                </div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Quantity</div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Price per Unit</div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Total Cost</div>
+                                <!-- 1 -->
+                                <div class="p-2 border border-gray-100">Architectural Planning</div>
+                                <div class="p-2 border border-gray-100">New York, USA</div>
+                                <div class="p-2 border border-gray-100">3 pcs.</div>
+                                <div class="p-2 border border-gray-100">$ 10,000</div>
+                                <div class="p-2 border border-gray-100">$ 30,000</div>
+                                <!-- 2 -->
+                                <div class="p-2 border border-gray-100 bg-gray-100">Interior Renovation</div>
+                                <div class="p-2 border border-gray-100 bg-gray-100">London, United Kingdom
+                                </div>
+                                <div class="p-2 border border-gray-100 bg-gray-100">1 pcs.</div>
+                                <div class="p-2 border border-gray-100 bg-gray-100">$ 20,000</div>
+                                <div class="p-2 border border-gray-100 bg-gray-100">$ 20,000</div>
+                                <!-- 3 -->
+                                <div class="p-2 border border-gray-100">Electrical and Wiring</div>
+                                <div class="p-2 border border-gray-100">Tokyo, Japan</div>
+                                <div class="p-2 border border-gray-100">10 pcs.</div>
+                                <div class="p-2 border border-gray-100">$ 8,000</div>
+                                <div class="p-2 border border-gray-100">$ 80,000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
