@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f172a;
+  border-radius: 3px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f172a;
+}
+
 @layer components {
   .tooltip-triangle {
     @apply after:content-['']  after:absolute after:-bottom-2 after:left-2 after:w-0 after:h-0 after:border-l-[10px] after:border-l-transparent after:border-t-[10px] after:border-t-gray-800 after:border-r-[10px] after:border-r-transparent;
