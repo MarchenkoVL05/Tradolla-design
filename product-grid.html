@@ -146,45 +146,55 @@
             </header>
             <main class="h-full p-3">
                 <div class="max-w-[1627px]">
-                    <p class="text-gray-400">Apply your filters &#8595;</p>
-                    <div class="mt-1 p-3 rounded border bg-white">
-                        <form class="flex items-end justify-between flex-wrap gap-4 text-gray-500" action="">
-                            <div class="flex items-end gap-4 flex-wrap">
-                                <label class="flex flex-col gap-1 w-full sm:w-auto">
-                                    Product name
-                                    <span class="relative flex items-center gap-3">
+                    <div class="mt-1 rounded border bg-white">
+                        <p class="p-3 border-b text-gray-500">Apply your filters &#8595;</p>
+                        <form class="p-3 text-gray-700" action="">
+                            <div class="flex flex-col gap-3">
+                                <label class="flex items-center">
+                                    <span
+                                        class="px-2 sm:px-4 py-1 h-full border rounded-l font-semibold text-gray-800 bg-gray-50">Product</span>
+                                    <div class="w-full relative flex items-center gap-3">
                                         <img class="max-h-4 absolute left-2" src="./images/search-icon.svg" alt="">
                                         <input
-                                            class="max-w-full w-full pl-9 py-1 pr-2 border shadow rounded focus:outline-none focus:border-orange-600"
-                                            type="text">
-                                    </span>
+                                            class="w-full pl-8 py-1 pr-2 border rounded-r focus:outline-none focus:border-orange-600"
+                                            type="text" placeholder="Searching...">
+                                    </div>
                                 </label>
-                                <label class="flex flex-col gap-1 w-full sm:w-auto">
-                                    Supplier name
-                                    <input
-                                        class="max-w-full w-full p-1 border shadow rounded focus:outline-none focus:border-orange-600"
-                                        type="text">
-                                </label>
-                                <div class="flex flex-col gap-1">
-                                    Choose price
-                                    <span class="flex gap-2 flex-wrap">
-                                        <input
-                                            class="max-w-full w-28 p-1 border shadow rounded focus:outline-none focus:border-orange-600"
-                                            type="number" placeholder="From (USD)">
-                                        <input
-                                            class="max-w-full w-28 p-1 border shadow rounded focus:outline-none focus:border-orange-600"
-                                            type="number" placeholder="To (USD)">
-                                    </span>
-                                </div>
-                                <div class="flex items-center">
-                                    <input type="checkbox" value="" id="avaliable"
-                                        class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded">
-                                    <label class="ml-2 text-lg text-green-600" for="avaliable">Avaliable</label>
+                                <div class="flex justify-between items-end gap-4 flex-wrap">
+                                    <div class="flex items-end gap-3 sm:gap-6 flex-wrap">
+                                        <label class="w-full sm:w-auto flex flex-col gap-1">
+                                            <span class="font-medium">Supplier</span>
+                                            <input
+                                                class="px-2 py-1 w-full border rounded-r focus:outline-none focus:border-orange-600"
+                                                type="text">
+                                        </label>
+                                        <label class="w-full sm:w-auto flex flex-col gap-1">
+                                            <span class="font-medium">Country</span>
+                                            <input
+                                                class="px-2 py-1 w-full border rounded-r focus:outline-none focus:border-orange-600"
+                                                type="text">
+                                        </label>
+                                        <div class="flex flex-col gap-1">
+                                            <span class="font-medium">Choose price</span>
+                                            <span class="flex gap-2">
+                                                <input
+                                                    class="w-24 sm:w-32 px-2 py-1 border rounded-r focus:outline-none focus:border-orange-600"
+                                                    type="number" placeholder="Min">
+                                                <input
+                                                    class="w-24 sm:w-32 px-2 py-1 border rounded-r focus:outline-none focus:border-orange-600"
+                                                    type="number" placeholder="Max">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <button class="transition-all text-orange-500 hover:text-slate-800">Clear
+                                            filters</button>
+                                        <button
+                                            class="py-2 px-6 inline-block transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
+                                            type="submit">Search</button>
+                                    </div>
                                 </div>
                             </div>
-                            <button
-                                class="py-2 px-6 flex justify-center items-center transition-all rounded bg-slate-900 text-white font-semibold hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
-                                type="submit">Search</button>
                         </form>
                     </div>
                     <div class="mt-1 sm:text-lg text-gray-500">If you need a more detailed search by categories, types
