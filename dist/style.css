@@ -1983,10 +1983,6 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .sm\:font-medium {
-    font-weight: 500;
-  }
 }
 
 @media (min-width: 768px) {
