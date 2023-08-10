@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./dist/style.css">
-    <!-- Froala WYSIWYG -->
-    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet'
-        type='text/css'>
-    <script type='text/javascript'
-        src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
+    <!-- TinyMCE WYSIWYG -->
+    <script src="https://cdn.tiny.cloud/1/btcy28zm7gkt490uwu9hv0hxl14b3j75j5o1vid0p7yjhk90/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <title>New Offer | Tradolla.com</title>
 </head>
 
@@ -154,76 +152,303 @@
 
             <main class="h-full p-3">
                 <div class="max-w-[1627px] text-gray-800">
-                    <div class="p-4 border rounded bg-white">
-                        <h1 class="text-lg sm:text-xl font-bold">Details</h1>
-                        <div class="text-sm sm:text-base mt-1 border-gray-100 text-gray-500">Enter
-                            information about the
-                            posting you want to
-                            publish. You can
-                            come
-                            back
-                            to this page
-                            to make changes at any time.
-                        </div>
-                        <div class="mt-4 flex flex-col gap-1">
-                            <div class="font-medium text-gray-700">Posting Title</div>
-                            <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                type="text" autofocus>
-                        </div>
-                        <div class="mt-4 flex flex-col gap-1">
-                            <div class="font-medium text-gray-700">Description</div>
-                            <textarea id="details"></textarea>
-                        </div>
-                        <div class="mt-4 flex flex-wrap gap-4 border-gray-100">
-                            <div class="flex flex-col gap-1">
-                                <div class="font-medium text-gray-700">Deadline</div>
-                                <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                    type="date">
+                    <div class="mt-4 grid grid-cols-4 gap-3">
+                        <div class="col-span-2 p-4 border rounded shadow bg-white">
+                            <h1 class="text-lg sm:text-xl font-bold">Details</h1>
+                            <div class="text-sm sm:text-base mt-1 text-gray-500">Enter
+                                information about the
+                                posting you want to
+                                publish. You can
+                                come
+                                back
+                                to this page
+                                to make changes at any time.
                             </div>
-                            <div class="flex flex-col gap-1">
-                                <div class="font-medium text-gray-700">Budget (USD)
+                            <div class="mt-4 flex flex-col gap-1">
+                                <div class="font-medium text-gray-700">Posting Title</div>
+                                <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                    type="text" autofocus>
+                            </div>
+                            <div class="mt-4 flex flex-col gap-1">
+                                <div class="font-medium text-gray-700">Description</div>
+                                <textarea></textarea>
+                            </div>
+                            <div class="mt-4 flex gap-4">
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-medium text-gray-700">Deadline</div>
+                                    <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                        type="date">
                                 </div>
-                                <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                    disabled type="number">
+                                <div class="flex flex-col gap-1">
+                                    <div class="font-medium text-gray-700">
+                                        <span class="relative flex items-center gap-1">
+                                            <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
+                                                alt="">
+                                            <span class="font-medium text-gray-700">Budget</span>
+                                            <span
+                                                class="font-normal invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                                data-tooltip="">
+                                                The budget will be automatically recalculated as items or services are
+                                                added
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                        disabled type="number">
+                                </div>
                             </div>
                         </div>
-                        <div class="mt-4 text-lg font-medium text-gray-700">Purchase position <span
-                                class="text-orange-500">#1</span></div>
-                        <div class="grid grid-cols-2 gap-4 mt-2">
-                            <div class="flex flex-col gap-1">
-                                <div class="font-medium text-gray-700">What product or service you need?</div>
-                                <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                    type="text">
-                            </div>
-                            <div class="flex flex-col gap-1">
-                                <span class="relative flex items-center gap-1">
-                                    <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg" alt="">
-                                    <span class="font-medium text-gray-700">Choose category</span>
-                                    <span
-                                        class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
-                                        data-tooltip="">
-                                        In the chosen category, suppliers will be able to find your post
+                        <div class="col-span-2">
+                            <div class="p-4 border rounded shadow bg-white">
+                                <div class="text-lg font-medium text-gray-700">Purchase position <span
+                                        class="text-orange-500">#1</span></div>
+                                <div class="mt-4 flex flex-col gap-1">
+                                    <div class="font-medium text-gray-700">What product or service you need?</div>
+                                    <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text">
+                                </div>
+                                <div class="mt-4 flex flex-col gap-1">
+                                    <span class="relative flex items-center gap-1">
+                                        <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
+                                            alt="">
+                                        <span class="font-medium text-gray-700">Choose category</span>
+                                        <span
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            data-tooltip="">
+                                            In the chosen category, suppliers will be able to find your post
+                                        </span>
                                     </span>
-                                </span>
-                                <select class="px-2 py-1 border-2 rounded focus:outline-none focus:border-orange-500">
-                                    <option class="" value="">Raw Materials, Chemicals, Paper, Fuel</option>
-                                    <option class="" value="">Industrial Equipment & Tools</option>
-                                    <option class="" value="">Components & Supplies</option>
-                                    <option class="" value="">Construction, Transportation & Facility Equipment &
-                                        Supplies
-                                    </option>
-                                    <option class="" value="">Medical, Laboratory & Test Equipment & Supplies &
-                                        Pharmaceuticals
-                                    </option>
-                                    <option class="" value="">Food, Cleaning & Service Industry Equipment & Supplies
-                                    </option>
-                                    <option class="" value="">Business, Communication & Technology Equipment & Supplies
-                                    </option>
-                                    <option class="" value="">Defense, Security & Safety Equipment & Supplies</option>
-                                    <option class="" value="">Personal, Domestic & Consumer Equipment & Supplies
-                                    </option>
-                                    <option class="" value="">Services</option>
-                                </select>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">1 level</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                                <option class="" value="">Raw Materials, Chemicals, Paper, Fuel</option>
+                                                <option class="" value="">Industrial Equipment & Tools</option>
+                                                <option class="" value="">Components & Supplies</option>
+                                                <option class="" value="">Construction, Transportation & Facility
+                                                    Equipment
+                                                    &
+                                                    Supplies
+                                                </option>
+                                                <option class="" value="">Medical, Laboratory & Test Equipment &
+                                                    Supplies &
+                                                    Pharmaceuticals
+                                                </option>
+                                                <option class="" value="">Food, Cleaning & Service Industry Equipment &
+                                                    Supplies
+                                                </option>
+                                                <option class="" value="">Business, Communication & Technology Equipment
+                                                    &
+                                                    Supplies
+                                                </option>
+                                                <option class="" value="">Defense, Security & Safety Equipment &
+                                                    Supplies
+                                                </option>
+                                                <option class="" value="">Personal, Domestic & Consumer Equipment &
+                                                    Supplies
+                                                </option>
+                                                <option class="" value="">Services</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">2 level</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">3 level</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">4 level</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">5 level</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 flex flex-col gap-1">
+                                    <span class="relative flex items-center gap-1">
+                                        <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
+                                            alt="">
+                                        <span class="font-medium text-gray-700">Delivery or service address</span>
+                                        <span
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            data-tooltip="">
+                                            In the chosen address, suppliers will be able to find your post
+                                        </span>
+                                    </span>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">Region 1</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                                <option value="">Eastern Europe</option>
+                                                <option value="">West Europe</option>
+                                                <option value="">Middle East</option>
+                                                <option value="">South America</option>
+                                                <option value="">North America</option>
+                                                <option value="">Africa</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">Region 2</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                                <option value="">Eastern Europe</option>
+                                                <option value="">West Europe</option>
+                                                <option value="">Middle East</option>
+                                                <option value="">South America</option>
+                                                <option value="">North America</option>
+                                                <option value="">Africa</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex gap-4 items-center">
+                                            <span class="flex-shrink-0">Region 3</span>
+                                            <select
+                                                class="w-full p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600">
+                                                <option class="text-gray-400" disabled="" selected="selected" value="">
+                                                    --
+                                                    select --
+                                                </option>
+                                                <option value="">Eastern Europe</option>
+                                                <option value="">West Europe</option>
+                                                <option value="">Middle East</option>
+                                                <option value="">South America</option>
+                                                <option value="">North America</option>
+                                                <option value="">Africa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 flex gap-6">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Quantity</div>
+                                        <div class="flex">
+                                            <input
+                                                class="w-24 px-2 py-1 border rounded-l focus:outline-none focus:border-orange-600"
+                                                type="number">
+                                            <select
+                                                class="px-2 rounded-r border-t border-b border-r font-medium focus:outline-none">
+                                                <option value="pcs">pcs</option>
+                                                <option value="kg">kg</option>
+                                                <option value="gram">gram</option>
+                                                <option value="liter">liter</option>
+                                                <option value="m">m</option>
+                                                <option value="cm">cm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Price per Unit</div>
+                                        <div class="flex">
+                                            <input
+                                                class="w-24 px-2 py-1 border rounded-l focus:outline-none focus:border-orange-600"
+                                                type="number">
+                                            <select
+                                                class="px-2 rounded-r border-t border-b border-r font-medium focus:outline-none">
+                                                <option value="pcs">$</option>
+                                                <option value="kg">€</option>
+                                                <option value="gram">¥</option>
+                                                <option value="liter">£</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 flex justify-end">
+                                    <button
+                                        class="py-2 px-4 inline-block transition-all rounded bg-slate-900 text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:bg-slate-900 focus:ring-offset-2"
+                                        type="submit">Add to Table</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 p-4 border rounded shadow w-full overflow-auto bg-white">
+                            <div class="flex items-center gap-2">
+                                <span class="font-medium">purchase positions:</span>
+                                <button class="text-orange-500">delete selected</button>
+                            </div>
+                            <div class="mt-2 grid grid-cols-5 min-w-[1020px]">
+                                <!-- table head -->
+                                <div class="p-2 font-medium border-t border-b border-r border-l shadow border-gray-200">
+                                    Product or Service
+                                </div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Shipping Address
+                                </div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Quantity</div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Price per Unit</div>
+                                <div class="p-2 font-medium border-t border-b border-r shadow border-gray-200">
+                                    Total Cost</div>
+                                <!-- 1 -->
+                                <label class="flex items-center gap-2 p-2 border border-gray-200"><input
+                                        class="w-4 h-4 flex-shrink-0" type="checkbox">
+                                    Architectural Planning</label>
+                                <div class="p-2 border border-gray-200">New York, USA</div>
+                                <div class="p-2 border border-gray-200">3 pcs.</div>
+                                <div class="p-2 border border-gray-200">$ 10,000</div>
+                                <div class="p-2 border border-gray-200">$ 30,000</div>
+                                <!-- 2 -->
+                                <label class="flex items-center gap-2 p-2 border border-gray-200 bg-gray-100"><input
+                                        class="w-4 h-4 flex-shrink-0" type="checkbox">
+                                    Interior Renovation</label>
+                                <div class="p-2 border border-gray-200 bg-gray-100">London, United Kingdom
+                                </div>
+                                <div class="p-2 border border-gray-200 bg-gray-100">1 pcs.</div>
+                                <div class="p-2 border border-gray-200 bg-gray-100">$ 20,000</div>
+                                <div class="p-2 border border-gray-200 bg-gray-100">$ 20,000</div>
+                                <!-- 3 -->
+                                <label class="flex items-center gap-2 p-2 border border-gray-200"><input
+                                        class="w-4 h-4 flex-shrink-0" type="checkbox">
+                                    Electrical and Wiring</label>
+                                <div class="p-2 border border-gray-200">Tokyo, Japan</div>
+                                <div class="p-2 border border-gray-200">10 pcs.</div>
+                                <div class="p-2 border border-gray-200">$ 8,000</div>
+                                <div class="p-2 border border-gray-200">$ 80,000</div>
+                            </div>
+                            <div class="p-4 flex justify-end">
+                                <button
+                                    class="py-2 px-6 inline-block transition-all rounded bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                                    type="submit">Save Post</button>
                             </div>
                         </div>
                     </div>
@@ -233,8 +458,12 @@
     </div>
     <script src="./script.js"></script>
     <script>
-        // WYSIWYG Editor (Froala)
-        var editor = new FroalaEditor("#details");
+        // WYSIWYG Editor (TinyMCE)
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
     </script>
 </body>
 
