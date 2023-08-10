@@ -156,7 +156,7 @@
                 <div class="max-w-[1627px] text-gray-800">
                     <div class="p-4 border rounded bg-white">
                         <h1 class="text-lg sm:text-xl font-bold">Details</h1>
-                        <div class="text-sm sm:text-base mt-1 pb-4 border-b border-gray-100 text-gray-500">Enter
+                        <div class="text-sm sm:text-base mt-1 border-gray-100 text-gray-500">Enter
                             information about the
                             posting you want to
                             publish. You can
@@ -168,13 +168,13 @@
                         <div class="mt-4 flex flex-col gap-1">
                             <div class="font-medium text-gray-700">Posting Title</div>
                             <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                type="text">
+                                type="text" autofocus>
                         </div>
                         <div class="mt-4 flex flex-col gap-1">
                             <div class="font-medium text-gray-700">Description</div>
                             <textarea id="details"></textarea>
                         </div>
-                        <div class="mt-4 flex gap-4 pb-4 border-b border-gray-100">
+                        <div class="mt-4 flex flex-wrap gap-4 border-gray-100">
                             <div class="flex flex-col gap-1">
                                 <div class="font-medium text-gray-700">Deadline</div>
                                 <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
@@ -185,6 +185,45 @@
                                 </div>
                                 <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                     disabled type="number">
+                            </div>
+                        </div>
+                        <div class="mt-4 text-lg font-medium text-gray-700">Purchase position <span
+                                class="text-orange-500">#1</span></div>
+                        <div class="grid grid-cols-2 gap-4 mt-2">
+                            <div class="flex flex-col gap-1">
+                                <div class="font-medium text-gray-700">What product or service you need?</div>
+                                <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                    type="text">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="relative flex items-center gap-1">
+                                    <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg" alt="">
+                                    <span class="font-medium text-gray-700">Choose category</span>
+                                    <span
+                                        class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                        data-tooltip="">
+                                        In the chosen category, suppliers will be able to find your post
+                                    </span>
+                                </span>
+                                <select class="px-2 py-1 border-2 rounded focus:outline-none focus:border-orange-500">
+                                    <option class="" value="">Raw Materials, Chemicals, Paper, Fuel</option>
+                                    <option class="" value="">Industrial Equipment & Tools</option>
+                                    <option class="" value="">Components & Supplies</option>
+                                    <option class="" value="">Construction, Transportation & Facility Equipment &
+                                        Supplies
+                                    </option>
+                                    <option class="" value="">Medical, Laboratory & Test Equipment & Supplies &
+                                        Pharmaceuticals
+                                    </option>
+                                    <option class="" value="">Food, Cleaning & Service Industry Equipment & Supplies
+                                    </option>
+                                    <option class="" value="">Business, Communication & Technology Equipment & Supplies
+                                    </option>
+                                    <option class="" value="">Defense, Security & Safety Equipment & Supplies</option>
+                                    <option class="" value="">Personal, Domestic & Consumer Equipment & Supplies
+                                    </option>
+                                    <option class="" value="">Services</option>
+                                </select>
                             </div>
                         </div>
                     </div>
