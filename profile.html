@@ -151,7 +151,120 @@
             </header>
 
             <main class="h-full p-3">
-
+                <div class="max-w-[1627px] text-gray-800  bg-white p-4 rounded border">
+                    <div class="flex flex-wrap font-semibold sm:border-b sm:border-gray-200">
+                        <div class="px-3 py-2 cursor-pointer border-b-2 text-orange-500 border-orange-500" data-pd-tab>
+                            User account
+                        </div>
+                        <div class="px-3 py-2 cursor-pointer" data-pd-tab>Company profile</div>
+                    </div>
+                    <div class="mt-4 grid grid-cols-4 gap-3" data-pd-content>
+                        <div class="col-span-4 md:col-span-2 xl:col-span-1 flex flex-col gap-3">
+                            <div
+                                class="relative p-4 flex flex-col justify-center items-center text-center rounded-md border shadow bg-white">
+                                <img class="h-24 rounded-full shadow" src="./images/emilia_clarke.jpg" alt="">
+                                <h1 class="mt-4 font-bold text-lg md:text-xl lg:text-2xl">Emilia Clarke</h1>
+                                <span class="text-gray-400">Product manager</span>
+                                <div class="absolute flex items-center gap-2 top-2 right-2">
+                                    <div class="w-2 h-2 rounded-full shadow bg-green-500"></div>
+                                    <span class="text-sm text-gray-500">Online</span>
+                                </div>
+                            </div>
+                            <div class="rounded-md border p-4 shadow bg-white">
+                                <div class="font-semibold text-gray-800">Company:</div>
+                                <a class="block mt-1 font-semibold uppercase text-blue-600 hover:underline"
+                                    href="./company.html">Chunghwa Telecom</a>
+                                <div class="text-gray-500">UK</div>
+                                <div class="mt-4 text-gray-800">Registered: <span class="font-semibold">6 years 11
+                                        months</span></div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 md:col-span-2 xl:col-span-3 flex flex-col gap-3">
+                            <div class="rounded-md border shadow bg-white">
+                                <h2 class="px-4 py-2 font-semibold bg-slate-50">Basic information</h2>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-4 py-2 gap-2 sm:gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">First Name</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" value="Emilia">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Last Name</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" value="Clarke">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Patronymic (if any)</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-4 py-2 gap-2 sm:gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Business role</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" value="Product manager">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Country</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" value="UK">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">City</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text" value="London">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-md border shadow bg-white">
+                                <h2 class="px-4 py-2 font-semibold bg-slate-50">Contacts</h2>
+                                <div class="grid grid-cols-1 xl:grid-cols-2 px-4 py-2 gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Email</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="email" value="emiliaclarke228@gmail.com">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Phone</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="tel" value="8-800-555-35-35">
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 xl:grid-cols-2 px-4 py-2 gap-4">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">New password</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text">
+                                    </div>
+                                    <div class="flex flex-col gap-1">
+                                        <div class="font-medium text-gray-700">Confirm new password</div>
+                                        <input
+                                            class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
+                                            type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-end">
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="px-4 py-1 sm:text-lg transition-all hover:text-orange-500">Reset</button>
+                                    <button
+                                        class="px-4 py-1 sm:text-lg flex justify-center items-center transition-all rounded bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
