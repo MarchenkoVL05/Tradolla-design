@@ -290,7 +290,9 @@
                     <div class="hidden" data-pd-content>
                         <div class="mt-4">
                             <div class="grid grid-cols-4 gap-3">
-                                <div class="col-span-2 border rounded-md shadow bg-white">
+                                <div class="col-span-4 flex justify-end">
+                                </div>
+                                <div class="col-span-4 sm:col-span-2 border rounded-md shadow bg-white">
                                     <div class="px-4 py-2 font-medium rounded bg-gray-50">Basic information</div>
                                     <div class="px-4 py-2 flex flex-col gap-1">
                                         <div class="font-medium text-gray-700">Name</div>
@@ -315,19 +317,19 @@ Based on the "customer-centric" concept, Chunghwa Telecom completed a new organi
 Organizational transformation and corporate values are the major hard and soft strengths of a company. Under our new customer-centric organizational structure, we advocate our four corporate values of " integrity, customers’ trust, creation of value and innovation, commitment to accountability” and integrate into our corporate culture.
                                         </textarea>
                                     </div>
-                                    <div class="px-4 py-2 flex gap-4">
+                                    <div class="px-4 py-2 flex flex-wrap gap-2 sm:gap-4">
                                         <div class="font-medium text-gray-700">Logotype: </div>
                                         <img class="h-12 sm:h-16" src="./images/company-logo.svg" alt="">
                                     </div>
                                     <div class="p-4">
                                         <div
-                                            class="h-12 sm:h-16 flex items-center gap-2 justify-center flex-wrap mx-auto border rounded border-gray-400 border-dashed text-gray-500">
+                                            class="h-14 sm:h-16 flex items-center gap-2 justify-center flex-wrap mx-auto border rounded border-gray-400 border-dashed text-gray-500">
                                             Drag you logotype or <span class="cursor-pointer text-orange-500">
                                                 browse</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-span-2 border rounded-md shadow bg-white">
+                                <div class="col-span-4 sm:col-span-2 border rounded-md shadow bg-white">
                                     <div class="px-4 py-2 font-medium rounded bg-gray-50">Contacts and social</div>
                                     <div class="px-4 py-2 flex flex-col gap-1">
                                         <div class="font-medium text-gray-700">Email</div>
@@ -392,10 +394,15 @@ Organizational transformation and corporate values are the major hard and soft s
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="www.cht.com.tw">
                                     </div>
+                                    <div class="p-4 flex justify-end">
+                                        <button
+                                            class="px-4 py-1 sm:text-lg flex justify-center items-center transition-all rounded bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Save</button>
+                                    </div>
                                 </div>
                                 <div class="col-span-4 border rounded-md shadow bg-white">
                                     <div class="px-4 py-2 font-medium rounded bg-gray-50">Requisites</div>
-                                    <div class="p-4 grid grid-cols-3 gap-4">
+                                    <div
+                                        class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                                         <div class="flex flex-col gap-1">
                                             <div class="font-medium text-gray-700">Headquarters</div>
                                             <input
