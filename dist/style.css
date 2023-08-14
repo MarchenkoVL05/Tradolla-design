@@ -607,6 +607,10 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -621,22 +625,6 @@ video {
 
 .col-span-6 {
   grid-column: span 6 / span 6;
-}
-
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
-.col-span-9 {
-  grid-column: span 9 / span 9;
-}
-
-.col-span-12 {
-  grid-column: span 12 / span 12;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
 }
 
 .col-span-7 {
@@ -847,10 +835,6 @@ video {
   height: 100%;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .max-h-12 {
   max-height: 3rem;
 }
@@ -889,14 +873,6 @@ video {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-96 {
-  max-height: 24rem;
-}
-
-.max-h-52 {
-  max-height: 13rem;
 }
 
 .min-h-full {
@@ -971,10 +947,6 @@ video {
   width: 100%;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
 .min-w-\[1020px\] {
   min-width: 1020px;
 }
@@ -987,12 +959,12 @@ video {
   min-width: 220px;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
 .min-w-\[686px\] {
   min-width: 686px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-7xl {
@@ -1104,14 +1076,6 @@ video {
 
 .grid-cols-8 {
   grid-template-columns: repeat(8, minmax(0, 1fr));
-}
-
-.grid-cols-10 {
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row-reverse {
@@ -1817,11 +1781,6 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-50:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-}
-
 .hover\:text-orange-400:hover {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
@@ -2077,16 +2036,12 @@ video {
     grid-column: span 2 / span 2;
   }
 
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
 
-  .md\:col-span-5 {
-    grid-column: span 5 / span 5;
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 
   .md\:mt-0 {
@@ -2472,12 +2427,12 @@ video {
     grid-column: span 1 / span 1;
   }
 
-  .\32xl\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
-
   .\32xl\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .\32xl\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
 
   .\32xl\:col-span-9 {
