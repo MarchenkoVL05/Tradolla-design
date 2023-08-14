@@ -38,7 +38,7 @@
                             Dashboard
                         </a>
 
-                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./favorites.html">Favorites</a>
                         <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
@@ -96,11 +96,11 @@
                     </div>
                 </div>
                 <div class="hidden lg:block" data-aside-setting>
-                    <div class="flex items-end gap-2 cursor-pointer"><img class="transition-all max-h-7"
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
                             src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
-                            out</span></div>
-                    <div
-                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -108,7 +108,7 @@
                                 pedropascal@gmail.com
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -128,7 +128,7 @@
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
                                 data-lang-arrow>
                         </button>
-                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md overflow-auto transition-all"
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md overflow-auto transition-all"
                             data-lang-list>
                             <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
                                 href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
@@ -143,7 +143,8 @@
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
@@ -152,10 +153,10 @@
 
             <main class="h-full p-3">
                 <div class="flex gap-3 pb-2 flex-col 2xl:flex-row">
-                    <div class="max-w-7xl rounded-md p-4 border bg-white">
+                    <div class="max-w-7xl rounded p-4 border bg-white">
                         <div class="flex gap-4 flex-col min-[1368px]:flex-row">
                             <div class="flex flex-col gap-1 w-full">
-                                <img class="bg-gray-50 border w-full max-h-80 min-[1368px]:h-80 object-contain rounded-md cursor-pointer"
+                                <img class="bg-gray-50 border w-full max-h-80 min-[1368px]:h-80 object-contain rounded cursor-pointer"
                                     src="./images/example-3.jpg" alt="">
                                 <div class="flex items-center gap-1 overflow-x-hidden">
                                     <img class="max-h-12 sm:max-h-16 rounded cursor-pointer"
@@ -206,15 +207,15 @@
                                 </div>
                                 <del class="block mt-2 sm:mt-4 text-xl text-slate-600">$1300</del>
                                 <div class="text-2xl text-slate-800">$<span>1199.5</span></div>
-                                <div class="mt-2 sm:mt-4 text-gray-700">Stock: <span
+                                <div class="mt-2 sm:mt-4 text-gray-800">Stock: <span
                                         class="text-green-600">Avaliable</span>
                                 </div>
                                 <div class="mt-4 flex items-center flex-wrap gap-2 sm:gap-4">
                                     <button
-                                        class="py-3 px-6 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        class="py-3 px-6 flex justify-center items-center gap-2 rounded transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
                                             src="./images/heart.svg" alt=""> Favorite</button>
                                     <button
-                                        class="py-3 px-6 flex justify-center items-center gap-2 rounded-md transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
+                                        class="py-3 px-6 flex justify-center items-center gap-2 rounded transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"><img
                                             src="./images/contact_us.svg" alt=""> Contact Us</button>
                                 </div>
                             </div>
@@ -380,7 +381,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="text-lg sm:text-xl font-semibold text-gray-700">Write your Review
+                                    <div class="text-lg sm:text-xl font-semibold text-gray-800">Write your Review
                                     </div>
                                     <div class="flex flex-col gap-2">
                                         <span class="mt-2 sm:mt-4 text-lg text-gray-600">Rating:</span>
@@ -395,23 +396,21 @@
                                     <form class="mt-4 flex flex-col gap-2 sm:gap-4 text-gray-600" action="">
                                         <label class="flex flex-col gap-2">
                                             Name:
-                                            <input
-                                                class="p-2 border rounded-md focus:outline-none focus:border-orange-600"
+                                            <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text">
                                         </label>
                                         <label class="flex flex-col gap-2">
                                             Email:
-                                            <input
-                                                class="p-2 border rounded-md focus:outline-none focus:border-orange-600"
+                                            <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text">
                                         </label>
                                         <label class="flex flex-col gap-2">
                                             Review:
                                             <textarea
-                                                class="p-2 border rounded-md focus:outline-none focus:border-orange-600"></textarea>
+                                                class="p-2 border rounded focus:outline-none focus:border-orange-600"></textarea>
                                         </label>
                                         <button
-                                            class="py-3 px-4 max-w-xs flex justify-center items-center transition-all rounded-md bg-orange-500 text-white font-semibold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                                            class="py-3 px-4 max-w-xs flex justify-center items-center transition-all rounded bg-orange-500 text-white font-semibold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                                             type="submit">Submit</button>
                                     </form>
                                 </div>
@@ -419,7 +418,7 @@
                         </div>
                     </div>
                     <div class="flex gap-3 flex-col sm:flex-row 2xl:flex-col">
-                        <div class="max-w-sm min-w-[220px] rounded-md border p-4 bg-white">
+                        <div class="max-w-sm min-w-[220px] rounded border p-4 bg-white">
                             <div class="font-semibold text-gray-800">Seller:</div>
                             <span class="mt-1 flex items-center gap-2 text-orange-500"><img class="max-h-6"
                                     src="./images/verified.svg" alt="">
@@ -432,7 +431,7 @@
                             <div class="mt-4 text-gray-800">Registered: <span class="font-semibold">6 years 11
                                     months</span></div>
                         </div>
-                        <div class="2xl:h-full w-full 2xl:max-w-sm min-w-[220px] rounded-md border p-4 bg-white">
+                        <div class="2xl:h-full w-full 2xl:max-w-sm min-w-[220px] rounded border p-4 bg-white">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5620249215126!2d58.49017452510491!3d51.22714340599063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417ffa30ce7e2269%3A0x679025c6b75b0fee!2z0YPQuy4g0JvQtdC90LjQvdGB0LrQvtCz0L4g0JrQvtC80YHQvtC80L7Qu9CwLCAxLCDQntGA0YHQuiwg0J7RgNC10L3QsdGD0YDQs9GB0LrQsNGPINC-0LHQuy4sIDQ2MjQyOA!5e0!3m2!1sru!2sru!4v1690259668591!5m2!1sru!2sru"
                                 width="100%" height="100%" allowfullscreen="true" loading="lazy"

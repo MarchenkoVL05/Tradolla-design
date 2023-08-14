@@ -38,7 +38,7 @@
                             Dashboard
                         </a>
 
-                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./favorites.html">Favorites</a>
                         <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
@@ -96,11 +96,11 @@
                     </div>
                 </div>
                 <div class="hidden lg:block" data-aside-setting>
-                    <div class="flex items-end gap-2 cursor-pointer"><img class="transition-all max-h-7"
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
                             src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
-                            out</span></div>
-                    <div
-                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -108,7 +108,7 @@
                                 pedropascal@gmail.com
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -128,7 +128,7 @@
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
                                 data-lang-arrow>
                         </button>
-                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md overflow-auto transition-all"
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md overflow-auto transition-all"
                             data-lang-list>
                             <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
                                 href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
@@ -143,7 +143,8 @@
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
@@ -153,7 +154,7 @@
             <main class="h-full p-3">
                 <div class="max-w-[1627px] pb-2">
                     <div
-                        class="flex sm:justify-between justify-center items-center flex-wrap gap-2 sm:gap-4 px-4 py-2 border rounded-md shadow text-gray-800 bg-white">
+                        class="flex sm:justify-between justify-center items-center flex-wrap gap-2 sm:gap-4 px-4 py-2 border rounded shadow text-gray-800 bg-white">
                         <h1 class="hidden sm:block text-lg font-semibold">Add a product</h1>
                         <div class="flex items-center gap-1">
                             <button class="px-4 py-1 sm:text-lg transition-all hover:text-orange-500">Discard</button>
@@ -163,21 +164,21 @@
                     </div>
                     <div class="grid xl:grid-cols-12 mt-4 items-start gap-3 text-gray-800">
                         <div class="xl:col-span-9 w-full max-w-7xl flex flex-col gap-4">
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Basic information</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Product name</div>
+                                    <div class="text-gray-800">Product name</div>
                                     <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
                                         type="text">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Description</div>
+                                    <div class="text-gray-800">Description</div>
                                     <textarea
                                         class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         rows="5"></textarea>
                                 </div>
                             </div>
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Add images</div>
                                 <div class="p-4">
                                     <div
@@ -186,7 +187,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Specifications</div>
                                 <div class="text-sm sm:text-base px-4 py-2 flex flex-col gap-4">
                                     <div class="py-2 grid grid-cols-6 gap-4 justify-between">
@@ -221,10 +222,10 @@
                             </div>
                         </div>
                         <div class="xl:col-span-3 gap-4 flex flex-col">
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Type</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Select category:</div>
+                                    <div class="text-gray-800">Select category:</div>
                                     <select
                                         class="p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600"
                                         name="legal_form">
@@ -238,7 +239,7 @@
                                     </select>
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Select sub-category:</div>
+                                    <div class="text-gray-800">Select sub-category:</div>
                                     <select
                                         class="p-2 border rounded text-gray-500 bg-white focus:outline-none focus:border-orange-600"
                                         name="legal_form">
@@ -252,23 +253,23 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Tags</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Add a keyword:</div>
+                                    <div class="text-gray-800">Add a keyword:</div>
                                     <input class="p-2 border rounded focus:outline-none focus:border-orange-600"
                                         type="text">
                                 </div>
                             </div>
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Pricing</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
                                     <span class="relative flex items-center gap-1">
                                         <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
                                             alt="">
-                                        <span class="text-gray-700">Base Price:</span>
+                                        <span class="text-gray-800">Base Price:</span>
                                         <span
-                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded text-white bg-gray-800 tooltip-triangle"
                                             data-tooltip>
                                             Product regular price
                                         </span>
@@ -290,7 +291,7 @@
                                     </div>
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="text-gray-700">Discount in percentage:</div>
+                                    <div class="text-gray-800">Discount in percentage:</div>
                                     <input class="w-full p-2 border rounded focus:outline-none focus:border-orange-600"
                                         type="number">
                                 </div>
@@ -298,9 +299,9 @@
                                     <span class="relative flex items-center gap-1">
                                         <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
                                             alt="">
-                                        <span class="text-gray-700">Final Price:</span>
+                                        <span class="text-gray-800">Final Price:</span>
                                         <span
-                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded text-white bg-gray-800 tooltip-triangle"
                                             data-tooltip>
                                             Product final price
                                         </span>
@@ -310,14 +311,14 @@
                                         type="text" disabled>
                                 </div>
                             </div>
-                            <div class="border rounded-md shadow bg-white">
+                            <div class="border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Stock status:</div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <label class="flex items-center gap-2 text-lg text-gray-700">
+                                    <label class="flex items-center gap-2 text-lg text-gray-800">
                                         <input name="status" type="radio">
                                         In stock
                                     </label>
-                                    <label class="flex items-center gap-2 text-lg text-gray-700">
+                                    <label class="flex items-center gap-2 text-lg text-gray-800">
                                         <input name="status" type="radio">
                                         Unavailable
                                     </label>
@@ -326,7 +327,7 @@
                         </div>
                     </div>
                     <div
-                        class="mt-4 flex justify-center sm:justify-between items-center flex-wrap gap-2 sm:gap-4 px-4 py-2 border rounded-md shadow text-gray-800 bg-white">
+                        class="mt-4 flex justify-center sm:justify-between items-center flex-wrap gap-2 sm:gap-4 px-4 py-2 border rounded shadow text-gray-800 bg-white">
                         <h2 class="hidden sm:block text-lg font-semibold">You're almost done</h2>
                         <div class="flex items-center gap-1">
                             <button class="px-4 py-1 sm:text-lg transition-all hover:text-orange-500">Discard</button>

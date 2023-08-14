@@ -38,7 +38,7 @@
                             Dashboard
                         </a>
 
-                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./favorites.html">Favorites</a>
                         <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
@@ -96,11 +96,11 @@
                     </div>
                 </div>
                 <div class="hidden lg:block" data-aside-setting>
-                    <div class="flex items-end gap-2 cursor-pointer"><img class="transition-all max-h-7"
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
                             src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
-                            out</span></div>
-                    <div
-                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -108,7 +108,7 @@
                                 pedropascal@gmail.com
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -128,7 +128,7 @@
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
                                 data-lang-arrow>
                         </button>
-                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md overflow-auto transition-all"
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md overflow-auto transition-all"
                             data-lang-list>
                             <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
                                 href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
@@ -143,7 +143,8 @@
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
@@ -153,8 +154,7 @@
             <main class="h-full p-3">
                 <div class="relative flex items-center gap-3">
                     <img class="max-h-5 absolute left-2" src="./images/search-icon.svg" alt="">
-                    <input
-                        class="max-w-full pl-9 py-2 pr-2 border rounded-md focus:outline-none focus:border-orange-600"
+                    <input class="max-w-full pl-9 py-2 pr-2 border rounded focus:outline-none focus:border-orange-600"
                         type="text" placeholder="Searching...">
                 </div>
             </main>

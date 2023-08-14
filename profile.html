@@ -41,7 +41,7 @@
                             Dashboard
                         </a>
 
-                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./favorites.html">Favorites</a>
                         <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
@@ -99,11 +99,11 @@
                     </div>
                 </div>
                 <div class="hidden lg:block" data-aside-setting>
-                    <div class="flex items-end gap-2 cursor-pointer"><img class="transition-all max-h-7"
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
                             src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
-                            out</span></div>
-                    <div
-                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -111,7 +111,7 @@
                                 pedropascal@gmail.com
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -131,7 +131,7 @@
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
                                 data-lang-arrow>
                         </button>
-                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md overflow-auto transition-all"
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md overflow-auto transition-all"
                             data-lang-list>
                             <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
                                 href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
@@ -146,7 +146,8 @@
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
@@ -165,7 +166,7 @@
                         <div class="mt-4 grid grid-cols-4 gap-3">
                             <div class="col-span-4 md:col-span-2 xl:col-span-1 flex flex-col gap-3">
                                 <div
-                                    class="relative p-4 flex flex-col justify-center items-center text-center rounded-md bg-white">
+                                    class="relative p-4 flex flex-col justify-center items-center text-center rounded bg-white">
                                     <img class="h-24 rounded-full shadow" src="./images/emilia_clarke.jpg" alt="">
                                     <h1 class="mt-4 font-bold text-lg md:text-xl lg:text-2xl">Emilia Clarke</h1>
                                     <span class="text-gray-400">Product manager</span>
@@ -174,7 +175,7 @@
                                         <span class="text-sm text-gray-500">Online</span>
                                     </div>
                                 </div>
-                                <div class="rounded-md border p-4 bg-white">
+                                <div class="rounded border p-4 bg-white">
                                     <div class="font-bold text-gray-800">Company:</div>
                                     <a class="block mt-1 font-semibold uppercase text-blue-600 hover:underline"
                                         href="./company.html">Chunghwa Telecom</a>
@@ -182,7 +183,7 @@
                                     <div class="mt-4 text-gray-800">Registered: <span class="font-semibold">6 years 11
                                             months</span></div>
                                 </div>
-                                <div class="rounded-md border p-4 bg-white">
+                                <div class="rounded border p-4 bg-white">
                                     <span class="inline-block font-bold">About Me:</span>
                                     <p class="mt-1 inline-block text-sm md:text-base text-gray-500">Dedicated,
                                         passionate,
@@ -196,24 +197,24 @@
                                 </div>
                             </div>
                             <div class="col-span-4 md:col-span-2 xl:col-span-3 flex flex-col gap-3">
-                                <div class="rounded-md border shadow overflow-auto bg-white">
+                                <div class="rounded border shadow overflow-auto bg-white">
                                     <h2 class="px-4 py-2 font-semibold bg-slate-50">Basic information</h2>
                                     <div
                                         class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-4 py-2 gap-3 sm:gap-4">
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">First Name</div>
+                                            <div class="font-medium text-gray-800">First Name</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text" value="Emilia" autofocus>
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Last Name</div>
+                                            <div class="font-medium text-gray-800">Last Name</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text" value="Clarke">
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Patronymic (if any)</div>
+                                            <div class="font-medium text-gray-800">Patronymic (if any)</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text">
@@ -222,36 +223,36 @@
                                     <div
                                         class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 px-4 py-2 gap-3 sm:gap-4">
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Business role</div>
+                                            <div class="font-medium text-gray-800">Business role</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text" value="Product manager">
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Country</div>
+                                            <div class="font-medium text-gray-800">Country</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text" value="UK">
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">City</div>
+                                            <div class="font-medium text-gray-800">City</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="text" value="London">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="rounded-md border shadow overflow-auto bg-white">
+                                <div class="rounded border shadow overflow-auto bg-white">
                                     <h2 class="px-4 py-2 font-semibold bg-slate-50">Contacts</h2>
                                     <div class="grid grid-cols-1 xl:grid-cols-2 px-4 py-2 gap-4">
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Email</div>
+                                            <div class="font-medium text-gray-800">Email</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="email" value="emiliaclarke228@gmail.com">
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Phone</div>
+                                            <div class="font-medium text-gray-800">Phone</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="tel" value="8-800-555-35-35">
@@ -259,20 +260,20 @@
                                     </div>
                                     <div class="grid grid-cols-1 xl:grid-cols-2 px-4 py-2 gap-4">
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">New password</div>
+                                            <div class="font-medium text-gray-800">New password</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="password">
                                         </div>
                                         <div class="flex flex-col gap-1">
-                                            <div class="font-medium text-gray-700">Confirm new password</div>
+                                            <div class="font-medium text-gray-800">Confirm new password</div>
                                             <input
                                                 class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                                 type="password">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-col rounded-md border shadow overflow-auto bg-white">
+                                <div class="flex flex-col rounded border shadow overflow-auto bg-white">
                                     <span class="px-4 py-2 font-semibold bg-slate-50">About Me:</span>
                                     <textarea></textarea>
                                 </div>
@@ -289,21 +290,21 @@
                     </div>
                     <div class="hidden" data-pd-content>
                         <div class="mt-4 grid grid-cols-4 gap-3">
-                            <div class="col-span-4 sm:col-span-2 border rounded-md shadow bg-white">
+                            <div class="col-span-4 sm:col-span-2 border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Basic information</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Name</div>
+                                    <div class="font-medium text-gray-800">Name</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text" value="Chunghwa Telecom Co., Ltd.">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Short description</div>
+                                    <div class="font-medium text-gray-800">Short description</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text"
                                         value="is the largest integrated telecom service provider in Taiwan, and the incumbent local exchange carrier of PSTN, Mobile, and broadband services in the country.">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Who we are?</div>
+                                    <div class="font-medium text-gray-800">Who we are?</div>
                                     <textarea
                                         class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         rows="10">Chunghwa Telecom is the largest integrated telecommunication service provider in Taiwan, with leading offerings in domestic and international fixed communication, mobile communication, broadband, and internet services.
@@ -313,7 +314,7 @@
                                     </textarea>
                                 </div>
                                 <div class="px-4 py-2 flex flex-wrap gap-2 sm:gap-4">
-                                    <div class="font-medium text-gray-700">Logotype: </div>
+                                    <div class="font-medium text-gray-800">Logotype: </div>
                                     <img class="h-12 sm:h-16" src="./images/company-logo.svg" alt="">
                                 </div>
                                 <div class="p-4">
@@ -324,20 +325,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-4 sm:col-span-2 border rounded-md shadow bg-white">
+                            <div class="col-span-4 sm:col-span-2 border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Contacts and social</div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Email</div>
+                                    <div class="font-medium text-gray-800">Email</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text" value="chtir@cht.com.tw">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Phone</div>
+                                    <div class="font-medium text-gray-800">Phone</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="tel" value="+8 800 555 35 35">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <div class="flex items-center gap-1 font-medium text-gray-700">
+                                    <div class="flex items-center gap-1 font-medium text-gray-800">
                                         <img class="h-6" src="./images/facebook.svg" alt="">
                                         <span>Facebook</span>
                                     </div>
@@ -345,7 +346,7 @@
                                         type="text" value="facebook.com/chngwa">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <div class="flex items-center gap-1 font-medium text-gray-700">
+                                    <div class="flex items-center gap-1 font-medium text-gray-800">
                                         <img class="h-6" src="./images/instagram.svg" alt="">
                                         <span>Instagram</span>
                                     </div>
@@ -353,7 +354,7 @@
                                         type="text" value="instagram.com/chngwa">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <div class="flex items-center gap-1 font-medium text-gray-700">
+                                    <div class="flex items-center gap-1 font-medium text-gray-800">
                                         <img class="h-6" src="./images/linkedin.svg" alt="">
                                         <span>LinkedIn</span>
                                     </div>
@@ -361,7 +362,7 @@
                                         type="text" value="Linkedin.com/cto">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <div class="flex items-center gap-1 font-medium text-gray-700">
+                                    <div class="flex items-center gap-1 font-medium text-gray-800">
                                         <img class="h-6" src="./images/twitter.svg" alt="">
                                         <span>Twitter</span>
                                     </div>
@@ -369,7 +370,7 @@
                                         type="text" value="Twitter.com/cto">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-2">
-                                    <div class="flex items-center gap-1 font-medium text-gray-700">
+                                    <div class="flex items-center gap-1 font-medium text-gray-800">
                                         <img class="h-6" src="./images/whatsapp.svg" alt="">
                                         <span>WhatsApp</span>
                                     </div>
@@ -377,7 +378,7 @@
                                         type="text" value="wa.com/chngwa">
                                 </div>
                                 <div class="px-4 py-2 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Web-site</div>
+                                    <div class="font-medium text-gray-800">Web-site</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text" value="www.cht.com.tw">
                                 </div>
@@ -386,91 +387,91 @@
                                         class="px-4 py-1 sm:text-lg flex justify-center items-center transition-all rounded bg-orange-500 text-white hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Save</button>
                                 </div>
                             </div>
-                            <div class="col-span-4 border rounded-md shadow bg-white">
+                            <div class="col-span-4 border rounded shadow bg-white">
                                 <div class="px-4 py-2 font-medium rounded bg-gray-50">Requisites</div>
                                 <div
                                     class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Headquarters</div>
+                                        <div class="font-medium text-gray-800">Headquarters</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="Taiwan, Taipei">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Company Registration Number</div>
+                                        <div class="font-medium text-gray-800">Company Registration Number</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="96979976">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Taxpayer Identification Number</div>
+                                        <div class="font-medium text-gray-800">Taxpayer Identification Number</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="01123456323">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">DUNS-number</div>
+                                        <div class="font-medium text-gray-800">DUNS-number</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="31-41-634">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Year of foundation</div>
+                                        <div class="font-medium text-gray-800">Year of foundation</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="1996">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Full-time staff</div>
+                                        <div class="font-medium text-gray-800">Full-time staff</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="1500">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Annual income (USD)</div>
+                                        <div class="font-medium text-gray-800">Annual income (USD)</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="$40 000 000">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Legal form</div>
+                                        <div class="font-medium text-gray-800">Legal form</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="corporation">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Type of company</div>
+                                        <div class="font-medium text-gray-800">Type of company</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="manufacturer">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Scope of activity</div>
+                                        <div class="font-medium text-gray-800">Scope of activity</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="manufacturing">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Bank name</div>
+                                        <div class="font-medium text-gray-800">Bank name</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="Taibai Bank">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">BIC code and/or SWIFT/IBAN</div>
+                                        <div class="font-medium text-gray-800">BIC code and/or SWIFT/IBAN</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="090293023012">
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Account number</div>
+                                        <div class="font-medium text-gray-800">Account number</div>
                                         <input
                                             class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                             type="text" value="32032-323-235-23">
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-4 col-span-4 border rounded-md overflow-auto bg-white text-gray-800">
+                            <div class="p-4 col-span-4 border rounded overflow-auto bg-white text-gray-800">
                                 <h4 class="font-medium text-center text-slate-800">Employees (11)</h4>
                                 <div class="mt-4 flex items-center justify-center flex-wrap gap-6">
                                     <a class="flex flex-col items-center" href="#">

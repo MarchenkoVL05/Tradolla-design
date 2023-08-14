@@ -41,7 +41,7 @@
                             Dashboard
                         </a>
 
-                        <a class="transition-all hover:text-orange-400" href="#">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./favorites.html">Favorites</a>
                         <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
                     </div>
                     <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
@@ -99,11 +99,11 @@
                     </div>
                 </div>
                 <div class="hidden lg:block" data-aside-setting>
-                    <div class="flex items-end gap-2 cursor-pointer"><img class="transition-all max-h-7"
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
                             src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
-                            out</span></div>
-                    <div
-                        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600">
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
                         <img class="h-10" src="./images/pedro_pascal.png" alt="">
                         <div>
                             <div class="text-gray-50 font-semibold">Pedro Pascal</div>
@@ -111,7 +111,7 @@
                                 pedropascal@gmail.com
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -131,7 +131,7 @@
                             <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
                                 data-lang-arrow="">
                         </button>
-                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded-md shadow-md 
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md 
 overflow-auto transition-all" data-lang-list="">
                             <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
                                 href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
@@ -146,7 +146,8 @@ overflow-auto transition-all" data-lang-list="">
                         <a class="transition-all hover:text-orange-500" href="#">Customers</a>
                         <a class="transition-all hover:text-orange-500" href="#">Help</a>
                     </div>
-                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0" href="#">
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
                         <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
                         <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
                     </a>
@@ -168,28 +169,28 @@ overflow-auto transition-all" data-lang-list="">
                                 to make changes at any time.
                             </div>
                             <div class="mt-4 flex flex-col gap-1">
-                                <div class="font-medium text-gray-700">Posting Title</div>
+                                <div class="font-medium text-gray-800">Posting Title</div>
                                 <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                     type="text" autofocus>
                             </div>
                             <div class="mt-4 flex flex-col gap-1">
-                                <div class="font-medium text-gray-700">Description</div>
+                                <div class="font-medium text-gray-800">Description</div>
                                 <textarea></textarea>
                             </div>
                             <div class="mt-4 flex gap-2 sm:gap-4 flex-wrap">
                                 <div class="flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">Deadline</div>
+                                    <div class="font-medium text-gray-800">Deadline</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="date">
                                 </div>
                                 <div class="flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">
+                                    <div class="font-medium text-gray-800">
                                         <span class="relative flex items-center gap-1">
                                             <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
                                                 alt="">
-                                            <span class="font-medium text-gray-700">Budget</span>
+                                            <span class="font-medium text-gray-800">Budget</span>
                                             <span
-                                                class="font-normal invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                                class="font-normal invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded text-white bg-gray-800 tooltip-triangle"
                                                 data-tooltip="">
                                                 The budget will be automatically recalculated as items or services are
                                                 added
@@ -203,10 +204,10 @@ overflow-auto transition-all" data-lang-list="">
                         </div>
                         <div class="col-span-4 xl:col-span-2">
                             <div class="p-4 border rounded shadow bg-white">
-                                <div class="text-lg font-bold text-gray-700">Purchase position <span
+                                <div class="text-lg font-bold text-gray-800">Purchase position <span
                                         class="text-orange-500">#1</span></div>
                                 <div class="mt-4 flex flex-col gap-1">
-                                    <div class="font-medium text-gray-700">What product or service you need?</div>
+                                    <div class="font-medium text-gray-800">What product or service you need?</div>
                                     <input class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
                                         type="text">
                                 </div>
@@ -214,9 +215,9 @@ overflow-auto transition-all" data-lang-list="">
                                     <span class="relative flex items-center gap-1">
                                         <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
                                             alt="">
-                                        <span class="font-medium text-gray-700">Choose category</span>
+                                        <span class="font-medium text-gray-800">Choose category</span>
                                         <span
-                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded text-white bg-gray-800 tooltip-triangle"
                                             data-tooltip="">
                                             In the chosen category, suppliers will be able to find your post
                                         </span>
@@ -304,9 +305,9 @@ overflow-auto transition-all" data-lang-list="">
                                     <span class="relative flex items-center gap-1">
                                         <img class="peer max-h-4 cursor-pointer" src="./images/question-tooltip.svg"
                                             alt="">
-                                        <span class="font-medium text-gray-700">Delivery or service address</span>
+                                        <span class="font-medium text-gray-800">Delivery or service address</span>
                                         <span
-                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded-md text-white bg-gray-800 tooltip-triangle"
+                                            class="invisible opacity-0 peer-hover:visible peer-hover:opacity-95 transition-all absolute -left-2 bottom-8 px-4 py-2 shadow rounded text-white bg-gray-800 tooltip-triangle"
                                             data-tooltip="">
                                             In the chosen address, suppliers will be able to find your post
                                         </span>
@@ -364,7 +365,7 @@ overflow-auto transition-all" data-lang-list="">
                                 </div>
                                 <div class="mt-4 flex-wrap sm:flex-nowrap flex gap-2 sm:gap-6">
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Quantity</div>
+                                        <div class="font-medium text-gray-800">Quantity</div>
                                         <div class="flex">
                                             <input
                                                 class="w-24 px-2 py-1 border rounded-l focus:outline-none focus:border-orange-600"
@@ -381,7 +382,7 @@ overflow-auto transition-all" data-lang-list="">
                                         </div>
                                     </div>
                                     <div class="flex flex-col gap-1">
-                                        <div class="font-medium text-gray-700">Price per Unit</div>
+                                        <div class="font-medium text-gray-800">Price per Unit</div>
                                         <div class="flex">
                                             <input
                                                 class="w-24 px-2 py-1 border rounded-l focus:outline-none focus:border-orange-600"

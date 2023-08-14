@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Favorites | Tradolla.com</title>
+</head>
+
+<body class="h-full bg-gray-100">
+    <div class="lg:flex lg:h-full">
+        <aside
+            class="lg:fixed lg:w-72 lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900">
+            <div class="min-h-full flex flex-col justify-between gap-8">
+                <div class="flex flex-col gap-8 break-all">
+                    <div class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row">
+                        <button class="w-7 h-7 lg:hidden" data-aside-burger><img src="./images/burger-icon--white.svg"
+                                alt="" data-aside-burger-img></button>
+                        <button class="hidden lg:block w-7 h-7"><img src="./images/burger-icon--white.svg"
+                                alt=""></button>
+                        <a class="block font-bold text-xl lg:text-2xl text-white" href="/"><span
+                                class="text-orange-500">Trad</span>olla.com</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/home-icon.svg" alt="">
+                                <span>Home</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="#">
+                            Dashboard
+                        </a>
+
+                        <a class="text-orange-400" href="./favorites.html">Favorites</a>
+                        <a class="transition-all hover:text-orange-400" href="./notifications.html">Notifications</a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/document.svg" alt="">
+                                <span>Procurements</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./offers.html">
+                            Offers
+                        </a><a class="transition-all hover:text-orange-400" href="./our-offers.html">
+                            Our offers
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-4" src="./images/cart-icon.svg" alt="">
+                                <span>E-commerce</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./product-list.html">
+                            Products
+                        </a>
+
+                        <a class="transition-all hover:text-orange-400" href="./our-products.html">
+                            Our products
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex flex-col gap-3 p-4 rounded-lg shadow font-light bg-slate-800 text-white"
+                        data-aside-links>
+                        <div class="mb-2 flex items-center justify-between cursor-pointer" data-aside-menu>
+                            <div class="flex items-center gap-2 text-xl">
+                                <img class="h-5" src="./images/social.svg" alt="">
+                                <span>Social</span>
+                            </div>
+                            <img class="max-h-5 transition-all" src="./images/arrow-btn-icon--white.svg" alt=""
+                                data-aside-menu-img>
+                        </div>
+                        <a class="transition-all hover:text-orange-400" href="./company-list.html">
+                            Companies</a>
+                        <a class="transition-all hover:text-orange-400" href="./chat.html">
+                            Chat and calls
+                        </a>
+                        <a class="transition-all hover:text-orange-400" href="./profile.html">
+                            Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block" data-aside-setting>
+                    <a class="flex items-end gap-2 cursor-pointer" href="#"><img class="transition-all max-h-7"
+                            src="./images/log-out-icon.svg" alt=""><span class="text-lg font-thin text-white">Log
+                            out</span></a>
+                    <a class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+                        href="./profile.html">
+                        <img class="h-10" src="./images/pedro_pascal.png" alt="">
+                        <div>
+                            <div class="text-gray-50 font-semibold">Pedro Pascal</div>
+                            <div class="text-gray-50 font-light text-sm">
+                                pedropascal@gmail.com
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <div class="hidden lg:block lg:w-72 lg:h-full lg:shrink-0"></div>
+        <div class="w-full flex flex-col">
+
+            <header
+                class="relative w-full lg:flex p-3 lg:items-center lg:justify-between lg:shrink-0 bg-white shadow lg:h-12 lg:px-3"
+                data-header>
+                <a class="hidden lg:block lg:invisible font-bold text-xl text-gray-800" href="/"><span
+                        class="text-orange-500">Trad</span>olla.com</a>
+                <div class="flex justify-between lg:justify-center items-center flex-wrap gap-4 lg:gap-14">
+                    <div class="relative z-10">
+                        <button class="pr-3 flex items-center gap-1 cursor-pointer bg-white" data-lang-button>
+                            <img class="max-h-5" src="./images/english.png" alt="">
+                            English
+                            <img class="max-h-4 transition-all" src="./images/arrow-btn-icon.svg" alt=""
+                                data-lang-arrow>
+                        </button>
+                        <div class="hidden absolute top-10 bg-white w-[200%] max-w-[170px] rounded shadow-md overflow-auto transition-all"
+                            data-lang-list>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/farsi.png" alt="">
+                                Farsi</a>
+                            <a class="flex items-start gap-1 p-3 border-b border-gray-100 hover:bg-slate-100"
+                                href="#"><img class="block max-h-5" src="./images/russian.png" alt="">
+                                Russian</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-6 text-gray-800 font-medium">
+                        <a class="transition-all hover:text-orange-500" href="#">Suppliers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Customers</a>
+                        <a class="transition-all hover:text-orange-500" href="#">Help</a>
+                    </div>
+                    <a class="hidden lg:flex flex-col mt-6 items-center gap-2 md:flex-row md:mt-0"
+                        href="./profile.html">
+                        <img class="max-h-8" src="./images/pedro_pascal.png" alt="">
+                        <span class="transition-all hover:text-orange-500">Pedro Pascal</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="h-full p-3">
+                <div class="p-4 rounded border text-gray-800 bg-white">
+                    <div class="flex flex-wrap font-semibold sm:border-b sm:border-gray-200">
+                        <div class="px-3 py-2 cursor-pointer border-b-2 text-orange-500 border-orange-500" data-pd-tab>
+                            Products
+                        </div>
+                        <div class="px-3 py-2 cursor-pointer" data-pd-tab>Offers</div>
+                    </div>
+                    <div data-pd-content>
+                        <div
+                            class="mt-4 pb-4 grid gap-4 sm grid-cols-1 min-[586px]:grid-cols-2 min-[850px]:grid-cols-3 lg:grid-cols-2 min-[1120px]:grid-cols-3 min-[1370px]:grid-cols-4 min-[1675px]:grid-cols-5">
+                            <!-- 1 -->
+                            <div
+                                class="flex flex-col justify-between mx-auto min-[1120px]:mx-0  min-[1370px]:max-w-xs h-full rounded shadow text-gray-500 bg-white">
+                                <div>
+                                    <a class="relative" href="./product-details.html">
+                                        <img class="w-full object-cover rounded" src="./images/example-1.jpg" alt="">
+                                        <div
+                                            class="absolute top-2 right-2 px-3 py-1 rounded-full text-white bg-orange-400">
+                                            new
+                                        </div>
+                                    </a>
+                                    <div class="p-2">
+                                        <a class="inline-block text-sm uppercase hover:underline"
+                                            href="./company.html">LLC
+                                            'VIATSKY
+                                            PLYWOOD
+                                            COMBINATE'</a>
+                                        <a class="inline-block text-base font-semibold text-gray-800 hover:underline"
+                                            href="./product-details.html">Apple
+                                            iMac
+                                            Pro (27-inch with
+                                            Retina
+                                            5K Display,
+                                            3.0GHz
+                                            10-core Intel Xeon W, 1TB SSD)
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="text-xl text-gray-800">$1000</div>
+                                    </div>
+                                    <div class="mt-1 flex items-end justify-between gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <div>Stock: <span class="text-green-600">Avaliable</span></div>
+                                            <div class="flex items-center gap-1">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded transition-all bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/contact_us.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/heart--fill.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div
+                                class="flex flex-col justify-between mx-auto min-[1120px]:mx-0  min-[1370px]:max-w-xs h-full rounded shadow text-gray-500 bg-white">
+                                <div>
+                                    <a class="relative" href="./product-details.html">
+                                        <img class="w-full object-cover rounded" src="./images/example-2.jpg" alt="">
+                                    </a>
+                                    <div class="p-2">
+                                        <a class="inline-block text-sm uppercase hover:underline"
+                                            href="./company.html">Chunghwa Telecom
+                                            Co., Ltd.</a>
+                                        <a class="inline-block text-base font-semibold text-gray-800 hover:underline"
+                                            href="./product-details.html">Apple iPhone XS Max (4GB RAM, 512GB ROM, 12MP
+                                            Main
+                                            Camera)
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="flex gap-4">
+                                        <del class="text-slate-600 text-xl">$1300</del>
+                                        <div class="text-xl text-gray-800">$1000</div>
+                                    </div>
+                                    <div class="mt-1 flex items-end justify-between gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <div>Stock: <span class="text-red-600">Sold-out</span></div>
+                                            <div class="flex items-center gap-1">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded transition-all bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/contact_us.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/heart--fill.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div
+                                class="flex flex-col justify-between mx-auto min-[1120px]:mx-0  min-[1370px]:max-w-xs h-full rounded shadow text-gray-500 bg-white">
+                                <div>
+                                    <a class="relative" href="./product-details.html">
+                                        <img class="w-full object-cover rounded" src="./images/example-3.jpg" alt="">
+                                    </a>
+                                    <div class="p-2">
+                                        <a class="inline-block text-sm uppercase hover:underline"
+                                            href="./company.html">Fubon Financial
+                                            Holding Co. Ltd</a>
+                                        <a class="inline-block text-base font-semibold text-gray-800 hover:underline"
+                                            href="./product-details.html">Apple MacBook Pro (15" Retina, Touch Bar,
+                                            2.2GHz
+                                            6-Core Intel Core i7, 16GB
+                                            RAM, 256GB SSD) - Space Gray (Latest Model)
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <div class="flex flex-col gap-1">
+                                        <div class="text-xl text-gray-800">$1300</div>
+                                    </div>
+                                    <div class="mt-1 flex items-end justify-between gap-4">
+                                        <div class="flex flex-col gap-1">
+                                            <div>Stock: <span class="text-green-600">Avaliable</span></div>
+                                            <div class="flex items-center gap-1">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star--fill.svg" alt="">
+                                                <img class="block max-h-4" src="./images/star.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded transition-all bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/contact_us.svg" alt="">
+                                            </button>
+                                            <button
+                                                class="p-2 flex justify-center items-center rounded border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                                                <img class="w-5 h-5" src="./images/heart--fill.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden" data-pd-content>
+                        <div class="mt-2 w-full overflow-auto rounded border text-gray-800 bg-white">
+                            <!-- Table -->
+                            <div class="grid grid-cols-8 min-w-[1020px] overflow-auto">
+                                <div class="px-4 py-2 col-span-4 border-b border-r font-medium flex items-center">
+                                    Procedure
+                                </div>
+                                <div class="px-4 py-2 col-span-2 border-b border-r font-medium flex items-center">
+                                    Company
+                                </div>
+                                <div class="px-4 py-2 col-span-1 border-b border-r font-medium flex items-center">
+                                    Published
+                                </div>
+                                <div class="px-4 py-2 col-span-1 border-b font-medium flex items-center">Deadline</div>
+                                <!-- 1 -->
+                                <div class="col-span-4 p-4">
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex items-center gap-2 text-gray-400">
+                                            <button><img class="h-4" src="./images/star--fill.svg" alt=""></button>
+                                            <div class="text-sm">Request (№ <span>000023</span>)</div>
+                                        </div>
+                                    </div>
+                                    <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                        href="./offer-details.html">Construction
+                                        Services for
+                                        Office Expansion
+                                        Project
+                                    </a>
+                                    <div class="mt-1 flex flex-col gap-1">
+                                        <div>Categories of goods and services: <span class="font-medium">Office
+                                                Equipment,
+                                                construction equipment</span></div>
+                                        <div>Delivery or service provision addresses: <span class="font-medium">New
+                                                York,
+                                                USA; London, United Kingdom</span></div>
+                                    </div>
+
+                                </div>
+                                <a class="col-span-2 flex items-center p-4 text-blue-500 hover:text-slate-800"
+                                    href="./company.html">Chunghwa
+                                    Telecom
+                                    Ltd.</a>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center">12.04.23</span>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center">31.12.23</span>
+                                <!-- 2 -->
+                                <div class="col-span-4 p-4 bg-gray-50">
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex items-center gap-2 text-gray-400">
+                                            <button><img class="h-5" src="./images/star--fill.svg" alt=""></button>
+                                            <div class="text-sm">Request (№ <span>000023</span>)</div>
+                                        </div>
+                                    </div>
+                                    <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                        href="./offer-details.html">Software Development Services
+                                    </a>
+                                    <div class="mt-1 flex flex-col gap-1">
+                                        <div>Categories of goods and services: <span class="font-medium">Electronics,
+                                                gadgets</span></div>
+                                        <div>Delivery or service provision addresses: <span class="font-medium">Los
+                                                Angeles,
+                                                USA; Tokyo, Japan</span></div>
+                                    </div>
+
+                                </div>
+                                <a class="col-span-2  flex items-center p-4 bg-gray-50 text-blue-500 hover:text-slate-800"
+                                    href="./company.html">ABC Solutions Ltd.</a>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">01.09.23</span>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center bg-gray-50">15.11.23</span>
+                                <!-- 3 -->
+                                <div class="col-span-4 p-4">
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex items-center gap-2 text-gray-400">
+                                            <button><img class="h-4" src="./images/star--fill.svg" alt=""></button>
+                                            <div class="text-sm">Request (№ <span>000065</span>)</div>
+                                        </div>
+                                    </div>
+                                    <a class="inline-block transition-all xl:text-lg text-orange-500 hover:text-slate-800"
+                                        href="./offer-details.html">Energy-efficient Lighting Solutions
+                                    </a>
+                                    <div class="mt-1 flex flex-col gap-1">
+                                        <div>Categories of goods and services: <span class="font-medium">Clothing,
+                                                fashion
+                                                accessories</span></div>
+                                        <div>Delivery or service provision addresses: <span class="font-medium">Paris,
+                                                France; Milan, Italy</span></div>
+                                    </div>
+                                </div>
+                                <a class="col-span-2  flex items-center p-4 text-blue-500 hover:text-slate-800"
+                                    href="./company.html">Bright Energy Corp.</a>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center">05.07.23</span>
+                                <span class="col-span-1 p-4 xl:text-lg flex items-center">30.09.23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
