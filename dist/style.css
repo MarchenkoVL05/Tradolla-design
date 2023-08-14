@@ -875,6 +875,10 @@ video {
   max-height: 100%;
 }
 
+.max-h-44 {
+  max-height: 11rem;
+}
+
 .min-h-full {
   min-height: 100%;
 }
@@ -1933,6 +1937,10 @@ video {
     max-height: 4rem;
   }
 
+  .sm\:max-h-80 {
+    max-height: 20rem;
+  }
+
   .sm\:w-12 {
     width: 3rem;
   }
@@ -2391,6 +2399,10 @@ video {
 
   .min-\[1368px\]\:w-96 {
     width: 24rem;
+  }
+
+  .min-\[1368px\]\:w-\[366px\] {
+    width: 366px;
   }
 
   .min-\[1368px\]\:flex-shrink-0 {
