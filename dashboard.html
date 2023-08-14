@@ -154,34 +154,34 @@
 
             <main class="h-full p-3">
                 <div class="max-w-[1627px] text-gray-800">
-                    <h1 class="text-xl font-bold">Chunghwa Telecom Co., Ltd.</h1>
+                    <h1 class="text-lg sm:text-xl font-bold">Chunghwa Telecom Co., Ltd.</h1>
                     <div class="mt-2 grid grid-cols-12 gap-3">
-                        <div class="text-sm col-span-4 flex gap-2 font-medium">
+                        <div class="text-sm col-span-6 md:col-span-4 flex gap-2 font-medium">
                             <span>Total sales:</span>
                             <span class="text-green-500">$270 000</span>
                         </div>
-                        <div class="text-sm col-span-4 flex gap-2 font-medium">
+                        <div class="text-sm col-span-6 md:col-span-4 flex gap-2 font-medium">
                             <span>Your offers:</span>
                             <span class="font-bold">$3 400 000</span>
                         </div>
-                        <div class="text-sm col-span-4 flex gap-2 font-medium">
+                        <div class="text-sm col-span-12 md:col-span-4 flex gap-2 font-medium">
                             <span>This month:</span>
                             <span class="text-red-500">$55 440 &darr;</span>
                         </div>
-                        <div class="col-span-6 p-4 rounded border shadow bg-white">
+                        <div class="col-span-12 md:col-span-6 p-4 rounded border shadow bg-white">
                             <p class="font-bold">Number of deals</p>
                             <canvas class="mt-4" id="dealsPerMonth"></canvas>
                         </div>
-                        <div class="col-span-6 p-4 rounded border shadow bg-white">
+                        <div class="col-span-12 md:col-span-6 p-4 rounded border shadow bg-white">
                             <p class="font-bold">Total sales (USD)</p>
                             <canvas class="mt-4" id="totalSales"></canvas>
                         </div>
-                        <div class="col-span-9 py-4 rounded border shadow bg-white">
+                        <div class="col-span-12 2xl:col-span-9 py-4 rounded border overflow-auto shadow bg-white">
                             <div class="px-4 flex justify-between gap-4">
-                                <div class="flexjustify-between gap-4 text-lg font-bold">Purchase orders:</div>
+                                <div class="flexjustify-between gap-4 sm:text-lg font-bold">Purchase orders:</div>
                                 <a class="hover:underline" href="#">View all</a>
                             </div>
-                            <div class="mt-2 grid grid-cols-12">
+                            <div class="mt-2 grid grid-cols-12 min-w-[686px]">
                                 <div class="col-span-3 px-4 py-2 border-b font-semibold">Order</div>
                                 <div class="col-span-7 px-4 py-2 border-b font-semibold">Offer</div>
                                 <div class="col-span-2 px-4 py-2 border-b font-semibold">Action</div>
@@ -248,7 +248,7 @@
                                         order</a></div>
                             </div>
                         </div>
-                        <div class="col-span-3 p-4 rounded border shadow bg-white">
+                        <div class="col-span-12 md:col-span-4 2xl:col-span-3 p-4 rounded border shadow bg-white">
                             <p class="font-bold">Popularity of categories</p>
                             <canvas class="mt-4" id="popularityOfCategories"></canvas>
                         </div>

@@ -991,6 +991,10 @@ video {
   min-width: 100%;
 }
 
+.min-w-\[686px\] {
+  min-width: 686px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -2073,6 +2077,18 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -2458,6 +2474,14 @@ video {
 
   .\32xl\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .\32xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .\32xl\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .\32xl\:h-14 {
