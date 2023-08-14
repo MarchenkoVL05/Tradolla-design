@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./dist/style.css">
-    <!-- TinyMCE WYSIWYG -->
-    <script src="https://cdn.tiny.cloud/1/btcy28zm7gkt490uwu9hv0hxl14b3j75j5o1vid0p7yjhk90/tinymce/6/tinymce.min.js"
-        referrerpolicy="origin"></script>
+    <!-- Froala WYSIWYG -->
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet'
+        type='text/css'>
+    <script type='text/javascript'
+        src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>
     <title>Profile | Tradolla.com</title>
 </head>
 
@@ -273,9 +275,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-col rounded border shadow overflow-auto bg-white">
-                                    <span class="px-4 py-2 font-semibold bg-slate-50">About Me:</span>
-                                    <textarea></textarea>
+                                <div class="flex flex-col overflow-auto bg-white">
+                                    <span class="px-4 py-2 font-semibold">About Me:</span>
+                                    <textarea id="details1"></textarea>
                                 </div>
                                 <div class="flex justify-end">
                                     <div class="flex items-center gap-1">
@@ -307,7 +309,7 @@
                                     <div class="font-medium text-gray-800">Who we are?</div>
                                     <textarea
                                         class="px-2 py-1 border rounded focus:outline-none focus:border-orange-600"
-                                        rows="10">Chunghwa Telecom is the largest integrated telecommunication service provider in Taiwan, with leading offerings in domestic and international fixed communication, mobile communication, broadband, and internet services.
+                                        id="details2">Chunghwa Telecom is the largest integrated telecommunication service provider in Taiwan, with leading offerings in domestic and international fixed communication, mobile communication, broadband, and internet services.
                                                 In addition to these traditional services, the Company also provides information and communication technology services to enterprise customers with big data, information security, cloud computing and IDC capabilities, and is expanding businesses into innovative technology services such as IoT, AI, etc. All of these capabilities and offerings aim to create an optimal communication environment to enable wonderful and convenient digital life-style, as well as to serve as a key partner for other international telecommunication service providers.
                                                 Based on the "customer-centric" concept, Chunghwa Telecom completed a new organizational transformation in 2022. Under the new organizational structure, our three business groups, Consumer, Enterprise and International Business Groups, with the full support of three technical groups, the Network Group, Information Group and Research Lab, will continue to implement our business strategy, "Transformation x 5G x Sustainability" and provide digital transformation solutions for our customers.
                                                 Organizational transformation and corporate values are the major hard and soft strengths of a company. Under our new customer-centric organizational structure, we advocate our four corporate values of " integrity, customers’ trust, creation of value and innovation, commitment to accountability” and integrate into our corporate culture.
@@ -543,12 +545,9 @@
         </div>
     </div>
     <script>
-        // WYSIWYG Editor (TinyMCE)
-        tinymce.init({
-            selector: 'textarea',
-            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-        });
+        // WYSIWYG Editor (Froala)
+        var editor1 = new FroalaEditor("#details1");
+        var editor2 = new FroalaEditor("#details2");
     </script>
     <script src="./script.js"></script>
 </body>
