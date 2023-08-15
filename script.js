@@ -98,6 +98,45 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Squeeze menu
+  const squeezeMenu = document.querySelector("[data-squezee-menu]");
+  const asideLogo = document.querySelector("[data-aside-logo]");
+  const asideMenu = document.querySelector("aside");
+  const asideHidden = document.querySelector("[data-aside-hidden]");
+
+  let asideOpened = true;
+
+  function squeezeMenuFunc() {
+    if (asideLinks) {
+      asideLinks.forEach((linksGroup) => {
+        linksGroup.classList.toggle("lg:flex");
+      });
+    }
+
+    if (asideSetting && asideLogo) {
+      asideSetting.classList.toggle("lg:block");
+      asideLogo.classList.toggle("hidden");
+    }
+
+    if (asideMenu) {
+      asideMenu.classList.toggle("lg:w-72");
+      asideMenu.classList.toggle("w-16");
+      asideMenu.querySelector("div").classList.toggle("items-center");
+    }
+
+    if (asideHidden) {
+      asideHidden.classList.toggle("lg:block");
+    }
+
+    asideOpened = !asideOpened;
+  }
+
+  if (squeezeMenu) {
+    squeezeMenu.addEventListener("click", () => {
+      squeezeMenuFunc();
+    });
+  }
+
   // close the burger when a screen becomes wider
   window.addEventListener("resize", () => {
     const windowWidth = window.innerWidth;
@@ -110,6 +149,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
       langList.classList.add("hidden");
       langBtnArrow.classList.remove("rotate-180");
+    }
+
+    if (windowWidth < 1024 && !asideOpened) {
+      squeezeMenuFunc();
     }
   });
 
