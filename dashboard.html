@@ -274,7 +274,7 @@
         new Chart(dealsPerMonth, {
             type: 'bar',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                 datasets: [{
                     label: 'Number of deals per month totaling',
                     data: [12, 19, 3, 5, 2, 3, 7, 12, 9, 6, 10, 4],
@@ -295,14 +295,15 @@
         new Chart(totalSales, {
             type: 'line',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
                 datasets:
                     [
                         {
                             label: 'Total sales per month',
-                            data: [120, 50, 100, 210, 240, 220, 100, 230, 270, 230, 150, 120],
-                            backgroundColor: '#F97316',
-                            cubicInterpolationMode: 'monotone'
+                            data: [60, 80, 83, 67, 73, 78, 68, 69, 65, 70, 72, 71],
+                            borderColor: '#F97316',
+                            backgroundColor: 'rgba(255, 122, 10, 0.1)',
+                            fill: true,
                         }
                     ]
             },
