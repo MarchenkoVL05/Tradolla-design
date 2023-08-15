@@ -971,12 +971,12 @@ video {
   min-width: 686px;
 }
 
-.min-w-full {
-  min-width: 100%;
-}
-
 .min-w-\[700px\] {
   min-width: 700px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-7xl {
@@ -1533,6 +1533,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -1560,10 +1564,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
 }
 
 .font-bold {
