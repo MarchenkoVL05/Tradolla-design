@@ -103,7 +103,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const asideLogo = document.querySelector("[data-aside-logo]");
   const asideMenu = document.querySelector("aside");
   const asideHidden = document.querySelector("[data-aside-hidden]");
-  const widthContaier = document.querySelector("[data-container]");
 
   let asideOpened = true;
 
@@ -128,10 +127,6 @@ window.addEventListener("DOMContentLoaded", () => {
     if (asideHidden) {
       asideHidden.classList.toggle("lg:w-72");
       asideHidden.classList.toggle("w-16");
-    }
-
-    if (widthContaier) {
-      widthContaier.classList.toggle("max-w-[1627px]");
     }
 
     asideOpened = !asideOpened;
