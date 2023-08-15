@@ -1952,6 +1952,10 @@ video {
     margin-top: 1rem;
   }
 
+  .sm\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
