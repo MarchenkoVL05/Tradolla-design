@@ -975,6 +975,10 @@ video {
   min-width: 100%;
 }
 
+.min-w-\[700px\] {
+  min-width: 700px;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1556,6 +1560,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {
