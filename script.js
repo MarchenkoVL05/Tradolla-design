@@ -103,6 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const asideLogo = document.querySelector("[data-aside-logo]");
   const asideMenu = document.querySelector("aside");
   const asideHidden = document.querySelector("[data-aside-hidden]");
+  const widthContaier = document.querySelector("[data-container]");
 
   let asideOpened = true;
 
@@ -125,7 +126,12 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     if (asideHidden) {
-      asideHidden.classList.toggle("lg:block");
+      asideHidden.classList.toggle("lg:w-72");
+      asideHidden.classList.toggle("w-16");
+    }
+
+    if (widthContaier) {
+      widthContaier.classList.toggle("max-w-[1627px]");
     }
 
     asideOpened = !asideOpened;
@@ -195,27 +201,29 @@ window.addEventListener("DOMContentLoaded", () => {
   const pdTabs = document.querySelectorAll("div[data-pd-tab]");
   const pdContents = document.querySelectorAll("[data-pd-content]");
 
-  pdTabs.forEach((tab, tabIndex) => {
-    tab.addEventListener("click", () => {
-      tab.classList.add("text-orange-500");
-      tab.classList.add("border-b-2");
-      tab.classList.add("border-orange-500");
-      pdTabs.forEach((t, i) => {
-        if (tabIndex !== i) {
-          t.classList.remove("text-orange-500");
-          t.classList.remove("border-b-2");
-          t.classList.remove("border-orange-500");
-        }
-      });
-      pdContents.forEach((content, contentIndex) => {
-        if (tabIndex === contentIndex) {
-          content.classList.remove("hidden");
-        } else {
-          content.classList.add("hidden");
-        }
+  if (pdTabs) {
+    pdTabs.forEach((tab, tabIndex) => {
+      tab.addEventListener("click", () => {
+        tab.classList.add("text-orange-500");
+        tab.classList.add("border-b-2");
+        tab.classList.add("border-orange-500");
+        pdTabs.forEach((t, i) => {
+          if (tabIndex !== i) {
+            t.classList.remove("text-orange-500");
+            t.classList.remove("border-b-2");
+            t.classList.remove("border-orange-500");
+          }
+        });
+        pdContents.forEach((content, contentIndex) => {
+          if (tabIndex === contentIndex) {
+            content.classList.remove("hidden");
+          } else {
+            content.classList.add("hidden");
+          }
+        });
       });
     });
-  });
+  }
 
   // toggle aside menu links
   const asideMenus = document.querySelectorAll("[data-aside-menu]");
