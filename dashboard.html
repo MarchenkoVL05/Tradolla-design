@@ -288,12 +288,15 @@
             type: 'line',
             data: {
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                datasets: [{
-                    label: 'Total sales per month',
-                    data: [120, 50, 100, 210, 220, 220, 100, 230, 270, 230, 150, 120],
-                    backgroundColor: '#F97316',
-                    hoverOffset: 4
-                }]
+                datasets:
+                    [
+                        {
+                            label: 'Total sales per month',
+                            data: [120, 50, 100, 210, 240, 220, 100, 230, 270, 230, 150, 120],
+                            backgroundColor: '#F97316',
+                            cubicInterpolationMode: 'monotone'
+                        }
+                    ]
             },
             options: {
                 scales: {
@@ -310,8 +313,8 @@
                 labels: ['Office Equipment', 'Construction equipment', 'Electronics'],
                 datasets: [{
                     label: 'Total sales per month',
-                    data: [120, 50, 100],
-                    backgroundColor: ['#F97316', '#b92c2c', '#353596'],
+                    data: [190, 120, 80],
+                    backgroundColor: ['#353596', '#5f5fb6', '#8b8bd8'],
                     hoverOffset: 4
                 }]
             },

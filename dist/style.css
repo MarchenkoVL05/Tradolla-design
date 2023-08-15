@@ -851,6 +851,10 @@ video {
   max-height: 1rem;
 }
 
+.max-h-44 {
+  max-height: 11rem;
+}
+
 .max-h-5 {
   max-height: 1.25rem;
 }
@@ -873,10 +877,6 @@ video {
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-44 {
-  max-height: 11rem;
 }
 
 .min-h-full {
@@ -2395,10 +2395,6 @@ video {
 
   .min-\[1368px\]\:h-80 {
     height: 20rem;
-  }
-
-  .min-\[1368px\]\:w-96 {
-    width: 24rem;
   }
 
   .min-\[1368px\]\:w-\[366px\] {
