@@ -154,6 +154,17 @@ window.addEventListener("DOMContentLoaded", () => {
     if (windowWidth < 1024 && !asideOpened) {
       squeezeMenuFunc();
     }
+
+    if (windowWidth >= 1024 && !asideBurgerClosed) {
+      asideLinks.forEach((bunchOfLinks) => {
+        bunchOfLinks.classList.add("hidden");
+        bunchOfLinks.classList.remove("flex");
+      });
+
+      asideSetting.classList.toggle("hidden");
+      asideBurgerImg.src = "./images/burger-icon--white.svg";
+      asideBurgerClosed = true;
+    }
   });
 
   // email confirmation's inputs logic
